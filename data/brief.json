@@ -1,86 +1,109 @@
 {
   "date": "2026-11-19",
-  "generatedAt": "2026-11-19T20:24:17+08:00",
+  "generatedAt": "2026-11-19T21:57:04+08:00",
   "summarizedBy": "source",
   "stories": [
     {
       "id": "25c96fa5a2",
       "title": "Anthropic prices initial public offering",
-      "summary": "The long-awaited IPO reportedly values the company at $1.5 trillion on a fully diluted basis.",
+      "summary": "Anthropic’s upsized $107.3 billion initial public offering and private placement broke SpaceX’s record and shares are indicated to open higher in gray market trading. Mandeep Singh of Bloomberg Intelligence looks at the…",
       "sources": [
         "Bloomberg",
         "TechCrunch"
       ],
       "publishedAt": "2026-11-19T06:11+08:00",
       "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
-      "score": 4.005
+      "score": 3.87
     },
     {
-      "id": "335389d60d",
-      "title": "Google ships Gemini 4 Neon, its fourth new Gemini model in a month",
+      "id": "b2c084a412",
+      "title": "Gemini 4 Neon",
       "summary": "Google released Gemini 4 Neon, a new frontier model built for software development, knowledge work, and science. It handles text, images, video, audio, and PDFs with a context window of one million tokens. At $3 per mil…",
       "sources": [
-        "The Decoder",
+        "DeepMind",
         "HN"
       ],
       "publishedAt": "2026-11-19T05:03+08:00",
-      "url": "https://the-decoder.com/google-ships-gemini-4-neon-its-fourth-new-gemini-model-in-a-month/",
-      "score": 1.864
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+      "score": 3.2
     },
     {
-      "id": "7160a0d7ef",
-      "title": "DeepMind Employees Are Unionising",
-      "summary": "DeepMind Employees Are Unionising",
+      "id": "97b20df2e7",
+      "title": "The AI Superintelligence Debate Has Serious Flaws",
+      "summary": "The AI Superintelligence Debate Has Serious Flaws",
       "sources": [
         "HN"
       ],
-      "publishedAt": "2026-11-19T17:28+08:00",
-      "url": "https://www.gdmunion.co.uk",
-      "score": 1.393
+      "publishedAt": "2026-11-19T20:17+08:00",
+      "url": "https://spectrum.ieee.org/ai-superintelligence-debate",
+      "score": 1.509
+    },
+    {
+      "id": "abfe9a9da1",
+      "title": "Anthropic’s Safety Pledges Questioned by Tech Leaders, Scientists",
+      "summary": "A coalition of tech leaders and scientists have signed “The Misanthropic Statement,” an open letter questioning Anthropic’s commitment to AI safety. Rumman Chodhury, CEO and founder at Humane Intelligence PBC, discusses…",
+      "sources": [
+        "Bloomberg"
+      ],
+      "publishedAt": "2026-11-19T21:54+08:00",
+      "url": "https://www.bloomberg.com/news/videos/2026-11-19/tech-leaders-experts-question-anthropic-safety-pledges-video",
+      "score": 1.298
+    },
+    {
+      "id": "1b959f4605",
+      "title": "AI Financing Shifts From Hyperscalers to Chips: Berro",
+      "summary": "Kelsey Berro, fixed income portfolio manager at JPMorgan Asset Management, says record demand has absorbed a surge in hyperscaler debt, but the next test for AI financing will come from chips. “2027, it’s gonna be about…",
+      "sources": [
+        "Bloomberg"
+      ],
+      "publishedAt": "2026-11-19T21:47+08:00",
+      "url": "https://www.bloomberg.com/news/videos/2026-11-19/ai-financing-shifts-from-hyperscalers-to-chips-berro-video",
+      "score": 1.291
     },
     {
       "id": "abe8fdc9ba",
       "title": "Nvidia Moves Ousted CEO Jensen Huang Out of the Spotlight",
       "summary": "The voluble executive has been quieted as the chipmaker he built tries to move forward",
       "sources": [
-        "Bloomberg"
+        "Bloomberg",
+        "TechCrunch"
       ],
-      "publishedAt": "2026-11-19T20:02+08:00",
+      "publishedAt": "2026-11-19T05:31+08:00",
       "url": "https://www.bloomberg.com/news/newsletters/2026-11-19/nvidia-moves-ousted-ceo-jensen-huang-out-of-the-spotlight",
-      "score": 1.281
+      "score": 1.188
     },
     {
-      "id": "54d1f0434d",
-      "title": "US Economy Struggles to Measure AI’s True GDP Impact in Real Time",
-      "summary": "A new US experimental measure shows AI is changing the economy, but only retrospectively.",
+      "id": "7cd396eaf0",
+      "title": "I let Apple’s always-listening AI summarize my life for two weeks",
+      "summary": "Was it worth it? I've been asking myself this quite a bit over the last month or so while testing both the Amazon Bee Frontier and Siri Recap on the Apple Watch Ultra 4. Both enable a wearable to ambiently listen to you…",
       "sources": [
-        "Bloomberg"
+        "The Verge"
       ],
-      "publishedAt": "2026-11-19T19:28+08:00",
-      "url": "https://www.bloomberg.com/news/newsletters/2026-11-19/us-economy-struggles-to-measure-ai-s-true-gdp-impact-in-real-time",
-      "score": 1.252
+      "publishedAt": "2026-11-19T21:00+08:00",
+      "url": "https://www.theverge.com/tech/1037100/apple-siri-recap-audio-intelligence-hands-on",
+      "score": 1.155
     },
     {
-      "id": "ba05f6db61",
-      "title": "LLM assisted reverse engineering",
-      "summary": "LLM assisted reverse engineering",
+      "id": "347bf623ee",
+      "title": "Canva adds an AI ‘off’ button",
+      "summary": "Canva will now allow you to turn off its generative AI features. With this change, you can disable the graphic design platform's array of AI tools, such as its AI photo-extending Magic Expand feature, as well as turn of…",
       "sources": [
-        "HN"
+        "The Verge"
       ],
-      "publishedAt": "2026-11-19T06:29+08:00",
-      "url": "https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering",
-      "score": 1.101
+      "publishedAt": "2026-11-19T20:30+08:00",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1037126/canva-ai-features-off-button",
+      "score": 1.132
     },
     {
-      "id": "2b8784d0dd",
-      "title": "Google's latest AI model is faster, cheaper and smarter than its flagship predecessor from just weeks ago",
-      "summary": "Google DeepMind has released Gemini 4 Neon, its fourth model in seven weeks, which is nearly 2x faster than its sibling Carbon, outperforms it on most benchmarks and comes in at a significantly lower price. The article…",
+      "id": "bb25daab1f",
+      "title": "OpenAI's own researchers now say they value their AI tools more than nearly half their colleagues",
+      "summary": "OpenAI's internal use of coding agents is growing fast, with theoretical token costs now exceeding researchers' base salaries. Even though teams are reluctant to work without these tools, the models still produce a lot…",
       "sources": [
         "The Decoder"
       ],
-      "publishedAt": "2026-11-19T19:18+08:00",
-      "url": "https://the-decoder.com/googles-latest-ai-model-is-faster-cheaper-and-smarter-than-its-flagship-predecessor-from-just-weeks-ago/",
-      "score": 0.957
+      "publishedAt": "2026-11-19T21:08+08:00",
+      "url": "https://the-decoder.com/openais-own-researchers-now-say-they-value-their-ai-tools-more-than-nearly-half-their-colleagues/",
+      "score": 0.968
     },
     {
       "id": "d414dc9f43",
@@ -92,7 +115,18 @@
       ],
       "publishedAt": "2026-11-18T22:00+08:00",
       "url": "https://www.theverge.com/games/1036140/will-wright-mymems-ai-game-interview",
-      "score": 0.944
+      "score": 0.913
+    },
+    {
+      "id": "2b8784d0dd",
+      "title": "Google's latest AI model is faster, cheaper and smarter than its flagship predecessor from just weeks ago",
+      "summary": "Google DeepMind has released Gemini 4 Neon, its fourth model in seven weeks, which is nearly 2x faster than its sibling Carbon, outperforms it on most benchmarks and comes in at a significantly lower price. The article…",
+      "sources": [
+        "The Decoder"
+      ],
+      "publishedAt": "2026-11-19T19:18+08:00",
+      "url": "https://the-decoder.com/googles-latest-ai-model-is-faster-cheaper-and-smarter-than-its-flagship-predecessor-from-just-weeks-ago/",
+      "score": 0.901
     },
     {
       "id": "ab196dc93b",
@@ -103,40 +137,7 @@
       ],
       "publishedAt": "2026-11-19T17:28+08:00",
       "url": "https://the-decoder.com/ocr-models-now-digitize-a-million-pages-for-under-130-as-costs-drop-fivefold-in-18-months/",
-      "score": 0.891
-    },
-    {
-      "id": "14c609265d",
-      "title": "The nation’s largest school districts consider ditching Google Search",
-      "summary": "New York, Los Angeles, and Chicago schools are considering Google alternatives after the company said it will disable Search for schools that opt out of its AI features, according to The New York Times. Starting next ye…",
-      "sources": [
-        "The Verge"
-      ],
-      "publishedAt": "2026-11-19T07:18+08:00",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1037151/school-districts-ditching-google",
-      "score": 0.754
-    },
-    {
-      "id": "2cf389d7c3",
-      "title": "Amidst fears of AI cyberattacks, Satya Nadella says lots of critical infrastructure is ‘unpatchable’",
-      "summary": "The Microsoft CEO downplayed the recent Outlook outage while noting that AI was causing both opportunities and new challenges for securing much of the connected world.",
-      "sources": [
-        "TechCrunch"
-      ],
-      "publishedAt": "2026-11-19T07:45+08:00",
-      "url": "https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable/",
-      "score": 0.701
-    },
-    {
-      "id": "0e23395eb7",
-      "title": "Microsoft CEO Satya Nadella remains confident in Nvidia after Huang’s exit",
-      "summary": "Microsoft CEO Satya Nadella expressed confidence in Jensen Huang's successor Colette Kress, who is serving as Nvidia's interim CEO.",
-      "sources": [
-        "TechCrunch"
-      ],
-      "publishedAt": "2026-11-19T07:17+08:00",
-      "url": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-remains-confident-in-nvidia-after-huangs-exit/",
-      "score": 0.691
+      "score": 0.84
     }
   ]
 }
