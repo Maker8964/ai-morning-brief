@@ -71,6 +71,11 @@ class RankTest(unittest.TestCase):
         self.assertEqual([s.sources[0] for s in picked].count("Bloomberg"), 3)
         self.assertIn("Wired", [s.sources[0] for s in picked])
 
+    def test_cap_counts_lead_item_source(self):
+        # Lead (items[0]) is HN even though Bloomberg has higher weight.
+        stories = [Story([item("HN", f"h{i}", hours_ago=i), item("Bloomberg", f"b{i}", weight=1.3)]) for i in range(5)]
+        self.assertEqual(len(rank(stories, now=NOW, per_source=3)), 3)
+
 
 class IngestTest(unittest.TestCase):
     RSS = b"""<?xml version="1.0"?><rss version="2.0"><channel><title>t</title>
