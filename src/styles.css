@@ -1,0 +1,205 @@
+:root {
+  --ink: #111111;
+  --paper: #f5f1e8;
+  --accent: #d9ff3d;
+  --muted: rgba(17, 17, 17, 0.6);
+  --bg: #000000;
+
+  --font-display: "Anton", "Archivo Black", "Oswald", "Impact", sans-serif;
+  --font-body: "Noto Serif SC", "Songti SC", "SimSun", serif;
+  --font-mono: "Space Mono", "IBM Plex Mono", ui-monospace, monospace;
+
+  --card-max: 390px;
+  --card-margin: 24px;
+  --pad-x: 20px;
+  --pad-y: 16px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  height: 100%;
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.app {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px var(--card-margin);
+  overflow: hidden;
+}
+
+/* ---------- Deck ---------- */
+.deck {
+  display: grid;
+  width: 100%;
+  max-width: var(--card-max);
+  touch-action: pan-y;
+  user-select: none;
+}
+
+.deck > .card {
+  grid-area: 1 / 1;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  transform-origin: 50% 0%;
+  transition: transform 260ms cubic-bezier(0.2, 0.8, 0.2, 1), opacity 260ms ease;
+}
+
+.deck > .card[data-depth="0"] { z-index: 3; cursor: grab; }
+.deck > .card[data-depth="1"] { z-index: 2; transform: translateY(10px) scale(0.96); pointer-events: none; }
+.deck > .card[data-depth="2"] { z-index: 1; transform: translateY(20px) scale(0.92); pointer-events: none; }
+.deck > .card.is-dragging { transition: none; cursor: grabbing; }
+
+.deck-index {
+  margin: 36px 0 0;
+  font: 400 11px/1 var(--font-mono);
+  letter-spacing: 0.08em;
+  color: rgba(245, 241, 232, 0.4);
+}
+
+/* ---------- Card ---------- */
+.card {
+  width: 100%;
+  background: var(--paper);
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  border-radius: 0;
+}
+
+.card__header,
+.card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: var(--pad-y) var(--pad-x);
+}
+
+.card__header { border-bottom: 1px solid var(--ink); }
+.card__footer { border-top: 1px solid var(--ink); margin-top: auto; }
+
+.card__badges {
+  display: flex;
+  gap: 8px;
+  min-width: 0;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border: 1px solid var(--ink);
+  border-radius: 12px;
+  white-space: nowrap;
+}
+
+.mono,
+.badge,
+.card__meta,
+.btn-copy,
+.count-pill {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.badge,
+.card__meta { color: var(--muted); }
+
+.card__meta {
+  flex-shrink: 0;
+  font-size: 11px;
+}
+
+.card__title {
+  margin: 0;
+  padding: var(--pad-y) var(--pad-x) 0;
+  font-family: var(--font-display);
+  font-weight: 400; /* Anton ships a single heavy weight */
+  font-size: 40px;
+  line-height: 0.95;
+  text-transform: uppercase;
+  color: var(--ink);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
+  overflow-wrap: anywhere;
+}
+
+.card__body {
+  margin: 0;
+  padding: 12px var(--pad-x) var(--pad-y);
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--ink);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  overflow: hidden;
+}
+
+.card__actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-copy,
+.btn-share {
+  appearance: none;
+  border: 0;
+  background: none;
+  color: var(--ink);
+  cursor: pointer;
+  padding: 0;
+}
+
+.btn-copy {
+  min-height: 32px;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.btn-copy:focus-visible,
+.btn-share:focus-visible {
+  outline: 1px solid var(--ink);
+  outline-offset: 3px;
+}
+
+.count-pill {
+  padding: 4px 10px;
+  border-radius: 12px;
+  background: var(--accent);
+  color: #000;
+  font-variant-numeric: tabular-nums;
+}
+
+.count-pill.is-over { background: var(--ink); color: var(--paper); }
+
+.btn-share {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  margin-right: -6px;
+}
+
+.btn-share svg { width: 20px; height: 20px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .deck > .card { transition: none; }
+}
