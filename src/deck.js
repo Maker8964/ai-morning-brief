@@ -88,7 +88,7 @@ export function createDeck(root, stories, { onChange } = {}) {
     card.classList.remove("is-dragging");
     const v = Math.abs(dx) / (performance.now() - t0);
     const passed = Math.abs(dx) > root.offsetWidth * SWIPE_THRESHOLD || v > FLICK_VELOCITY;
-    if (!passed) { card.style.transform = ""; return; }
+    if (!passed || n < 2) { card.style.transform = ""; return; }
     if (dx < 0) {
       next();
     } else {

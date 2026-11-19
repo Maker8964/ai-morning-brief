@@ -90,6 +90,7 @@ html, body {
   display: flex;
   gap: 8px;
   min-width: 0;
+  flex: 1 1 auto;
 }
 
 .badge {
@@ -98,6 +99,9 @@ html, body {
   border: 1px solid var(--ink);
   border-radius: 12px;
   white-space: nowrap;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .mono,
