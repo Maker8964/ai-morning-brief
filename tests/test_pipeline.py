@@ -71,6 +71,9 @@ class RankTest(unittest.TestCase):
         self.assertEqual([s.sources[0] for s in picked].count("Bloomberg"), 3)
         self.assertIn("Wired", [s.sources[0] for s in picked])
 
+    def test_zero_limit_selects_nothing(self):
+        self.assertEqual(rank([Story([item("Wired", "a")])], now=NOW, limit=0), [])
+
     def test_cap_counts_lead_item_source(self):
         # Lead (items[0]) is HN even though Bloomberg has higher weight.
         stories = [Story([item("HN", f"h{i}", hours_ago=i), item("Bloomberg", f"b{i}", weight=1.3)]) for i in range(5)]

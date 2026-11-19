@@ -26,6 +26,8 @@ def rank(stories: list[Story], now: datetime | None = None, limit: int = 12, per
     picked: list[Story] = []
     counts: dict[str, int] = {}
     for s in sorted(stories, key=lambda s: s.score, reverse=True):
+        if len(picked) >= limit:
+            break
         lead = s.lead.source
         if counts.get(lead, 0) >= per_source:
             continue
