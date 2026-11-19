@@ -1,6 +1,6 @@
 {
   "date": "2026-11-19",
-  "generatedAt": "2026-11-19T21:57:04+08:00",
+  "generatedAt": "2026-11-19T22:43:25+08:00",
   "summarizedBy": "source",
   "stories": [
     {
@@ -9,34 +9,23 @@
       "summary": "Anthropic’s upsized $107.3 billion initial public offering and private placement broke SpaceX’s record and shares are indicated to open higher in gray market trading. Mandeep Singh of Bloomberg Intelligence looks at the…",
       "sources": [
         "Bloomberg",
-        "TechCrunch"
+        "The Verge"
       ],
       "publishedAt": "2026-11-19T06:11+08:00",
       "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
-      "score": 3.87
+      "score": 5.439
     },
     {
-      "id": "b2c084a412",
-      "title": "Gemini 4 Neon",
+      "id": "335389d60d",
+      "title": "Google ships Gemini 4 Neon, its fourth new Gemini model in a month",
       "summary": "Google released Gemini 4 Neon, a new frontier model built for software development, knowledge work, and science. It handles text, images, video, audio, and PDFs with a context window of one million tokens. At $3 per mil…",
       "sources": [
-        "DeepMind",
+        "The Decoder",
         "HN"
       ],
       "publishedAt": "2026-11-19T05:03+08:00",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
-      "score": 3.2
-    },
-    {
-      "id": "97b20df2e7",
-      "title": "The AI Superintelligence Debate Has Serious Flaws",
-      "summary": "The AI Superintelligence Debate Has Serious Flaws",
-      "sources": [
-        "HN"
-      ],
-      "publishedAt": "2026-11-19T20:17+08:00",
-      "url": "https://spectrum.ieee.org/ai-superintelligence-debate",
-      "score": 1.509
+      "url": "https://the-decoder.com/google-ships-gemini-4-neon-its-fourth-new-gemini-model-in-a-month/",
+      "score": 1.756
     },
     {
       "id": "abfe9a9da1",
@@ -47,7 +36,7 @@
       ],
       "publishedAt": "2026-11-19T21:54+08:00",
       "url": "https://www.bloomberg.com/news/videos/2026-11-19/tech-leaders-experts-question-anthropic-safety-pledges-video",
-      "score": 1.298
+      "score": 1.259
     },
     {
       "id": "1b959f4605",
@@ -58,7 +47,7 @@
       ],
       "publishedAt": "2026-11-19T21:47+08:00",
       "url": "https://www.bloomberg.com/news/videos/2026-11-19/ai-financing-shifts-from-hyperscalers-to-chips-berro-video",
-      "score": 1.291
+      "score": 1.252
     },
     {
       "id": "abe8fdc9ba",
@@ -70,7 +59,7 @@
       ],
       "publishedAt": "2026-11-19T05:31+08:00",
       "url": "https://www.bloomberg.com/news/newsletters/2026-11-19/nvidia-moves-ousted-ceo-jensen-huang-out-of-the-spotlight",
-      "score": 1.188
+      "score": 1.163
     },
     {
       "id": "7cd396eaf0",
@@ -81,7 +70,7 @@
       ],
       "publishedAt": "2026-11-19T21:00+08:00",
       "url": "https://www.theverge.com/tech/1037100/apple-siri-recap-audio-intelligence-hands-on",
-      "score": 1.155
+      "score": 1.12
     },
     {
       "id": "347bf623ee",
@@ -92,7 +81,18 @@
       ],
       "publishedAt": "2026-11-19T20:30+08:00",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1037126/canva-ai-features-off-button",
-      "score": 1.132
+      "score": 1.099
+    },
+    {
+      "id": "ba05f6db61",
+      "title": "LLM assisted reverse engineering",
+      "summary": "LLM assisted reverse engineering",
+      "sources": [
+        "HN"
+      ],
+      "publishedAt": "2026-11-19T06:29+08:00",
+      "url": "https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering",
+      "score": 1.041
     },
     {
       "id": "bb25daab1f",
@@ -103,19 +103,7 @@
       ],
       "publishedAt": "2026-11-19T21:08+08:00",
       "url": "https://the-decoder.com/openais-own-researchers-now-say-they-value-their-ai-tools-more-than-nearly-half-their-colleagues/",
-      "score": 0.968
-    },
-    {
-      "id": "d414dc9f43",
-      "title": "Will Wright’s next game uses AI to map your memories",
-      "summary": "Will Wright, the creator of legendary franchises like SimCity and The Sims, is working on a new game - and it's built around AI. The new title, focused on your memories, is called MyMems. Like Wright's other titles, it…",
-      "sources": [
-        "The Verge",
-        "Ars Technica"
-      ],
-      "publishedAt": "2026-11-18T22:00+08:00",
-      "url": "https://www.theverge.com/games/1036140/will-wright-mymems-ai-game-interview",
-      "score": 0.913
+      "score": 0.939
     },
     {
       "id": "2b8784d0dd",
@@ -126,18 +114,29 @@
       ],
       "publishedAt": "2026-11-19T19:18+08:00",
       "url": "https://the-decoder.com/googles-latest-ai-model-is-faster-cheaper-and-smarter-than-its-flagship-predecessor-from-just-weeks-ago/",
-      "score": 0.901
+      "score": 0.875
     },
     {
-      "id": "ab196dc93b",
-      "title": "OCR models now digitize a million pages for under $130 as costs drop fivefold in 18 months",
-      "summary": "Pulling text out of scanned books and records has gotten a lot cheaper with freely available AI models. The article OCR models now digitize a million pages for under $130 as costs drop fivefold in 18 months appeared fir…",
+      "id": "14c609265d",
+      "title": "The nation’s largest school districts consider ditching Google Search",
+      "summary": "New York, Los Angeles, and Chicago schools are considering Google alternatives after the company said it will disable Search for schools that opt out of its AI features, according to The New York Times. Starting next ye…",
       "sources": [
-        "The Decoder"
+        "The Verge"
       ],
-      "publishedAt": "2026-11-19T17:28+08:00",
-      "url": "https://the-decoder.com/ocr-models-now-digitize-a-million-pages-for-under-130-as-costs-drop-fivefold-in-18-months/",
-      "score": 0.84
+      "publishedAt": "2026-11-19T07:18+08:00",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1037151/school-districts-ditching-google",
+      "score": 0.705
+    },
+    {
+      "id": "2cf389d7c3",
+      "title": "Amidst fears of AI cyberattacks, Satya Nadella says lots of critical infrastructure is ‘unpatchable’",
+      "summary": "The Microsoft CEO downplayed the recent Outlook outage while noting that AI was causing both opportunities and new challenges for securing much of the connected world.",
+      "sources": [
+        "TechCrunch"
+      ],
+      "publishedAt": "2026-11-19T07:45+08:00",
+      "url": "https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable/",
+      "score": 0.654
     }
   ]
 }
