@@ -85,6 +85,11 @@ class IngestTest(unittest.TestCase):
         self.assertEqual(items[0].title, "Model & chip news")
         self.assertEqual(items[0].summary, "Hello world")
 
+    def test_malformed_feed_is_skipped(self):
+        from pipeline.ingest import fetch_source
+        with mock.patch("pipeline.ingest._fetch", return_value=b"not json"):
+            self.assertEqual(fetch_source(Source("HN", "u", kind="hn")), [])
+
     def test_ai_filter(self):
         self.assertTrue(is_ai("OpenAI ships GPT-5.1"))
         self.assertTrue(is_ai("Why AI agents fail"))

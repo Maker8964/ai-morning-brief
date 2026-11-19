@@ -79,10 +79,10 @@ def parse_hn(source: Source, raw: bytes) -> list[Item]:
 def fetch_source(source: Source) -> list[Item]:
     try:
         raw = _fetch(source.url)
-    except Exception as exc:  # one dead feed must not kill the brief
+        items = parse_hn(source, raw) if source.kind == "hn" else parse_rss(source, raw)
+    except Exception as exc:  # one dead or malformed feed must not kill the brief
         log.warning("fetch failed: %s (%s)", source.name, exc)
         return []
-    items = parse_hn(source, raw) if source.kind == "hn" else parse_rss(source, raw)
     if not source.ai_only:
         items = [i for i in items if is_ai(i.title)]
     log.info("%-16s %3d items", source.name, len(items))
