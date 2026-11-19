@@ -1,142 +1,142 @@
 {
   "date": "2026-11-19",
-  "generatedAt": "2026-11-19T22:43:25+08:00",
-  "summarizedBy": "source",
+  "generatedAt": "2026-11-19T22:49:33+08:00",
+  "summarizedBy": "llm",
   "stories": [
     {
       "id": "25c96fa5a2",
-      "title": "Anthropic prices initial public offering",
-      "summary": "Anthropic’s upsized $107.3 billion initial public offering and private placement broke SpaceX’s record and shares are indicated to open higher in gray market trading. Mandeep Singh of Bloomberg Intelligence looks at the…",
+      "title": "Anthropic prices record IPO at $83 a share",
+      "summary": "Anthropic 将 IPO 定价为每股 83 美元，估值达到 1.5 万亿美元。这一创纪录的上市有望为整个 AI 行业设定新的估值基准。",
       "sources": [
         "Bloomberg",
         "The Verge"
       ],
       "publishedAt": "2026-11-19T06:11+08:00",
       "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
-      "score": 5.439
+      "score": 5.425
     },
     {
-      "id": "335389d60d",
-      "title": "Google ships Gemini 4 Neon, its fourth new Gemini model in a month",
-      "summary": "Google released Gemini 4 Neon, a new frontier model built for software development, knowledge work, and science. It handles text, images, video, audio, and PDFs with a context window of one million tokens. At $3 per mil…",
+      "id": "b2c084a412",
+      "title": "Google ships Gemini 4 Neon model",
+      "summary": "Google 推出了 Gemini 4 Neon，这是一款专为软件开发和知识工作打造的前沿模型，支持百万级上下文窗口。",
       "sources": [
-        "The Decoder",
+        "DeepMind",
         "HN"
       ],
       "publishedAt": "2026-11-19T05:03+08:00",
-      "url": "https://the-decoder.com/google-ships-gemini-4-neon-its-fourth-new-gemini-model-in-a-month/",
-      "score": 1.756
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+      "score": 3.131
     },
     {
       "id": "abfe9a9da1",
-      "title": "Anthropic’s Safety Pledges Questioned by Tech Leaders, Scientists",
-      "summary": "A coalition of tech leaders and scientists have signed “The Misanthropic Statement,” an open letter questioning Anthropic’s commitment to AI safety. Rumman Chodhury, CEO and founder at Humane Intelligence PBC, discusses…",
+      "title": "Tech leaders question Anthropic safety",
+      "summary": "一群科技领袖和科学家签署了一份名为 Misanthropic Statement 的公开信，质疑 Anthropic 对 AI 安全的承诺。",
       "sources": [
         "Bloomberg"
       ],
       "publishedAt": "2026-11-19T21:54+08:00",
       "url": "https://www.bloomberg.com/news/videos/2026-11-19/tech-leaders-experts-question-anthropic-safety-pledges-video",
-      "score": 1.259
+      "score": 1.253
     },
     {
       "id": "1b959f4605",
-      "title": "AI Financing Shifts From Hyperscalers to Chips: Berro",
-      "summary": "Kelsey Berro, fixed income portfolio manager at JPMorgan Asset Management, says record demand has absorbed a surge in hyperscaler debt, but the next test for AI financing will come from chips. “2027, it’s gonna be about…",
+      "title": "AI financing shift from hyperscalers to chips",
+      "summary": "摩根资产管理表示，AI 融资需求已吸收大量超大规模企业债务，而 2027 年的下一个考验将转向芯片融资。",
       "sources": [
         "Bloomberg"
       ],
       "publishedAt": "2026-11-19T21:47+08:00",
       "url": "https://www.bloomberg.com/news/videos/2026-11-19/ai-financing-shifts-from-hyperscalers-to-chips-berro-video",
-      "score": 1.252
+      "score": 1.247
     },
     {
       "id": "abe8fdc9ba",
-      "title": "Nvidia Moves Ousted CEO Jensen Huang Out of the Spotlight",
-      "summary": "The voluble executive has been quieted as the chipmaker he built tries to move forward",
+      "title": "Nvidia moves ousted CEO Jensen Huang out of spotlight",
+      "summary": "Nvidia 将其被罢免的 CEO 黄仁勋移出聚光灯，此举引发了行业对其美国本土科技领导力影响的讨论。",
       "sources": [
         "Bloomberg",
         "TechCrunch"
       ],
       "publishedAt": "2026-11-19T05:31+08:00",
       "url": "https://www.bloomberg.com/news/newsletters/2026-11-19/nvidia-moves-ousted-ceo-jensen-huang-out-of-the-spotlight",
-      "score": 1.163
+      "score": 1.16
     },
     {
       "id": "7cd396eaf0",
-      "title": "I let Apple’s always-listening AI summarize my life for two weeks",
-      "summary": "Was it worth it? I've been asking myself this quite a bit over the last month or so while testing both the Amazon Bee Frontier and Siri Recap on the Apple Watch Ultra 4. Both enable a wearable to ambiently listen to you…",
+      "title": "Apple devices test ambient listening and AI summary",
+      "summary": "科技媒体测试了 Apple Watch 上的 Siri Recap 等功能，这些可穿戴设备能环境式监听对话并利用 AI 进行总结。",
       "sources": [
         "The Verge"
       ],
       "publishedAt": "2026-11-19T21:00+08:00",
       "url": "https://www.theverge.com/tech/1037100/apple-siri-recap-audio-intelligence-hands-on",
-      "score": 1.12
+      "score": 1.116
     },
     {
       "id": "347bf623ee",
-      "title": "Canva adds an AI ‘off’ button",
-      "summary": "Canva will now allow you to turn off its generative AI features. With this change, you can disable the graphic design platform's array of AI tools, such as its AI photo-extending Magic Expand feature, as well as turn of…",
+      "title": "Canva adds a toggle to turn off generative AI",
+      "summary": "图形设计平台 Canva 推出了一项新功能，允许用户关闭其生成式 AI 工具以及图像生成聊天机器人。",
       "sources": [
         "The Verge"
       ],
       "publishedAt": "2026-11-19T20:30+08:00",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1037126/canva-ai-features-off-button",
-      "score": 1.099
+      "score": 1.094
     },
     {
       "id": "ba05f6db61",
       "title": "LLM assisted reverse engineering",
-      "summary": "LLM assisted reverse engineering",
+      "summary": "最新讨论关注大语言模型在辅助逆向工程领域的应用，展示了 AI 在代码理解和分析方面的潜力。",
       "sources": [
         "HN"
       ],
       "publishedAt": "2026-11-19T06:29+08:00",
       "url": "https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering",
-      "score": 1.041
+      "score": 1.038
     },
     {
       "id": "bb25daab1f",
-      "title": "OpenAI's own researchers now say they value their AI tools more than nearly half their colleagues",
-      "summary": "OpenAI's internal use of coding agents is growing fast, with theoretical token costs now exceeding researchers' base salaries. Even though teams are reluctant to work without these tools, the models still produce a lot…",
+      "title": "OpenAI researchers rely heavily on internal AI tools",
+      "summary": "OpenAI 内部对编码智能体的依赖迅速增长，其理论 Token 成本甚至超过了研究人员的基本工资。",
       "sources": [
         "The Decoder"
       ],
       "publishedAt": "2026-11-19T21:08+08:00",
       "url": "https://the-decoder.com/openais-own-researchers-now-say-they-value-their-ai-tools-more-than-nearly-half-their-colleagues/",
-      "score": 0.939
+      "score": 0.935
     },
     {
       "id": "2b8784d0dd",
-      "title": "Google's latest AI model is faster, cheaper and smarter than its flagship predecessor from just weeks ago",
-      "summary": "Google DeepMind has released Gemini 4 Neon, its fourth model in seven weeks, which is nearly 2x faster than its sibling Carbon, outperforms it on most benchmarks and comes in at a significantly lower price. The article…",
+      "title": "Google releases faster and cheaper Gemini 4 Neon",
+      "summary": "Google DeepMind 推出的 Gemini 4 Neon 性能超越近期旗舰机型，且速度更快、价格更具竞争力。",
       "sources": [
         "The Decoder"
       ],
       "publishedAt": "2026-11-19T19:18+08:00",
       "url": "https://the-decoder.com/googles-latest-ai-model-is-faster-cheaper-and-smarter-than-its-flagship-predecessor-from-just-weeks-ago/",
-      "score": 0.875
+      "score": 0.871
+    },
+    {
+      "id": "ab196dc93b",
+      "title": "OCR model costs drop fivefold in 18 months",
+      "summary": "得益于开源 AI 模型的发展，OCR 数字化一百万页文档的成本在 18 个月内下降了五倍，降至 130 美元以下。",
+      "sources": [
+        "The Decoder"
+      ],
+      "publishedAt": "2026-11-19T17:28+08:00",
+      "url": "https://the-decoder.com/ocr-models-now-digitize-a-million-pages-for-under-130-as-costs-drop-fivefold-in-18-months/",
+      "score": 0.814
     },
     {
       "id": "14c609265d",
-      "title": "The nation’s largest school districts consider ditching Google Search",
-      "summary": "New York, Los Angeles, and Chicago schools are considering Google alternatives after the company said it will disable Search for schools that opt out of its AI features, according to The New York Times. Starting next ye…",
+      "title": "Major school districts consider ditching Google Search",
+      "summary": "由于 Google 计划将 Gemini 功能与搜索绑定且不允许学校单独关闭，纽约等大型学区正考虑放弃 Google 搜索。",
       "sources": [
         "The Verge"
       ],
       "publishedAt": "2026-11-19T07:18+08:00",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1037151/school-districts-ditching-google",
-      "score": 0.705
-    },
-    {
-      "id": "2cf389d7c3",
-      "title": "Amidst fears of AI cyberattacks, Satya Nadella says lots of critical infrastructure is ‘unpatchable’",
-      "summary": "The Microsoft CEO downplayed the recent Outlook outage while noting that AI was causing both opportunities and new challenges for securing much of the connected world.",
-      "sources": [
-        "TechCrunch"
-      ],
-      "publishedAt": "2026-11-19T07:45+08:00",
-      "url": "https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable/",
-      "score": 0.654
+      "score": 0.703
     }
   ]
 }
