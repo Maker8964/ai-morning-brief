@@ -163,10 +163,11 @@ function showPreview(blob, file, canShareFile) {
     });
   }
   button("Download", () => download(blob, file.name));
-  button("Close", close).focus();
+  const closeBtn = button("Close", close);
   overlay.addEventListener("click", (e) => e.target === overlay && close());
   document.addEventListener("keydown", onKey);
   document.body.append(overlay);
+  closeBtn.focus();
 }
 
 /**
