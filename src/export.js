@@ -50,7 +50,15 @@ async function fontEmbedCSS(text) {
   const codepoints = new Set([...`${text}${text.toUpperCase()}`].map((ch) => ch.codePointAt(0)));
   const hrefs = [...document.querySelectorAll('link[rel="stylesheet"][href*="fonts.googleapis.com"]')].map((l) => l.href);
   const sheets = await Promise.all(hrefs.map((href) => {
-    if (!cssCache.has(href)) cssCache.set(href, fetch(href).then((r) => r.text()));
+    if (!cssCache.has(href)) {
+      cssCache.set(href, fetch(href).then((r) => {
+        if (!r.ok) throw new Error(`font css ${r.status}`);
+        return r.text();
+      }).catch((err) => {
+        cssCache.delete(href);
+        throw err;
+      }));
+    }
     return cssCache.get(href);
   }));
   const faces = sheets.join("\n").match(/@font-face\s*{[^}]*}/g) || [];
