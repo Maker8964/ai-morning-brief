@@ -1,142 +1,143 @@
 {
-  "date": "2026-11-19",
-  "generatedAt": "2026-11-19T22:49:33+08:00",
+  "date": "2026-11-20",
+  "generatedAt": "2026-11-20T10:42:38+08:00",
   "summarizedBy": "llm",
   "stories": [
     {
-      "id": "25c96fa5a2",
-      "title": "Anthropic prices record IPO at $83 a share",
-      "summary": "Anthropic 将 IPO 定价为每股 83 美元，估值达到 1.5 万亿美元。这一创纪录的上市有望为整个 AI 行业设定新的估值基准。",
-      "sources": [
-        "Bloomberg",
-        "The Verge"
-      ],
-      "publishedAt": "2026-11-19T06:11+08:00",
-      "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
-      "score": 5.425
-    },
-    {
-      "id": "b2c084a412",
-      "title": "Google ships Gemini 4 Neon model",
-      "summary": "Google 推出了 Gemini 4 Neon，这是一款专为软件开发和知识工作打造的前沿模型，支持百万级上下文窗口。",
-      "sources": [
-        "DeepMind",
-        "HN"
-      ],
-      "publishedAt": "2026-11-19T05:03+08:00",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
-      "score": 3.131
-    },
-    {
-      "id": "abfe9a9da1",
-      "title": "Tech leaders question Anthropic safety",
-      "summary": "一群科技领袖和科学家签署了一份名为 Misanthropic Statement 的公开信，质疑 Anthropic 对 AI 安全的承诺。",
-      "sources": [
-        "Bloomberg"
-      ],
-      "publishedAt": "2026-11-19T21:54+08:00",
-      "url": "https://www.bloomberg.com/news/videos/2026-11-19/tech-leaders-experts-question-anthropic-safety-pledges-video",
-      "score": 1.253
-    },
-    {
-      "id": "1b959f4605",
-      "title": "AI financing shift from hyperscalers to chips",
-      "summary": "摩根资产管理表示，AI 融资需求已吸收大量超大规模企业债务，而 2027 年的下一个考验将转向芯片融资。",
-      "sources": [
-        "Bloomberg"
-      ],
-      "publishedAt": "2026-11-19T21:47+08:00",
-      "url": "https://www.bloomberg.com/news/videos/2026-11-19/ai-financing-shifts-from-hyperscalers-to-chips-berro-video",
-      "score": 1.247
-    },
-    {
-      "id": "abe8fdc9ba",
-      "title": "Nvidia moves ousted CEO Jensen Huang out of spotlight",
-      "summary": "Nvidia 将其被罢免的 CEO 黄仁勋移出聚光灯，此举引发了行业对其美国本土科技领导力影响的讨论。",
+      "id": "bab1a902fa",
+      "title": "Anthropic Debuts on Nasdaq",
+      "summary": "Anthropic完成了其历史性的IPO上市，开盘价较发行价大幅上涨，引发了资本市场对人工智能板块的广泛关注。",
       "sources": [
         "Bloomberg",
         "TechCrunch"
       ],
-      "publishedAt": "2026-11-19T05:31+08:00",
-      "url": "https://www.bloomberg.com/news/newsletters/2026-11-19/nvidia-moves-ousted-ceo-jensen-huang-out-of-the-spotlight",
-      "score": 1.16
+      "publishedAt": "2026-11-20T00:19+08:00",
+      "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
+      "score": 3.897
     },
     {
-      "id": "7cd396eaf0",
-      "title": "Apple devices test ambient listening and AI summary",
-      "summary": "科技媒体测试了 Apple Watch 上的 Siri Recap 等功能，这些可穿戴设备能环境式监听对话并利用 AI 进行总结。",
+      "id": "b898a1b212",
+      "title": "Google Releases Gemini 4 Neon",
+      "summary": "Google推出了专为软件开发和科学研究打造的新模型Gemini 4 Neon，标志着其模型能力的进一步升级。",
       "sources": [
-        "The Verge"
+        "DeepMind",
+        "Google"
       ],
-      "publishedAt": "2026-11-19T21:00+08:00",
-      "url": "https://www.theverge.com/tech/1037100/apple-siri-recap-audio-intelligence-hands-on",
-      "score": 1.116
+      "publishedAt": "2026-11-19T05:03+08:00",
+      "url": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+      "score": 2.677
     },
     {
-      "id": "347bf623ee",
-      "title": "Canva adds a toggle to turn off generative AI",
-      "summary": "图形设计平台 Canva 推出了一项新功能，允许用户关闭其生成式 AI 工具以及图像生成聊天机器人。",
+      "id": "52653ae3ad",
+      "title": "Recent Tech Outages Spark Concern",
+      "summary": "近期航空、银行及生产力平台的数字系统频繁瘫痪，网络安全专家指出这背后可能存在更深层次的原因。",
       "sources": [
-        "The Verge"
+        "TechCrunch",
+        "Wired"
       ],
-      "publishedAt": "2026-11-19T20:30+08:00",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1037126/canva-ai-features-off-button",
-      "score": 1.094
+      "publishedAt": "2026-11-20T05:42+08:00",
+      "url": "https://techcrunch.com/2026/11/19/these-tech-outages-are-giving-y2k-ai-agent-style/",
+      "score": 1.451
     },
     {
-      "id": "ba05f6db61",
-      "title": "LLM assisted reverse engineering",
-      "summary": "最新讨论关注大语言模型在辅助逆向工程领域的应用，展示了 AI 在代码理解和分析方面的潜力。",
+      "id": "2174d3373b",
+      "title": "Gemini on Mac Gains Agent Features",
+      "summary": "Google为macOS的Gemini应用带来了全新AI代理功能，能够协助用户自动化处理多步骤的本地及网页任务。",
+      "sources": [
+        "The Verge",
+        "TechCrunch"
+      ],
+      "publishedAt": "2026-11-20T02:09+08:00",
+      "url": "https://www.theverge.com/tech/1037902/google-gemini-macos-ai-computer-use",
+      "score": 1.396
+    },
+    {
+      "id": "be373132dc",
+      "title": "Claude Solves Black Hole Physics",
+      "summary": "Claude成功解决了黑洞物理学中的两个未解难题，展现了AI在尖端科学研究领域的强大潜力。",
       "sources": [
         "HN"
       ],
-      "publishedAt": "2026-11-19T06:29+08:00",
-      "url": "https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering",
-      "score": 1.038
+      "publishedAt": "2026-11-20T01:30+08:00",
+      "url": "https://www.anthropic.com/research/claude-black-hole-physics",
+      "score": 1.329
     },
     {
-      "id": "bb25daab1f",
-      "title": "OpenAI researchers rely heavily on internal AI tools",
-      "summary": "OpenAI 内部对编码智能体的依赖迅速增长，其理论 Token 成本甚至超过了研究人员的基本工资。",
+      "id": "f73f91faac",
+      "title": "Asian Chip Stocks Slide as Anthropic IPO Fails to Dispel AI Woes",
+      "summary": "Asia’s chip-related shares resumed their selloff on Friday despite Anthropic PBC’s blockbuster listing, a sign that concerns about the artificial intelligence trade, which have been building for months, continue to domi…",
       "sources": [
-        "The Decoder"
+        "Bloomberg"
       ],
-      "publishedAt": "2026-11-19T21:08+08:00",
-      "url": "https://the-decoder.com/openais-own-researchers-now-say-they-value-their-ai-tools-more-than-nearly-half-their-colleagues/",
-      "score": 0.935
+      "publishedAt": "2026-11-20T09:49+08:00",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-20/asian-chip-stocks-slide-as-anthropic-ipo-fails-to-dispel-ai-woes",
+      "score": 1.255
     },
     {
-      "id": "2b8784d0dd",
-      "title": "Google releases faster and cheaper Gemini 4 Neon",
-      "summary": "Google DeepMind 推出的 Gemini 4 Neon 性能超越近期旗舰机型，且速度更快、价格更具竞争力。",
+      "id": "30177c409e",
+      "title": "Minotaur's Rosenberg: Anthropic IPO Fuels Wider AI Trade",
+      "summary": "Minotaur Capital Co-Founder and Portfolio Manager Armina Rosenberg says Anthropic’s initial public offering supports confidence in the broader artificial intelligence trade despite near-term volatility. (Source: Bloombe…",
       "sources": [
-        "The Decoder"
+        "Bloomberg"
       ],
-      "publishedAt": "2026-11-19T19:18+08:00",
-      "url": "https://the-decoder.com/googles-latest-ai-model-is-faster-cheaper-and-smarter-than-its-flagship-predecessor-from-just-weeks-ago/",
-      "score": 0.871
+      "publishedAt": "2026-11-20T09:08+08:00",
+      "url": "https://www.bloomberg.com/news/videos/2026-11-20/minotaur-s-rosenberg-anthropic-ipo-fuels-wider-ai-trade-video",
+      "score": 1.221
     },
     {
-      "id": "ab196dc93b",
-      "title": "OCR model costs drop fivefold in 18 months",
-      "summary": "得益于开源 AI 模型的发展，OCR 数字化一百万页文档的成本在 18 个月内下降了五倍，降至 130 美元以下。",
+      "id": "7b5278e370",
+      "title": "Emerging-Market Stocks Head for Bear Market on AI-Led Tech Slide",
+      "summary": "Emerging-market stocks are set to enter a bear market as a slide in artificial intelligence shares, concern about rising global interest rates and trade tensions weigh on investor sentiment.",
       "sources": [
-        "The Decoder"
+        "Bloomberg"
       ],
-      "publishedAt": "2026-11-19T17:28+08:00",
-      "url": "https://the-decoder.com/ocr-models-now-digitize-a-million-pages-for-under-130-as-costs-drop-fivefold-in-18-months/",
-      "score": 0.814
+      "publishedAt": "2026-11-20T09:05+08:00",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-20/emerging-market-stocks-set-for-bear-market-on-ai-led-tech-slide",
+      "score": 1.219
     },
     {
-      "id": "14c609265d",
-      "title": "Major school districts consider ditching Google Search",
-      "summary": "由于 Google 计划将 Gemini 功能与搜索绑定且不允许学校单独关闭，纽约等大型学区正考虑放弃 Google 搜索。",
+      "id": "2b5c9a7682",
+      "title": "Should governments slow frontier AI? Jacob Coxon and Robin Hanson debate [video]",
+      "summary": "Should governments slow frontier AI? Jacob Coxon and Robin Hanson debate [video]",
+      "sources": [
+        "HN"
+      ],
+      "publishedAt": "2026-11-20T02:47+08:00",
+      "url": "https://www.youtube.com/watch?v=lwfewYL7X0o",
+      "score": 1.217
+    },
+    {
+      "id": "2ed09bbf2a",
+      "title": "Apple may be developing its own AI agent that runs your Mac",
+      "summary": "The iPhone maker appears to be building agents that can compete with the likes of Meta Muse, Instinct, Claude, and OpenAI Dots.",
+      "sources": [
+        "TechCrunch"
+      ],
+      "publishedAt": "2026-11-20T08:56+08:00",
+      "url": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
+      "score": 1.025
+    },
+    {
+      "id": "b24c1081da",
+      "title": "Apple is hiring engineers to build its own AI agent",
+      "summary": "Apple is working on its own AI agent that can perform a range of tasks for you, including browsing the web, working across apps, writing code, and calling services. That's according to a job listing spotted by Bloomberg…",
       "sources": [
         "The Verge"
       ],
-      "publishedAt": "2026-11-19T07:18+08:00",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1037151/school-districts-ditching-google",
-      "score": 0.703
+      "publishedAt": "2026-11-20T06:31+08:00",
+      "url": "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing",
+      "score": 1.02
+    },
+    {
+      "id": "4aacf31011",
+      "title": "Anthropic’s 7 founders cashed out nearly $2B in record-breaking IPO",
+      "summary": "At the upgraded $83/share IPO price, Anthropic's seven founders each pocketed $280 million, while the company nabbed nearly $105 billion.",
+      "sources": [
+        "TechCrunch"
+      ],
+      "publishedAt": "2026-11-20T08:43+08:00",
+      "url": "https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/",
+      "score": 1.017
     }
   ]
 }
