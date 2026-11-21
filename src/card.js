@@ -1,6 +1,9 @@
+import { deliverImage, exportFilename, renderCardPng } from "./export.js";
 import { formatXPost, xLength, X_MAX } from "./xpost.js";
 
 const SHARE_ICON = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" aria-hidden="true"><path d="M12 3v13"/><path d="M7 8l5-5 5 5"/><path d="M5 12v9h14v-9"/></svg>`;
+
+const IMAGE_ICON = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" aria-hidden="true"><rect x="3.75" y="4.75" width="16.5" height="14.5"/><path d="M3.75 16l5-5 4 4 2.5-2.5 5 5"/><circle cx="15.5" cy="9" r="1.25"/></svg>`;
 
 const pad = (n) => String(n).padStart(2, "0");
 const MONTHS = ["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"];
@@ -34,10 +37,16 @@ async function copyText(text) {
   }
 }
 
+function localDate() {
+  const d = new Date();
+  return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+}
+
 /**
  * story: { id, title, summary, sources: string[] (1–2), publishedAt: ISO, url? }
+ * index: 1-based position in the brief; date: brief date (YYYY-MM-DD), both for the image file name.
  */
-export function createCard(story) {
+export function createCard(story, { index = 1, date = localDate() } = {}) {
   const card = el("article", "card");
   card.dataset.id = story.id;
 
@@ -64,7 +73,15 @@ export function createCard(story) {
   shareBtn.type = "button";
   shareBtn.setAttribute("aria-label", "Share");
   shareBtn.innerHTML = SHARE_ICON;
-  footer.append(actions, shareBtn);
+
+  const saveBtn = el("button", "btn-save");
+  saveBtn.type = "button";
+  saveBtn.setAttribute("aria-label", "Save image");
+  saveBtn.innerHTML = IMAGE_ICON;
+
+  const icons = el("div", "card__icons");
+  icons.append(saveBtn, shareBtn);
+  footer.append(actions, icons);
 
   card.append(header, title, body, footer);
 
@@ -94,5 +111,24 @@ export function createCard(story) {
     }
   });
 
-  return { el: card, update(next) { Object.assign(story, next); title.textContent = story.title; body.textContent = story.summary; updateCount(); } };
+  // Start rendering on press so the share sheet opens while the tap still counts as a user gesture.
+  let image = null;
+  const renderImage = () => (image ??= renderCardPng(card).catch((err) => {
+    image = null;
+    throw err;
+  }));
+  saveBtn.addEventListener("pointerdown", () => renderImage().catch(() => {}));
+  saveBtn.addEventListener("click", async () => {
+    if (saveBtn.getAttribute("aria-busy") === "true") return;
+    saveBtn.setAttribute("aria-busy", "true");
+    try {
+      await deliverImage(await renderImage(), exportFilename(date, index));
+    } catch (err) {
+      console.error("Save image failed", err);
+    } finally {
+      saveBtn.removeAttribute("aria-busy");
+    }
+  });
+
+  return { el: card, update(next) { Object.assign(story, next); title.textContent = story.title; body.textContent = story.summary; updateCount(); image = null; } };
 }

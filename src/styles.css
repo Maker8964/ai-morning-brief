@@ -163,7 +163,8 @@ html, body {
 }
 
 .btn-copy,
-.btn-share {
+.btn-share,
+.btn-save {
   appearance: none;
   border: 0;
   background: none;
@@ -179,7 +180,8 @@ html, body {
 }
 
 .btn-copy:focus-visible,
-.btn-share:focus-visible {
+.btn-share:focus-visible,
+.btn-save:focus-visible {
   outline: 1px solid var(--ink);
   outline-offset: 3px;
 }
@@ -194,15 +196,71 @@ html, body {
 
 .count-pill.is-over { background: var(--ink); color: var(--paper); }
 
-.btn-share {
+.card__icons {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.btn-share,
+.btn-save {
   display: grid;
   place-items: center;
   width: 32px;
   height: 32px;
-  margin-right: -6px;
 }
 
-.btn-share svg { width: 20px; height: 20px; }
+.btn-share { margin-right: -6px; }
+
+.btn-share svg,
+.btn-save svg { width: 20px; height: 20px; }
+
+.btn-save[aria-busy="true"] { opacity: 0.4; cursor: progress; }
+
+/* ---------- Image preview (long-press to save) ---------- */
+.img-preview {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 24px;
+  background: rgba(0, 0, 0, 0.92);
+}
+
+.img-preview__img {
+  display: block;
+  max-width: min(100%, var(--card-max));
+  max-height: 70dvh;
+  border: 1px solid var(--paper);
+  -webkit-touch-callout: default;
+}
+
+.img-preview__hint,
+.img-preview__btn {
+  font: 400 11px/1.2 var(--font-mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--paper);
+}
+
+.img-preview__hint { margin: 0; opacity: 0.6; }
+
+.img-preview__actions { display: flex; gap: 8px; }
+
+.img-preview__btn {
+  appearance: none;
+  min-height: 32px;
+  padding: 4px 12px;
+  border: 1px solid var(--paper);
+  border-radius: 12px;
+  background: none;
+  font-weight: 700;
+  cursor: pointer;
+}
 
 @media (prefers-reduced-motion: reduce) {
   .deck > .card { transition: none; }

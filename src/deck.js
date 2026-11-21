@@ -5,22 +5,23 @@ const SWIPE_THRESHOLD = 0.25; // fraction of card width
 const FLICK_VELOCITY = 0.5;   // px/ms
 const OUT_MS = 260;
 
-export function createDeck(root, stories, { onChange } = {}) {
+export function createDeck(root, stories, { onChange, date } = {}) {
   let index = 0;
   let busy = false;
   const n = stories.length;
-  const at = (i) => stories[((i % n) + n) % n];
+  const wrap = (i) => ((i % n) + n) % n;
+  const at = (i) => stories[wrap(i)];
 
   function render() {
     root.replaceChildren();
     const count = Math.min(VISIBLE, n);
     for (let d = count - 1; d >= 0; d--) {
-      const { el } = createCard(at(index + d));
+      const { el } = createCard(at(index + d), { index: wrap(index + d) + 1, date });
       el.dataset.depth = d;
       if (d > 0) el.setAttribute("aria-hidden", "true");
       root.append(el);
     }
-    onChange?.(((index % n) + n) % n, n);
+    onChange?.(wrap(index), n);
   }
 
   const top = () => root.querySelector('.card[data-depth="0"]');
