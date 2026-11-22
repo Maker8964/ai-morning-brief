@@ -1,140 +1,139 @@
 {
-  "date": "2026-11-21",
-  "generatedAt": "2026-11-21T10:54:00+08:00",
+  "date": "2026-11-22",
+  "generatedAt": "2026-11-22T09:38:57+08:00",
   "summarizedBy": "llm",
   "stories": [
     {
-      "id": "0714522cb0",
-      "title": "Anthropic Researcher Claims Riemann Hypothesis Proof With Claude",
-      "summary": "Anthropic数学家Levent Alpöge借助Claude成功证明了黎曼猜想。如果经证实，这将是人工智能在数学领域的又一里程碑式成就。",
-      "sources": [
-        "Bloomberg",
-        "The Verge"
-      ],
-      "publishedAt": "2026-11-21T00:34+08:00",
-      "url": "https://www.bloomberg.com/news/articles/2026-11-21/anthropic-researcher-claims-to-solve-riemann-problem-with-claude",
-      "score": 1.426
-    },
-    {
-      "id": "a4a5f14309",
-      "title": "US SEC Examines Nvidia Over Potential Accounting Issues",
-      "summary": "知情人士透露，美国证券交易委员会（SEC）正在对Nvidia潜在的会计问题进行调查。",
+      "id": "3d1bee2216",
+      "title": "Pandex brings European law to AI agents via MCP",
+      "summary": "Pandex推出基于MCP的欧洲人工智能官方法律查询服务，旨在为AI代理提供合规支持。",
       "sources": [
         "HN"
       ],
-      "publishedAt": "2026-11-21T04:22+08:00",
-      "url": "https://www.marketscreener.com/news/us-sec-s-nvidia-probe-is-examining-potential-accounting-issues-sources-say-ce785ed3dd8ff627",
-      "score": 1.399
+      "publishedAt": "2026-11-22T04:47+08:00",
+      "url": "https://www.pandex.io",
+      "score": 1.241
     },
     {
-      "id": "3e30621eb1",
-      "title": "Vibecoding an inference chip",
-      "summary": "Vibecoding an inference chip",
-      "sources": [
-        "HN"
-      ],
-      "publishedAt": "2026-11-21T02:15+08:00",
-      "url": "https://ankitg.me/blog/vibecoding-inference-chip/",
-      "score": 1.226
-    },
-    {
-      "id": "d3325aea2b",
-      "title": "The Hungry Butler Effect: Concealed Commercial Incentives in LLMs",
-      "summary": "The Hungry Butler Effect: Concealed Commercial Incentives in LLMs",
-      "sources": [
-        "HN"
-      ],
-      "publishedAt": "2026-11-21T06:18+08:00",
-      "url": "https://www.researchgate.net/publication/418143113_The_Hungry_Butler_Effect_Concealed_Commercial_Incentives_and_the_Erosion_of_Epistemic_Rigour_in_Large_Language_Models",
-      "score": 1.206
-    },
-    {
-      "id": "26dcaf5e7c",
-      "title": "Wall Street Week | Gaming Blockbuster, Healthcare Costs, Cybersecurity Meets AI",
-      "summary": "This week, former New York Fed President Bill Dudley and Kathryn Judge of Columbia Law School discuss what the Treasury and Fed can do to tackle the nation’s debt crisis. Plus, what Grand Theft Auto 6’s release means fo…",
+      "id": "217df14086",
+      "title": "Crowdstrike and Zscaler talks highlight AI cyber consolidation",
+      "summary": "网络安全巨头Crowdstrike与Zscaler的会谈表明，AI驱动的攻击正加速行业数十亿美元并购潮。",
       "sources": [
         "Bloomberg"
       ],
-      "publishedAt": "2026-11-21T08:13+08:00",
-      "url": "https://www.bloomberg.com/news/videos/2026-11-21/wall-street-week-gaming-blockbuster-cybersecurity-video",
-      "score": 1.17
+      "publishedAt": "2026-11-22T03:02+08:00",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-21/crowdstrike-s-talks-with-zscaler-show-ai-led-cyber-consolidation",
+      "score": 1.011
     },
     {
-      "id": "fca29ab717",
-      "title": "Tony Wang on CrowdStrike-Zscaler Deal, AI Trade",
-      "summary": "Tony Wang, Portfolio Manager of the Science and Technology Equity Strategy at T. Rowe Price, is asked whether the AI cycle has changed and whether recent declines create a buying opportunity. He also flags Wednesday’s P…",
-      "sources": [
-        "Bloomberg"
-      ],
-      "publishedAt": "2026-11-21T07:27+08:00",
-      "url": "https://www.bloomberg.com/news/videos/2026-11-20/tony-wang-on-crowdstrike-zscaler-deal-ai-trade-video",
-      "score": 1.136
-    },
-    {
-      "id": "8bc8fed2fb",
-      "title": "Meta Reconsiders 2030 Net-Zero Goal Amid AI Growth",
-      "summary": "由于AI数据中心产生创纪录的排放量，Meta正在重新评估其2030年的可持续发展目标。",
-      "sources": [
-        "Ars Technica"
-      ],
-      "publishedAt": "2026-11-21T05:47+08:00",
-      "url": "https://arstechnica.com/ai/2026/11/meta-reconsiders-2030-net-zero-goal-amid-record-emissions-from-ai-data-centers/",
-      "score": 0.903
-    },
-    {
-      "id": "08b074f7bc",
-      "title": "Trump Threatens Tremendous Tax for Overseas AI Data Centers",
-      "summary": "美国总统特朗普承诺对在海外建设数据中心的公司征收重税，以防止本土企业将基础设施移至国外。",
+      "id": "2cb10b95a7",
+      "title": "UN fails to reach agreement on killer robots regulation",
+      "summary": "联合国外交官在日内瓦未能就规范自主武器达成实质性规则，仅同意未来继续探讨相关选项。",
       "sources": [
         "The Verge"
       ],
-      "publishedAt": "2026-11-21T02:50+08:00",
-      "url": "https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax",
-      "score": 0.887
+      "publishedAt": "2026-11-22T04:03+08:00",
+      "url": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
+      "score": 0.968
     },
     {
-      "id": "6e086317ff",
-      "title": "Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced.",
-      "summary": "Test using prompts with unique, trackable secrets proves that data doesn't stay private.",
+      "id": "fdad322903",
+      "title": "California Nvidia probe includes potential criminal violations",
+      "summary": "加州对Nvidia涉嫌向中国违规出售芯片及误导投资者的调查已扩大至潜在的州法律刑事违规行为。",
       "sources": [
-        "Ars Technica"
+        "Bloomberg"
       ],
-      "publishedAt": "2026-11-21T04:59+08:00",
-      "url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
-      "score": 0.877
+      "publishedAt": "2026-11-22T01:11+08:00",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-21/california-nvidia-probe-covers-potential-criminal-law-violations",
+      "score": 0.948
     },
     {
-      "id": "ee805bbdeb",
-      "title": "Experts warn: Nearly everyone in AI is susceptible to a honey-trap scheme right now",
-      "summary": "Techies are building technology that can advance all aspects of the world — but can they protect their hearts? That's the vulnerability that honey pots exploit.",
+      "id": "f3487ac988",
+      "title": "Signal restricts screenshots to counter AI surveillance threat",
+      "summary": "为应对人工智能监控带来的生存威胁，加密通讯应用Signal在其安卓和iOS端限制了截图功能。",
       "sources": [
         "TechCrunch"
       ],
-      "publishedAt": "2026-11-21T04:58+08:00",
-      "url": "https://techcrunch.com/2026/11/20/experts-warn-nearly-everyone-in-ai-is-susceptible-to-a-honey-trap-scheme-right-now/",
+      "publishedAt": "2026-11-22T05:37+08:00",
+      "url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
+      "score": 0.94
+    },
+    {
+      "id": "7367584ae4",
+      "title": "Wall Street faces reality check amid AI spending concerns",
+      "summary": "由于Nvidia动荡、AI支出担忧及市场情绪恶化，华尔街正面临严峻的AI现实考验。",
+      "sources": [
+        "Bloomberg"
+      ],
+      "publishedAt": "2026-11-21T22:50+08:00",
+      "url": "https://www.bloomberg.com/news/videos/2026-11-21/wall-street-confronts-ai-reality-check-video",
       "score": 0.877
     },
     {
-      "id": "1448d81f9a",
-      "title": "Cops Are Pushing Extremely Corny ‘Grand Theft Auto 6’ Slop",
-      "summary": "The blockbuster game makes no secret of its contempt for law enforcement. Real police departments using it to recruit new members and scold the public apparently didn’t get the memo.",
+      "id": "187dad26ad",
+      "title": "Tasklet (YC P26) Is Hiring Product and Agent Infra Engineers",
+      "summary": "Tasklet (YC P26) Is Hiring Product and Agent Infra Engineers",
       "sources": [
-        "Wired"
+        "HN"
       ],
-      "publishedAt": "2026-11-21T07:24+08:00",
-      "url": "https://www.wired.com/story/cops-are-being-extremely-corny-about-gta-vi/",
-      "score": 0.872
+      "publishedAt": "2026-11-22T05:11+08:00",
+      "url": "https://tasklet.ai/careers",
+      "score": 0.841
     },
     {
-      "id": "583b7a1c74",
-      "title": "METR Updates AI Capabilities Graph and Trajectory",
-      "summary": "非营利组织METR的最新报告显示，部分AI能力呈指数级提升，但在需要判断力的任务上表现仍逊于编程。",
+      "id": "a2b0b71c81",
+      "title": "Anthropic goes public on Nasdaq",
+      "summary": "开发Claude的AI实验室Anthropic上周四在纳斯达克成功上市，引发业界对其安全首要地位的讨论。",
       "sources": [
-        "MIT Tech Review"
+        "The Verge"
       ],
-      "publishedAt": "2026-11-21T02:15+08:00",
-      "url": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
-      "score": 0.87
+      "publishedAt": "2026-11-21T23:00+08:00",
+      "url": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure",
+      "score": 0.814
+    },
+    {
+      "id": "6ccebafcdf",
+      "title": "Here are the top AI agents that can live in your text messages",
+      "summary": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
+      "sources": [
+        "TechCrunch"
+      ],
+      "publishedAt": "2026-11-22T01:00+08:00",
+      "url": "https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/",
+      "score": 0.797
+    },
+    {
+      "id": "769adf524e",
+      "title": "Chess.com’s next move is a new hub for classic games, from mahjong to sudoku",
+      "summary": "Chess.com is ready to go a lot bigger than chess. After launching Gambit, a gambling-free poker site, earlier this year, the company is now adding 10 more games: backgammon, checkers, go, hearts, mahjong, shogi, sudoku,…",
+      "sources": [
+        "The Verge"
+      ],
+      "publishedAt": "2026-11-21T22:00+08:00",
+      "url": "https://www.theverge.com/games/1038099/chess-classic-games-expansion-ai",
+      "score": 0.789
+    },
+    {
+      "id": "dffab27fe8",
+      "title": "Actors license faces to microdrama startups",
+      "summary": "好莱坞演员开始效仿中国趋势，向微短剧初创公司授权自己的AI面孔，引发行业对长期后果的担忧。",
+      "sources": [
+        "TechCrunch"
+      ],
+      "publishedAt": "2026-11-22T00:00+08:00",
+      "url": "https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/",
+      "score": 0.771
+    },
+    {
+      "id": "f5a6d06d7d",
+      "title": "Nvidia researchers argue huge context windows are dead end",
+      "summary": "Nvidia研究人员认为巨型AI上下文窗口成本高且易出错，提出用定期摘要和关键词搜索替代的方案。",
+      "sources": [
+        "The Decoder"
+      ],
+      "publishedAt": "2026-11-22T00:23+08:00",
+      "url": "https://the-decoder.com/nvidia-researchers-argue-huge-ai-context-windows-are-a-dead-end/",
+      "score": 0.71
     }
   ]
 }
