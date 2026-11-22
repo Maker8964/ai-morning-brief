@@ -1,12 +1,12 @@
 {
   "date": "2026-11-22",
-  "generatedAt": "2026-11-22T09:38:57+08:00",
+  "generatedAt": "2026-11-22T09:43:17+08:00",
   "summarizedBy": "llm",
   "stories": [
     {
       "id": "3d1bee2216",
-      "title": "Pandex brings European law to AI agents via MCP",
-      "summary": "Pandex推出基于MCP的欧洲人工智能官方法律查询服务，旨在为AI代理提供合规支持。",
+      "title": "Pandex brings European law to AI agents",
+      "summary": "Pandex推出了官方欧洲AI法案的MCP实现，帮助AI代理合规运行。这为自动化代理在欧洲的合法应用提供了重要支持。",
       "sources": [
         "HN"
       ],
@@ -16,58 +16,58 @@
     },
     {
       "id": "217df14086",
-      "title": "Crowdstrike and Zscaler talks highlight AI cyber consolidation",
-      "summary": "网络安全巨头Crowdstrike与Zscaler的会谈表明，AI驱动的攻击正加速行业数十亿美元并购潮。",
+      "title": "Crowdstrike and Zscaler talks highlight AI consolidation",
+      "summary": "网络安全巨头Crowdstrike与Zscaler的接触凸显了行业整合趋势。面对AI驱动的高级攻击，各大公司正通过并购扩大防御能力。",
       "sources": [
         "Bloomberg"
       ],
       "publishedAt": "2026-11-22T03:02+08:00",
       "url": "https://www.bloomberg.com/news/articles/2026-11-21/crowdstrike-s-talks-with-zscaler-show-ai-led-cyber-consolidation",
-      "score": 1.011
+      "score": 1.009
     },
     {
       "id": "2cb10b95a7",
-      "title": "UN fails to reach agreement on killer robots regulation",
-      "summary": "联合国外交官在日内瓦未能就规范自主武器达成实质性规则，仅同意未来继续探讨相关选项。",
+      "title": "UN fails to agree on killer robots rules",
+      "summary": "联合国外交官在日内瓦未能就规范自治武器达成实质协议。各方仅同意继续讨论选项，凸显了对致命机器监管的巨大分歧。",
       "sources": [
         "The Verge"
       ],
       "publishedAt": "2026-11-22T04:03+08:00",
       "url": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
-      "score": 0.968
+      "score": 0.966
     },
     {
       "id": "fdad322903",
-      "title": "California Nvidia probe includes potential criminal violations",
-      "summary": "加州对Nvidia涉嫌向中国违规出售芯片及误导投资者的调查已扩大至潜在的州法律刑事违规行为。",
+      "title": "California Nvidia probe eyes criminal violations",
+      "summary": "加州对Nvidia涉嫌向中国违规销售芯片及误导投资者的调查已扩大至州法刑事违规。这显著推高了这家芯片巨头的法律风险。",
       "sources": [
         "Bloomberg"
       ],
       "publishedAt": "2026-11-22T01:11+08:00",
       "url": "https://www.bloomberg.com/news/articles/2026-11-21/california-nvidia-probe-covers-potential-criminal-law-violations",
-      "score": 0.948
+      "score": 0.946
     },
     {
       "id": "f3487ac988",
-      "title": "Signal restricts screenshots to counter AI surveillance threat",
-      "summary": "为应对人工智能监控带来的生存威胁，加密通讯应用Signal在其安卓和iOS端限制了截图功能。",
+      "title": "Signal restricts screenshots amid AI surveillance",
+      "summary": "Signal在移动端限制了截图功能以应对AI监控威胁。此举旨在保护用户隐私，防范潜在的AI图像与数据采集。",
       "sources": [
         "TechCrunch"
       ],
       "publishedAt": "2026-11-22T05:37+08:00",
       "url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
-      "score": 0.94
+      "score": 0.938
     },
     {
       "id": "7367584ae4",
-      "title": "Wall Street faces reality check amid AI spending concerns",
-      "summary": "由于Nvidia动荡、AI支出担忧及市场情绪恶化，华尔街正面临严峻的AI现实考验。",
+      "title": "Wall Street confronts AI market reality check",
+      "summary": "华尔街正面临AI市场现实考验，Anthropic的IPO未能扭转市场情绪。高盛恐慌指数飙升至9分，反映出投资者对AI支出的担忧。",
       "sources": [
         "Bloomberg"
       ],
       "publishedAt": "2026-11-21T22:50+08:00",
       "url": "https://www.bloomberg.com/news/videos/2026-11-21/wall-street-confronts-ai-reality-check-video",
-      "score": 0.877
+      "score": 0.875
     },
     {
       "id": "187dad26ad",
@@ -78,18 +78,18 @@
       ],
       "publishedAt": "2026-11-22T05:11+08:00",
       "url": "https://tasklet.ai/careers",
-      "score": 0.841
+      "score": 0.839
     },
     {
       "id": "a2b0b71c81",
-      "title": "Anthropic goes public on Nasdaq",
-      "summary": "开发Claude的AI实验室Anthropic上周四在纳斯达克成功上市，引发业界对其安全首要地位的讨论。",
+      "title": "Can Anthropic afford to put safety first?",
+      "summary": "Today, I’m talking with Hayden Field, The Verge’s senior AI reporter, about the Anthropic IPO for the third and final episode in our series about AI in real life. The AI lab behind Claude went public on the Nasdaq last…",
       "sources": [
         "The Verge"
       ],
       "publishedAt": "2026-11-21T23:00+08:00",
       "url": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure",
-      "score": 0.814
+      "score": 0.812
     },
     {
       "id": "6ccebafcdf",
@@ -100,7 +100,7 @@
       ],
       "publishedAt": "2026-11-22T01:00+08:00",
       "url": "https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/",
-      "score": 0.797
+      "score": 0.795
     },
     {
       "id": "769adf524e",
@@ -111,29 +111,29 @@
       ],
       "publishedAt": "2026-11-21T22:00+08:00",
       "url": "https://www.theverge.com/games/1038099/chess-classic-games-expansion-ai",
-      "score": 0.789
+      "score": 0.787
     },
     {
       "id": "dffab27fe8",
       "title": "Actors license faces to microdrama startups",
-      "summary": "好莱坞演员开始效仿中国趋势，向微短剧初创公司授权自己的AI面孔，引发行业对长期后果的担忧。",
+      "summary": "好莱坞演员开始向微短剧初创公司授权自己的AI面孔。这种源自中国的趋势引发了业界对好莱坞长远影响的担忧。",
       "sources": [
         "TechCrunch"
       ],
       "publishedAt": "2026-11-22T00:00+08:00",
       "url": "https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/",
-      "score": 0.771
+      "score": 0.769
     },
     {
       "id": "f5a6d06d7d",
-      "title": "Nvidia researchers argue huge context windows are dead end",
-      "summary": "Nvidia研究人员认为巨型AI上下文窗口成本高且易出错，提出用定期摘要和关键词搜索替代的方案。",
+      "title": "Nvidia researchers question massive context windows",
+      "summary": "Nvidia研究人员认为巨型AI上下文窗口是死胡同，因其成本高且易出错。测试表明定期摘要和关键词搜索能以更低成本达到同等效果。",
       "sources": [
         "The Decoder"
       ],
       "publishedAt": "2026-11-22T00:23+08:00",
       "url": "https://the-decoder.com/nvidia-researchers-argue-huge-ai-context-windows-are-a-dead-end/",
-      "score": 0.71
+      "score": 0.708
     }
   ]
 }
