@@ -1,4 +1,5 @@
 import json
+import logging
 import unittest
 from datetime import datetime, timedelta, timezone
 from unittest import mock
@@ -9,7 +10,7 @@ from pipeline.ingest import is_ai, parse_rss
 from pipeline.models import Item, Story
 from pipeline.rank import rank
 from pipeline.sources import Source
-from pipeline.summarize import parse_response, summarize
+from pipeline.summarize import is_chinese, parse_response, summarize
 
 NOW = datetime(2026, 11, 19, 0, 0, tzinfo=timezone.utc)
 
@@ -105,34 +106,94 @@ class IngestTest(unittest.TestCase):
         self.assertFalse(is_ai("Said the chairman"))  # 'ai' inside a word
 
 
+ZH = "OpenAI发布了GPT-5，在推理和编程基准上大幅领先上一代模型，并向所有付费用户开放。"
+
+
+def reply(rows):
+    return json.dumps({"stories": rows}, ensure_ascii=False)
+
+
+class FakeChat:
+    """Answers each call with the next canned reply and records the system prompts and payloads."""
+
+    def __init__(self, *replies):
+        self.replies, self.calls = list(replies), []
+
+    def __call__(self, messages, *config):
+        self.calls.append((messages[0]["content"], json.loads(messages[1]["content"])))
+        r = self.replies.pop(0)
+        if isinstance(r, Exception):
+            raise r
+        return r
+
+
 class SummarizeTest(unittest.TestCase):
     def stories(self):
         return [Story([item("Wired", "Original headline one", summary="Excerpt one")]),
-                Story([item("HN", "Original headline two")])]
+                Story([item("HN", "Tasklet (YC P26) Is Hiring Product and Agent Infra Engineers")])]
 
-    def test_fallback_without_key(self):
-        stories = self.stories()
-        with mock.patch.dict("os.environ", {}, clear=True):
-            self.assertFalse(summarize(stories))
-        self.assertEqual(stories[0].title, "Original headline one")
-        self.assertEqual(stories[0].summary, "Excerpt one")
-        self.assertEqual(stories[1].summary, "Original headline two")
+    def run_summarize(self, stories, chat, key="k"):
+        env = {"LLM_API_KEY": key} if key else {}
+        with mock.patch.dict("os.environ", env, clear=True), self.assertLogs("pipeline.summarize", "DEBUG") as logs:
+            logging.getLogger("pipeline.summarize").debug("start")
+            used = summarize(stories, chat=chat)
+        return used, "\n".join(logs.output)
 
-    def test_llm_result_applied_and_missing_rows_fall_back(self):
-        stories = self.stories()
-        reply = json.dumps({"stories": [{"id": 0, "title": "Punchy Title.", "summary": "中文摘要。"}]}, ensure_ascii=False)
-        with mock.patch.dict("os.environ", {"LLM_API_KEY": "k"}):
-            self.assertTrue(summarize(stories, chat=lambda *a: reply))
-        self.assertEqual((stories[0].title, stories[0].summary), ("Punchy Title", "中文摘要。"))
-        self.assertEqual(stories[1].title, "Original headline two")
+    def test_is_chinese(self):
+        self.assertTrue(is_chinese(ZH))
+        self.assertTrue(is_chinese("Anthropic推出Claude新版本。"))
+        self.assertFalse(is_chinese("Tasklet (YC P26) Is Hiring Product and Agent Infra Engineers"))
+        self.assertFalse(is_chinese("Chess.com is ready to go a lot bigger than chess. 国际象棋"))
+        self.assertFalse(is_chinese(""))
+        self.assertFalse(is_chinese("The company said " * 10 + "这是一个非常重要的人工智能领域的突破性进展消息"))
 
-    def test_llm_error_falls_back(self):
-        def boom(*a):
-            raise TimeoutError
+    def test_chinese_summary_passes_through_untouched(self):
+        stories = self.stories()[:1]
+        chat = FakeChat(reply([{"id": 0, "title": "Punchy Title.", "summary": ZH}]))
+        self.assertTrue(self.run_summarize(stories, chat)[0])
+        self.assertEqual((stories[0].title, stories[0].summary), ("Punchy Title", ZH))
+        self.assertEqual(len(chat.calls), 1)
+
+    def test_english_summary_retried_once_with_stronger_prompt(self):
         stories = self.stories()
-        with mock.patch.dict("os.environ", {"LLM_API_KEY": "k"}):
-            self.assertFalse(summarize(stories, chat=boom))
-        self.assertEqual(stories[0].title, "Original headline one")
+        chat = FakeChat(
+            reply([{"id": 0, "title": "One", "summary": ZH},
+                   {"id": 1, "title": "Tasklet hiring", "summary": "Tasklet Is Hiring Engineers"}]),
+            reply([{"id": 1, "title": "x", "summary": "YC孵化的Tasklet正在招聘产品与智能体基础设施工程师，扩充团队以加速其AI代理产品的研发。"}]),
+        )
+        self.run_summarize(stories, chat)
+        self.assertEqual([p["id"] for p in chat.calls[1][1]], [1])
+        self.assertIn("MUST be Simplified Chinese", chat.calls[1][0])
+        self.assertEqual(stories[1].title, "Tasklet hiring")
+        self.assertTrue(all(is_chinese(s.summary) for s in stories))
+
+    def test_english_source_text_is_translated(self):
+        stories = self.stories()
+        translated = "YC孵化的Tasklet正在招聘产品工程师和智能体基础设施工程师。"
+        chat = FakeChat(reply([{"id": 0, "title": "One", "summary": ZH}]),  # story 1 missing
+                        reply([]),                                         # retry returns nothing
+                        reply([{"id": 0, "summary": translated}]))         # translate call
+        self.run_summarize(stories, chat)
+        self.assertEqual(chat.calls[2][1], [{"id": 0, "text": stories[1].lead.title}])
+        self.assertEqual(stories[1].summary, translated)
+        self.assertEqual(stories[1].title, stories[1].lead.title)
+
+    def test_story_dropped_when_translation_fails(self):
+        stories = self.stories()
+        chat = FakeChat(reply([{"id": 0, "title": "One", "summary": ZH},
+                               {"id": 1, "title": "Two", "summary": "Still English"}]),
+                        TimeoutError(),
+                        reply([{"id": 0, "summary": "Still English after translation"}]))
+        _, logs = self.run_summarize(stories, chat)
+        self.assertEqual([s.summary for s in stories], [ZH])
+        self.assertIn("dropping story without a Chinese summary: Tasklet", logs)
+
+    def test_without_key_english_stories_dropped_chinese_kept(self):
+        stories = self.stories() + [Story([item("36Kr", "标题", summary=ZH)])]
+        used, logs = self.run_summarize(stories, chat=None, key=None)
+        self.assertFalse(used)
+        self.assertEqual([(s.title, s.summary) for s in stories], [("标题", ZH)])
+        self.assertIn("dropping story", logs)
 
     def test_parse_response_accepts_fenced_json(self):
         rows = parse_response('```json\n{"stories":[{"id":"1","title":"T","summary":"S"}]}\n```')
