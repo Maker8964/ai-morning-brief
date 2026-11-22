@@ -145,6 +145,7 @@ class SummarizeTest(unittest.TestCase):
         self.assertFalse(is_chinese("Tasklet (YC P26) Is Hiring Product and Agent Infra Engineers"))
         self.assertFalse(is_chinese("Chess.com is ready to go a lot bigger than chess. 国际象棋"))
         self.assertFalse(is_chinese(""))
+        self.assertFalse(is_chinese("The company said " * 10 + "这是一个非常重要的人工智能领域的突破性进展消息"))
 
     def test_chinese_summary_passes_through_untouched(self):
         stories = self.stories()[:1]

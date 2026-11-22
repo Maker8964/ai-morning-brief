@@ -46,7 +46,7 @@ def is_chinese(text: str) -> bool:
     """Mostly-Chinese text. Each Latin word counts as one unit, so names like OpenAI or GPT-5 are fine."""
     cjk = len(CJK.findall(text))
     words = len(LATIN_WORD.findall(text))
-    return cjk >= 20 or (cjk > 0 and cjk >= words)
+    return cjk > 0 and cjk >= words
 
 
 def _story_payload(idx: int, story: Story) -> dict:
