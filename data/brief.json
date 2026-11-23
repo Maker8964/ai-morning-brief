@@ -1,101 +1,101 @@
 {
   "date": "2026-11-23",
-  "generatedAt": "2026-11-23T10:00:38+08:00",
+  "generatedAt": "2026-11-23T10:02:09+08:00",
   "summarizedBy": "llm",
   "stories": [
     {
       "id": "4c573e6b70",
-      "title": "OpenAI Chief Scientist Urges AI Development Limits",
-      "summary": "OpenAI首席科学家提议限制功能更强大AI模型的开发，直到研究人员能够更好地理解和监控其行为，以确保技术安全。",
+      "title": "OpenAI Chief Scientist Urges AI Limits",
+      "summary": "OpenAI首席科学家提议限制功能更强大的AI模型开发，直到研究人员能够更好地理解和监控其行为。",
       "sources": [
         "Bloomberg",
         "TechCrunch"
       ],
       "publishedAt": "2026-11-23T03:40+08:00",
       "url": "https://www.bloomberg.com/news/articles/2026-11-22/openai-chief-scientist-urges-industry-limits-on-ai-development",
-      "score": 1.634
+      "score": 1.633
     },
     {
       "id": "1ba4d31258",
-      "title": "Local AI guide with Inkling, Qwen, and Unsloth",
-      "summary": "本指南介绍了如何使用Inkling、Qwen和Unsloth运行本地AI模型。这为开发者在本地部署和优化大模型提供了实用参考。",
+      "title": "A Beginner Guide to Local AI",
+      "summary": "本文介绍了如何使用Inkling、Qwen和Unsloth快速上手本地AI，为开发者提供基础指南。",
       "sources": [
         "HN"
       ],
       "publishedAt": "2026-11-23T05:01+08:00",
       "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
-      "score": 1.473
+      "score": 1.478
     },
     {
       "id": "ce223767cc",
-      "title": "Agent swarm trying to solve P vs. NP",
-      "summary": "研究人员正尝试通过AI智能体集群来解决计算机科学中的P对NP难题。这展示了AI在挑战复杂数学和理论问题上的最新应用。",
+      "title": "Agent Swarm Tries to Solve P vs NP",
+      "summary": "一个AI智能体集群正尝试挑战计算机科学中的P与NP问题，探索自动化解决复杂数学难题的潜力。",
       "sources": [
         "HN"
       ],
       "publishedAt": "2026-11-23T05:53+08:00",
       "url": "https://pequalnp.com/",
-      "score": 1.434
+      "score": 1.435
     },
     {
       "id": "69aed33940",
-      "title": "Localcode, open source agentic coding on your Mac",
-      "summary": "Localcode是一个开源项目，允许用户在Mac上一键运行具备智能体能力的编程助手。它简化了本地AI辅助编程的部署流程。",
+      "title": "Localcode Brings Agentic Coding",
+      "summary": "Localcode是一款全新的开源工具，只需一条命令即可在Mac上实现自主代理编程。",
       "sources": [
         "HN"
       ],
       "publishedAt": "2026-11-23T06:18+08:00",
       "url": "https://github.com/mjwsolo/localcode",
-      "score": 1.253
+      "score": 1.262
     },
     {
       "id": "2c6a6d4bfa",
-      "title": "AI Selloff Spurs EmergingMarket Stock Losses",
-      "summary": "由于市场对人工智能交易可持续性的担忧加剧，引发了从美国到亚洲的全球抛售，新兴市场股票将抹去今年的涨幅。",
+      "title": "AI Selloff Hits Emerging Markets",
+      "summary": "由于市场对人工智能交易可持续性的担忧引发全球抛售，新兴市场股票将抹去今年以来的涨幅。",
       "sources": [
         "Bloomberg"
       ],
       "publishedAt": "2026-11-23T09:02+08:00",
       "url": "https://www.bloomberg.com/news/articles/2026-11-23/emerging-market-stocks-set-to-erase-2026-gains-on-ai-selloff",
-      "score": 1.251
+      "score": 1.249
     },
     {
       "id": "44880c1376",
       "title": "AI Investment Adding to Inflation",
-      "summary": "经济学家指出AI领域的持续投资反映了更广泛经济领域投资的疲软，并对通胀产生了影响。这可能促使美联储采取进一步加息措施。",
+      "summary": "经济学家指出AI领域的持续投资加剧了通货膨胀，并反映出其他领域投资的疲软。",
       "sources": [
         "Bloomberg"
       ],
       "publishedAt": "2026-11-23T08:41+08:00",
       "url": "https://www.bloomberg.com/news/videos/2026-11-23/ai-investment-adding-to-inflation-jain-video",
-      "score": 1.233
+      "score": 1.232
     },
     {
       "id": "914bb147d0",
-      "title": "Investors bet big on Anthropic before its IPO",
-      "summary": "Notable Capital、GIC和Baillie Gifford等机构在Anthropic上市前对其进行了巨额投资。这揭示了资本对该公司的强大信心。",
+      "title": "Backers Share Anthropic Bets",
+      "summary": "Notable Capital、GIC和Baillie Gifford等主要投资机构分享了在Anthropic上市前对其进行巨额押注的信念。",
       "sources": [
         "TechCrunch"
       ],
       "publishedAt": "2026-11-23T09:25+08:00",
       "url": "https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo/",
-      "score": 1.075
+      "score": 1.074
     },
     {
       "id": "4b4d8e1532",
-      "title": "Major tech outages may continue to happen",
-      "summary": "近期美国发生了FAA停飞、Outlook瘫痪及摩根大通银行故障等多起重大技术中断。专家认为未来可能还会出现更多类似的系统故障。",
+      "title": "More Tech Outages Expected",
+      "summary": "在经历了一系列重大技术故障后，各方专家和官员警告称，未来可能会发生更多网络与系统瘫痪事件。",
       "sources": [
         "The Verge"
       ],
       "publishedAt": "2026-11-23T06:48+08:00",
       "url": "https://www.theverge.com/tech/1039851/major-tech-outages",
-      "score": 1.058
+      "score": 1.057
     },
     {
       "id": "10b966779b",
-      "title": "Binding of Isaac Removes AI Music After Backlash",
-      "summary": "由于玩家在Steam上差评轰炸，Binding of Isaac: Repentance Plus开发者移除了含有Suno元数据的AI生成音乐。",
+      "title": "AI Music Removed from Binding of Isaac",
+      "summary": "因在游戏特定片段中使用了带有Suno元数据的AI音乐遭到玩家差评轰炸后，《Binding of Isaac》开发商移除了相关内容。",
       "sources": [
         "The Verge"
       ],
@@ -105,8 +105,8 @@
     },
     {
       "id": "0c81fa30a9",
-      "title": "The vibe-coding revolution is coming to gadgets",
-      "summary": "AI驱动的 vibe-coding 变革正逐渐向各类消费电子设备普及。这一趋势将改变用户与智能硬件的互动和开发方式。",
+      "title": "The Vibe-Coding Revolution",
+      "summary": "AI驱动的“氛围编程”浪潮正在席卷各类科技设备，改变着人们构建软件与应用的方式。",
       "sources": [
         "The Verge"
       ],
@@ -116,8 +116,8 @@
     },
     {
       "id": "6ccebafcdf",
-      "title": "Banks Ban ThirdParty AI Bots Over Account Risks",
-      "summary": "美国主要金融机构正禁止第三方AI代理登录用户账户，并警告称任何由机器人造成的昂贵失误将完全由用户承担。",
+      "title": "Banks Ban Third-Party AI Bots",
+      "summary": "美国主要金融机构正禁止第三方AI代理登录用户账户，并警告用户需自行承担机器人造成的损失。",
       "sources": [
         "TechCrunch",
         "Wired"
@@ -127,15 +127,15 @@
       "score": 0.711
     },
     {
-      "id": "de5cd1a6d5",
-      "title": "Perplexity and Intelligence in AI models",
-      "summary": "本文探讨了困惑度（perplexity）如何衡量AI模型的进展，并帮助开发者建立评估新兴能力的共同方法。这对于衡量模型性能至关重要。",
+      "id": "ea4ec8bb42",
+      "title": "AI Coding Agents Fail Real Work",
+      "summary": "尽管AI编程助手能通过独立测试，但在复杂的模拟工作环境中完成的任务比例却不足十分之一。",
       "sources": [
-        "OpenAI"
+        "The Decoder"
       ],
-      "publishedAt": "2026-11-22T08:00+08:00",
-      "url": "https://openai.com/index/perplexity-and-intelligence",
-      "score": 0.638
+      "publishedAt": "2026-11-22T23:15+08:00",
+      "url": "https://the-decoder.com/ai-coding-agents-ace-isolated-tests-but-complete-fewer-than-one-in-ten-tasks-in-a-simulated-workplace/",
+      "score": 0.676
     }
   ]
 }
