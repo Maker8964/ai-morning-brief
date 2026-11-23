@@ -1,139 +1,141 @@
 {
-  "date": "2026-11-22",
-  "generatedAt": "2026-11-22T10:03:22+08:00",
+  "date": "2026-11-23",
+  "generatedAt": "2026-11-23T10:00:38+08:00",
   "summarizedBy": "llm",
   "stories": [
     {
-      "id": "3d1bee2216",
-      "title": "Pandex brings European law to AI agents via MCP",
-      "summary": "Pandex 推出了基于 MCP 的欧洲人工智能官方法律服务。这一工具旨在帮助 AI 代理在合规框架内运行。",
+      "id": "4c573e6b70",
+      "title": "OpenAI Chief Scientist Urges AI Development Limits",
+      "summary": "OpenAI首席科学家提议限制功能更强大AI模型的开发，直到研究人员能够更好地理解和监控其行为，以确保技术安全。",
+      "sources": [
+        "Bloomberg",
+        "TechCrunch"
+      ],
+      "publishedAt": "2026-11-23T03:40+08:00",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-22/openai-chief-scientist-urges-industry-limits-on-ai-development",
+      "score": 1.634
+    },
+    {
+      "id": "1ba4d31258",
+      "title": "Local AI guide with Inkling, Qwen, and Unsloth",
+      "summary": "本指南介绍了如何使用Inkling、Qwen和Unsloth运行本地AI模型。这为开发者在本地部署和优化大模型提供了实用参考。",
       "sources": [
         "HN"
       ],
-      "publishedAt": "2026-11-22T04:47+08:00",
-      "url": "https://www.pandex.io",
-      "score": 1.237
+      "publishedAt": "2026-11-23T05:01+08:00",
+      "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
+      "score": 1.473
     },
     {
-      "id": "217df14086",
-      "title": "Crowdstrike and Zscaler talks highlight AI cyber consolidation",
-      "summary": "随着企业加紧防御 AI 驱动的高级攻击，网络安全行业正迎来百亿美元级别的收购浪潮。这反映出市场向大公司整合的趋势。",
+      "id": "ce223767cc",
+      "title": "Agent swarm trying to solve P vs. NP",
+      "summary": "研究人员正尝试通过AI智能体集群来解决计算机科学中的P对NP难题。这展示了AI在挑战复杂数学和理论问题上的最新应用。",
+      "sources": [
+        "HN"
+      ],
+      "publishedAt": "2026-11-23T05:53+08:00",
+      "url": "https://pequalnp.com/",
+      "score": 1.434
+    },
+    {
+      "id": "69aed33940",
+      "title": "Localcode, open source agentic coding on your Mac",
+      "summary": "Localcode是一个开源项目，允许用户在Mac上一键运行具备智能体能力的编程助手。它简化了本地AI辅助编程的部署流程。",
+      "sources": [
+        "HN"
+      ],
+      "publishedAt": "2026-11-23T06:18+08:00",
+      "url": "https://github.com/mjwsolo/localcode",
+      "score": 1.253
+    },
+    {
+      "id": "2c6a6d4bfa",
+      "title": "AI Selloff Spurs EmergingMarket Stock Losses",
+      "summary": "由于市场对人工智能交易可持续性的担忧加剧，引发了从美国到亚洲的全球抛售，新兴市场股票将抹去今年的涨幅。",
       "sources": [
         "Bloomberg"
       ],
-      "publishedAt": "2026-11-22T03:02+08:00",
-      "url": "https://www.bloomberg.com/news/articles/2026-11-21/crowdstrike-s-talks-with-zscaler-show-ai-led-cyber-consolidation",
-      "score": 0.997
+      "publishedAt": "2026-11-23T09:02+08:00",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-23/emerging-market-stocks-set-to-erase-2026-gains-on-ai-selloff",
+      "score": 1.251
     },
     {
-      "id": "2cb10b95a7",
-      "title": "UN fails to reach agreement on autonomous weapons",
-      "summary": "联合国外交官在日内瓦未能就规范自主武器或杀戮机器达成规则。各方在经历无果的谈判后仅同意开始讨论相关选项。",
-      "sources": [
-        "The Verge"
-      ],
-      "publishedAt": "2026-11-22T04:03+08:00",
-      "url": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
-      "score": 0.954
-    },
-    {
-      "id": "fdad322903",
-      "title": "California probes Nvidia for potential criminal violations",
-      "summary": "加州对 Nvidia 是否非法向中国出售高级芯片及误导投资者的调查正在审视潜在的州刑事违规行为。此举显著加大了这家芯片制造商的风险。",
+      "id": "44880c1376",
+      "title": "AI Investment Adding to Inflation",
+      "summary": "经济学家指出AI领域的持续投资反映了更广泛经济领域投资的疲软，并对通胀产生了影响。这可能促使美联储采取进一步加息措施。",
       "sources": [
         "Bloomberg"
       ],
-      "publishedAt": "2026-11-22T01:11+08:00",
-      "url": "https://www.bloomberg.com/news/articles/2026-11-21/california-nvidia-probe-covers-potential-criminal-law-violations",
-      "score": 0.935
+      "publishedAt": "2026-11-23T08:41+08:00",
+      "url": "https://www.bloomberg.com/news/videos/2026-11-23/ai-investment-adding-to-inflation-jain-video",
+      "score": 1.233
     },
     {
-      "id": "f3487ac988",
-      "title": "Signal restricts screenshots to combat AI surveillance",
-      "summary": "面对 AI 监控构成的生存威胁，Signal 限制了其在 Android 和 iOS 应用上的截屏功能。此举旨在保护用户的隐私和安全。",
+      "id": "914bb147d0",
+      "title": "Investors bet big on Anthropic before its IPO",
+      "summary": "Notable Capital、GIC和Baillie Gifford等机构在Anthropic上市前对其进行了巨额投资。这揭示了资本对该公司的强大信心。",
       "sources": [
         "TechCrunch"
       ],
-      "publishedAt": "2026-11-22T05:37+08:00",
-      "url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
-      "score": 0.926
+      "publishedAt": "2026-11-23T09:25+08:00",
+      "url": "https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo/",
+      "score": 1.075
     },
     {
-      "id": "7367584ae4",
-      "title": "Wall Street faces AI reality check as market sentiment sags",
-      "summary": "华尔街正面对人工智能的现实检验，Anthropic 的 IPO 未能扭转市场情绪。投资者对 AI 支出的担忧和市场动荡令高盛恐慌指数飙升。",
-      "sources": [
-        "Bloomberg"
-      ],
-      "publishedAt": "2026-11-21T22:50+08:00",
-      "url": "https://www.bloomberg.com/news/videos/2026-11-21/wall-street-confronts-ai-reality-check-video",
-      "score": 0.866
-    },
-    {
-      "id": "187dad26ad",
-      "title": "Tasklet is hiring engineering talent",
-      "summary": "Tasklet正在招聘产品和智能体基础设施工程师。这为开发者提供了加入早期AI初创公司的机会。",
-      "sources": [
-        "HN"
-      ],
-      "publishedAt": "2026-11-22T05:11+08:00",
-      "url": "https://tasklet.ai/careers",
-      "score": 0.828
-    },
-    {
-      "id": "a2b0b71c81",
-      "title": "Anthropic goes public on Nasdaq",
-      "summary": "开发 Claude 的 AI 实验室 Anthropic 上周四在纳斯达克上市。这引发了外界对其能否在资本化进程中继续坚持安全第一原则的讨论。",
+      "id": "4b4d8e1532",
+      "title": "Major tech outages may continue to happen",
+      "summary": "近期美国发生了FAA停飞、Outlook瘫痪及摩根大通银行故障等多起重大技术中断。专家认为未来可能还会出现更多类似的系统故障。",
       "sources": [
         "The Verge"
       ],
-      "publishedAt": "2026-11-21T23:00+08:00",
-      "url": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure",
-      "score": 0.804
+      "publishedAt": "2026-11-23T06:48+08:00",
+      "url": "https://www.theverge.com/tech/1039851/major-tech-outages",
+      "score": 1.058
+    },
+    {
+      "id": "10b966779b",
+      "title": "Binding of Isaac Removes AI Music After Backlash",
+      "summary": "由于玩家在Steam上差评轰炸，Binding of Isaac: Repentance Plus开发者移除了含有Suno元数据的AI生成音乐。",
+      "sources": [
+        "The Verge"
+      ],
+      "publishedAt": "2026-11-23T01:25+08:00",
+      "url": "https://www.theverge.com/games/1039770/binding-of-isaac-ai-music",
+      "score": 0.871
+    },
+    {
+      "id": "0c81fa30a9",
+      "title": "The vibe-coding revolution is coming to gadgets",
+      "summary": "AI驱动的 vibe-coding 变革正逐渐向各类消费电子设备普及。这一趋势将改变用户与智能硬件的互动和开发方式。",
+      "sources": [
+        "The Verge"
+      ],
+      "publishedAt": "2026-11-22T21:00+08:00",
+      "url": "https://www.theverge.com/column/1039139/vibe-coding-gadgets-tv-camera",
+      "score": 0.756
     },
     {
       "id": "6ccebafcdf",
-      "title": "Top AI agents living in text messages",
-      "summary": "媒体盘点了多款集成在短信中的AI智能体，涵盖通用助手以及家庭、旅游和工作场景。这展示了AI应用的新趋势。",
+      "title": "Banks Ban ThirdParty AI Bots Over Account Risks",
+      "summary": "美国主要金融机构正禁止第三方AI代理登录用户账户，并警告称任何由机器人造成的昂贵失误将完全由用户承担。",
       "sources": [
-        "TechCrunch"
+        "TechCrunch",
+        "Wired"
       ],
       "publishedAt": "2026-11-22T01:00+08:00",
       "url": "https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/",
-      "score": 0.786
+      "score": 0.711
     },
     {
-      "id": "769adf524e",
-      "title": "Chess.com launches classic games hub",
-      "summary": "Chess.com推出包含麻将、数独等十款经典游戏的新平台。此举标志着该平台正向棋牌和益智游戏领域大幅拓展。",
+      "id": "de5cd1a6d5",
+      "title": "Perplexity and Intelligence in AI models",
+      "summary": "本文探讨了困惑度（perplexity）如何衡量AI模型的进展，并帮助开发者建立评估新兴能力的共同方法。这对于衡量模型性能至关重要。",
       "sources": [
-        "The Verge"
+        "OpenAI"
       ],
-      "publishedAt": "2026-11-21T22:00+08:00",
-      "url": "https://www.theverge.com/games/1038099/chess-classic-games-expansion-ai",
-      "score": 0.779
-    },
-    {
-      "id": "dffab27fe8",
-      "title": "Actors license faces to microdrama startups",
-      "summary": "好莱坞演员开始向微短剧初创公司授权其面部数字形象。专家正密切关注这种在海外及中国流行的新趋势对未来影视行业的影响。",
-      "sources": [
-        "TechCrunch"
-      ],
-      "publishedAt": "2026-11-22T00:00+08:00",
-      "url": "https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/",
-      "score": 0.761
-    },
-    {
-      "id": "f5a6d06d7d",
-      "title": "Nvidia researchers argue huge context windows are dead end",
-      "summary": "Nvidia 研究人员指出，大语言模型往往不需要庞大且昂贵的长上下文窗口。测试表明，定期摘要和关键词搜索能以更低成本达到同等效果。",
-      "sources": [
-        "The Decoder"
-      ],
-      "publishedAt": "2026-11-22T00:23+08:00",
-      "url": "https://the-decoder.com/nvidia-researchers-argue-huge-ai-context-windows-are-a-dead-end/",
-      "score": 0.701
+      "publishedAt": "2026-11-22T08:00+08:00",
+      "url": "https://openai.com/index/perplexity-and-intelligence",
+      "score": 0.638
     }
   ]
 }
