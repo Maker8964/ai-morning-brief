@@ -1,97 +1,142 @@
 {
   "date": "2026-11-24",
-  "generatedAt": "2026-11-24T08:27:12+08:00",
+  "generatedAt": "2026-11-24T13:38:37+08:00",
   "summarizedBy": "llm",
   "stories": [
     {
-      "id": "d631009dc6",
+      "id": "a872bf0858",
       "title": "Nvidia Reinstates Jensen Huang as CEO",
-      "summary": "Nvidia董事会在Jensen Huang因丑闻辞职一周后重新任命其为CEO。这一迅速回归引发了外界对企业治理与市场影响的热议。",
+      "summary": "Nvidia董事会投票一致决定重新任命Jensen Huang为CEO。此前他在因丑闻辞职一周后获董事会信任重返岗位。",
       "sources": [
         "Bloomberg",
         "The Verge"
       ],
       "publishedAt": "2026-11-23T22:00+08:00",
-      "url": "https://www.wired.com/story/jensen-huang-is-back-as-nvidia-ceo/",
-      "score": 7.45
-    },
-    {
-      "id": "49258f2ca6",
-      "title": "States Sue SpaceX Over Grok Deepfakes",
-      "summary": "俄勒冈州和弗吉尼亚州总检察长起诉SpaceX，指控其X平台的Grok功能缺乏安全保护，生成并传播色情深伪影像。",
-      "sources": [
-        "The Verge",
-        "Ars Technica"
-      ],
-      "publishedAt": "2026-11-23T19:00+08:00",
-      "url": "https://www.wired.com/story/states-sue-spacex-over-grok-deepfakes/",
-      "score": 1.642
-    },
-    {
-      "id": "9867a2712e",
-      "title": "Singapore Raises GDP Growth Outlook",
-      "summary": "得益于人工智能热潮带来的经济动力，新加坡将今年的GDP增长预测上调至约6%，展现出极强的科技抗压能力。",
-      "sources": [
-        "Bloomberg"
-      ],
-      "publishedAt": "2026-11-24T08:00+08:00",
-      "url": "https://www.bloomberg.com/news/articles/2026-11-24/singapore-raises-gdp-growth-outlook-to-around-6-on-ai-boom",
-      "score": 1.276
-    },
-    {
-      "id": "8e4e73262f",
-      "title": "OpenAI Staffer Captured Secrets on Hidden Bug",
-      "summary": "美国检察官称，OpenAI前工程师因在办公室会议室安装窃听装置，可能已截获核心商业机密及战略合作伙伴的条款清单照片。",
-      "sources": [
-        "Bloomberg"
-      ],
-      "publishedAt": "2026-11-24T07:56+08:00",
-      "url": "https://www.bloomberg.com/news/articles/2026-11-23/openai-staffer-likely-captured-secrets-on-hidden-bug-us-says",
-      "score": 1.274
-    },
-    {
-      "id": "efd23ded56",
-      "title": "RBC Has Ideas For Canada to Unlock Tech GDP Gains as NVIDIA Rallies",
-      "summary": "最新报道分析了此次COP气候大会谈判陷入僵局并最终走向失败的核心原因，引发国际社会广泛关注。",
-      "sources": [
-        "Bloomberg"
-      ],
-      "publishedAt": "2026-11-24T07:30+08:00",
-      "url": "https://www.bloomberg.com/news/newsletters/2026-11-23/rbc-has-ideas-for-canada-to-unlock-tech-gdp-gains-as-nvidia-rallies",
-      "score": 1.251
+      "url": "https://www.theverge.com/tech/1039937/nvidia-ceo-jensen-huang-reinstated",
+      "score": 6.448
     },
     {
       "id": "1d0c151fef",
-      "title": "OpenAI and Cisco Introduce Shirudo",
-      "summary": "OpenAI与Cisco联合推出开源Linux运行时Shirudo，旨在帮助团队在部署补丁的同时保护正在运行的系统安全。",
+      "title": "OpenAI and Cisco Launch Shirudo",
+      "summary": "OpenAI与Cisco联合推出开源Linux运行时Shirudo。该工具旨在帮助团队在部署补丁期间保护运行中的系统。",
       "sources": [
-        "OpenAI"
+        "OpenAI",
+        "HN"
       ],
       "publishedAt": "2026-11-24T05:20+08:00",
       "url": "https://openai.com/index/introducing-shirudo",
-      "score": 1.238
+      "score": 2.599
     },
     {
-      "id": "5094532b4e",
-      "title": "GLM-5.4 Released for Generalized Coding",
-      "summary": "GLM-5.4正式发布，旨在通过首个循环Transformer模型推动广义编程能力的提升。",
+      "id": "1951d3d0ae",
+      "title": "Declare UI Language for Humans and AI",
+      "summary": "Declare作为一款全新的UI语言亮相，旨在为人与AI的协同交互提供支持。这有助于提升AI时代下的界面开发与协作效率。",
       "sources": [
         "HN"
       ],
-      "publishedAt": "2026-11-23T18:06+08:00",
-      "url": "https://z.ai/blog/glm-5.4",
-      "score": 1.214
+      "publishedAt": "2026-11-24T10:36+08:00",
+      "url": "https://davidtemkin.github.io/declarelang/",
+      "score": 1.316
+    },
+    {
+      "id": "a5f5dff457",
+      "title": "Rajan Warns AI Boom Faces Returns Reckoning",
+      "summary": "专家指出AI泡沫正面临回报清算的关键问题。巨额计算投资能否产生足够收益来支撑资本部署，将直接影响行业估值。",
+      "sources": [
+        "Bloomberg"
+      ],
+      "publishedAt": "2026-11-24T13:03+08:00",
+      "url": "https://www.bloomberg.com/news/videos/2026-11-24/rajan-warns-ai-boom-faces-a-reckoning-on-returns-video",
+      "score": 1.27
+    },
+    {
+      "id": "d77e65c92a",
+      "title": "Fujitsu Focuses on Sovereign AI Infrastructure",
+      "summary": "Fujitsu首席技术官探讨了Monaka服务器的全球部署。公司正重点发力国防、金融等对安全性要求极高的主权AI基础设施市场。",
+      "sources": [
+        "Bloomberg"
+      ],
+      "publishedAt": "2026-11-24T11:59+08:00",
+      "url": "https://www.bloomberg.com/news/videos/2026-11-24/fujitsu-cto-on-ai-focus-outlook-video",
+      "score": 1.217
+    },
+    {
+      "id": "0a94eb7b80",
+      "title": "Juncts Unifies DM Inbox Across Five Apps",
+      "summary": "Juncts推出了一款汇聚五个应用消息的统一DM收件箱。该工具允许Claude和ChatGPT直接在其中进行工作。",
+      "sources": [
+        "HN"
+      ],
+      "publishedAt": "2026-11-24T11:16+08:00",
+      "url": "https://juncts.com/app?demo=1&utm_source=hackernews&utm_medium=launch&utm_campaign=launch-nov26",
+      "score": 1.2
+    },
+    {
+      "id": "8f20e5199f",
+      "title": "LLMs Can Detect Prior Concept Injections",
+      "summary": "最新研究表明大型语言模型具备潜伏内省能力。LLMs能够有效检测并识别先前的概念注入。",
+      "sources": [
+        "HN"
+      ],
+      "publishedAt": "2026-11-24T06:29+08:00",
+      "url": "https://arxiv.org/abs/2602.20031",
+      "score": 1.198
+    },
+    {
+      "id": "0026f06ac7",
+      "title": "US Blacklists Alibaba-Owned Company",
+      "summary": "美国政府将阿里巴巴旗下的新加坡子公司列入黑名单。此举对相关企业的AI发展野心造成了一次打击。",
+      "sources": [
+        "Bloomberg"
+      ],
+      "publishedAt": "2026-11-24T09:45+08:00",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-24/us-blacklists-alibaba-owned-company-in-setback-to-ai-ambitions",
+      "score": 1.117
+    },
+    {
+      "id": "972640f78a",
+      "title": "States Sue SpaceX Over Grok Deepfakes",
+      "summary": "俄勒冈州和弗吉尼亚州总检察长对SpaceX等公司提起诉讼。指控其对Grok生成涉及儿童等色情虚假图像的防护措施薄弱。",
+      "sources": [
+        "Ars Technica",
+        "Wired"
+      ],
+      "publishedAt": "2026-11-23T19:00+08:00",
+      "url": "https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn/",
+      "score": 0.948
+    },
+    {
+      "id": "61dcf11694",
+      "title": "Finding Faster Quantum Algorithms with Agents",
+      "summary": "DeepMind利用智能体团队和形式化验证来寻找更快的量子算法。此举旨在改进用于核聚变和化学领域的量子计算方案。",
+      "sources": [
+        "DeepMind"
+      ],
+      "publishedAt": "2026-11-24T00:59+08:00",
+      "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+      "score": 0.828
     },
     {
       "id": "43b498f2b7",
       "title": "Anthropic Launches Claude Ship",
-      "summary": "Anthropic推出Claude Ship开发工具，允许AI代理审查、修复并批准代码更改，以解决AI生成代码带来的效率瓶颈。",
+      "summary": "Anthropic推出开发者工具Claude Ship，允许AI代理审查、修复并批准代码变更，以解决代码审核瓶颈。",
       "sources": [
         "TechCrunch"
       ],
       "publishedAt": "2026-11-24T06:05+08:00",
       "url": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
-      "score": 1.002
+      "score": 0.828
+    },
+    {
+      "id": "388f4aa5f2",
+      "title": "Supertake Raises $20M for AI Portfolios",
+      "summary": "初创公司Supertake融资2000万美元，利用AI代理将市场预测转化为股票投资组合，免去用户选股烦恼。",
+      "sources": [
+        "TechCrunch"
+      ],
+      "publishedAt": "2026-11-24T06:02+08:00",
+      "url": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
+      "score": 0.826
     }
   ]
 }
