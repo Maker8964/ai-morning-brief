@@ -70,10 +70,10 @@ def _terms(text: str) -> set[str]:
 
 
 def matches_story(story: Story, summary: str) -> bool:
-    """Cheap topical check: Latin keywords in the summary must overlap the story's headlines, or an
+    """Cheap topical check: Latin keywords in the summary must overlap the source headlines, or an
     excerpt that is itself about those headlines. Without Latin keywords on both sides it is not judged."""
     terms = _terms(summary)
-    headline = _terms(" ".join([story.title] + [i.title for i in story.items]))
+    headline = _terms(" ".join(i.title for i in story.items))
     if not terms or not headline or terms & headline:
         return True
     return any(terms & ex and ex & headline for ex in (_terms(i.summary) for i in story.items))
@@ -164,9 +164,8 @@ def summarize(stories: list[Story], chat=_chat) -> bool:
             if not 0 <= idx < len(stories):
                 continue
             story = stories[idx]
-            if row["title"] and not story.title:
-                story.title = row["title"]
             if is_valid(story, row["summary"]):
+                story.title = story.title or row["title"]
                 story.summary = row["summary"]
                 used = True
             else:

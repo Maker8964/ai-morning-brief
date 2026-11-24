@@ -46,13 +46,16 @@ def _urls(story: Story) -> set[str]:
     return {normalize_url(i.url) for i in story.items}
 
 
-def _fill(picked: list[Story], candidates: list[Story], limit: int, tried: set[str]) -> tuple[int, bool]:
-    """Summarizes untried candidates in rank order to top `picked` up to `limit`, backfilling dropped ones.
+def _fill(picked: list[Story], stories: list[Story], limit: int, tried: set[str], now: datetime) -> tuple[int, bool]:
+    """Summarizes the next-ranked untried stories to top `picked` up to `limit`, backfilling dropped ones.
+
+    The per-source cap counts only stories already picked, so a rejected story frees its slot.
 
     Returns (stories attempted, whether the LLM was used)."""
     attempted, llm = 0, False
     for _ in range(BACKFILL_ROUNDS):
-        batch = [s for s in candidates if not _urls(s) & tried][: limit - len(picked)]
+        untried = [s for s in stories if not _urls(s) & tried]
+        batch = rank(untried, now=now, limit=limit - len(picked), taken=picked)
         if not batch:
             break
         for s in batch:
@@ -78,11 +81,10 @@ def build(limit: int = 12, window_hours: int = 36, now: datetime | None = None) 
             log.warning("only %d/%d stories; retrying with a %dh window", len(picked), limit, window)
         items = ingest(now=now, window_hours=window)
         stories = dedup(items)
-        ranked = rank(stories, now=now, limit=len(stories))
         before = len(picked)
-        n, used = _fill(picked, ranked, limit, tried)
+        n, used = _fill(picked, stories, limit, tried, now)
         attempted, llm = attempted + n, llm or used
-        stages.append(f"window={window}h items={len(items)} stories={len(stories)} ranked={len(ranked)} "
+        stages.append(f"window={window}h items={len(items)} stories={len(stories)} "
                       f"attempted={n} kept={len(picked) - before}")
         log.info("%s picked=%d/%d llm=%s", stages[-1], len(picked), limit, llm)
     if len(picked) < limit:

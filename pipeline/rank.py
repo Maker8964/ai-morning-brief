@@ -18,13 +18,16 @@ def score(story: Story, now: datetime) -> float:
     return authority * coverage * buzz * (0.3 + 0.7 * recency)
 
 
-def rank(stories: list[Story], now: datetime | None = None, limit: int = 12, per_source: int = 3) -> list[Story]:
-    """Top stories by score, capping how many any one lead source can contribute."""
+def rank(stories: list[Story], now: datetime | None = None, limit: int = 12, per_source: int = 3,
+         taken: list[Story] = ()) -> list[Story]:
+    """Top stories by score, capping how many any one lead source can contribute (counting `taken`)."""
     now = now or datetime.now(timezone.utc)
     for s in stories:
         s.score = score(s, now)
     picked: list[Story] = []
     counts: dict[str, int] = {}
+    for s in taken:
+        counts[s.lead.source] = counts.get(s.lead.source, 0) + 1
     for s in sorted(stories, key=lambda s: s.score, reverse=True):
         if len(picked) >= limit:
             break

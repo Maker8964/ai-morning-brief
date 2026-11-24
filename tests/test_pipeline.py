@@ -76,6 +76,11 @@ class RankTest(unittest.TestCase):
     def test_zero_limit_selects_nothing(self):
         self.assertEqual(rank([Story([item("Wired", "a")])], now=NOW, limit=0), [])
 
+    def test_cap_counts_already_taken_stories(self):
+        taken = [Story([item("Wired", f"taken {i}")]) for i in range(3)]
+        stories = [Story([item("Wired", "w")]), Story([item("HN", "h", hours_ago=30)])]
+        self.assertEqual([s.lead.source for s in rank(stories, now=NOW, taken=taken)], ["HN"])
+
     def test_cap_counts_lead_item_source(self):
         # Lead (items[0]) is HN even though Bloomberg has higher weight.
         stories = [Story([item("HN", f"h{i}", hours_ago=i), item("Bloomberg", f"b{i}", weight=1.3)]) for i in range(5)]
@@ -165,7 +170,7 @@ class SummarizeTest(unittest.TestCase):
         self.run_summarize(stories, chat)
         self.assertEqual([p["id"] for p in chat.calls[1][1]], [1])
         self.assertIn("MUST be Simplified Chinese", chat.calls[1][0])
-        self.assertEqual(stories[1].title, "Tasklet hiring")
+        self.assertEqual(stories[1].title, "x")  # title from the rejected reply is not kept
         self.assertTrue(all(is_chinese(s.summary) for s in stories))
 
     def test_english_source_text_is_translated(self):
@@ -242,6 +247,13 @@ class TopicTest(unittest.TestCase):
         self.assertEqual((sent["headline"], sent["excerpt"]), (RBC_TITLE, stories[0].lead.summary))
         self.assertIn("off-topic", logs)
 
+    def test_unrelated_llm_title_cannot_validate_unrelated_summary(self):
+        stories = [self.rbc()]
+        chat = FakeChat(reply([{"id": 0, "title": "COP climate talks stall", "summary": COP_ZH}]),
+                        reply([{"id": 0, "title": "RBC Canada tech GDP", "summary": RBC_ZH}]))
+        self.run_summarize(stories, chat)
+        self.assertEqual((stories[0].title, stories[0].summary), ("RBC Canada tech GDP", RBC_ZH))
+
     def test_off_topic_summary_dropped_after_retry(self):
         stories = [self.rbc(), self.stories()[0]]
         chat = FakeChat(reply([{"id": 0, "title": "RBC Canada", "summary": COP_ZH},
@@ -254,10 +266,10 @@ class TopicTest(unittest.TestCase):
         self.assertIn("dropping story without a valid Chinese summary: RBC", logs)
 
 
-def stories_for(n, offset=0):
+def stories_for(n, offset=0, sources=None):
     words = ["Alpha", "Bravo", "Charlie", "Delta", "Echo", "Foxtrot", "Golf", "Hotel", "India", "Juliet",
              "Kilo", "Lima", "Mike", "November", "Oscar", "Papa", "Quebec", "Romeo", "Sierra", "Tango"]
-    return [item(f"S{i}", f"{words[i]}corp unveils {words[i]}bot model", hours_ago=1 + i)
+    return [item(f"S{i % sources if sources else i}", f"{words[i]}corp unveils {words[i]}bot model", hours_ago=1 + i)
             for i in range(offset, offset + n)]
 
 
@@ -289,6 +301,13 @@ class BriefTest(unittest.TestCase):
         self.assertIn("Mikecorp unveils Mikebot model", titles)
         self.assertNotIn("Alphacorp unveils Alphabot model", titles)
 
+    def test_backfill_reaches_source_whose_story_was_rejected(self):
+        # 16 stories from 4 sources: the per-source cap of 3 leaves Mike (S0's 4th) out at first.
+        brief, windows = self.build({36: stories_for(16, sources=4)}, drop=("Alpha",))
+        titles = [c["title"] for c in brief["stories"]]
+        self.assertEqual((len(titles), windows), (12, [36]))
+        self.assertIn("Mikecorp unveils Mikebot model", titles)
+
     def test_short_window_retried_with_wider_window(self):
         brief, windows = self.build({36: stories_for(8), 48: stories_for(14)})
         self.assertEqual((len(brief["stories"]), windows), (12, [36, 48]))
@@ -311,7 +330,7 @@ class BriefTest(unittest.TestCase):
         log = "\n".join(logs.output)
         self.assertIn("retrying with a 48h window", log)
         self.assertIn("brief short: 9/12 stories, ingest/dedup/rank stage came up short", log)
-        self.assertIn("window=36h items=10 stories=10 ranked=10 attempted=10 kept=9", log)
+        self.assertIn("window=36h items=10 stories=10 attempted=10 kept=9", log)
 
     def test_summarize_shortfall_names_summarize_stage(self):
         with self.assertRaises(ShortBrief) as err:
