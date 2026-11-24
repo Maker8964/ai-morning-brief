@@ -1,8 +1,8 @@
 """English display headline + Chinese summary per story, via any OpenAI-compatible chat API.
 
 Env: LLM_API_KEY (required to enable), LLM_BASE_URL (default OpenAI), LLM_MODEL.
-Summaries must be Simplified Chinese: English ones are retried once, then the source text is
-translated; a story that still has no Chinese summary is dropped from the brief.
+Summaries must be Simplified Chinese and about their own story (`is_valid`): failing ones are
+retried once, then the source text is translated; a story still without one is dropped.
 """
 
 import json
@@ -31,11 +31,15 @@ For each story you get one or more source headlines and excerpts. Return JSON:
 CHINESE_RULE = ("summary MUST be Simplified Chinese. Never return English text in the summary. "
                 "If the source text is English, translate the key fact into Chinese.")
 
-RETRY_PROMPT = f"{SYSTEM_PROMPT}\n- {CHINESE_RULE}"
+TOPIC_RULE = ("The summary must be about the story's own headline. If an excerpt is unrelated to its "
+              "headline, ignore that excerpt and summarize the headline.")
 
-TRANSLATE_PROMPT = f"""Translate each text into a Simplified Chinese news summary of 60-90 characters.
+RETRY_PROMPT = f"{SYSTEM_PROMPT}\n- {CHINESE_RULE}\n- {TOPIC_RULE}"
+
+TRANSLATE_PROMPT = f"""For each headline and text, write a Simplified Chinese news summary of 60-90 characters.
 Return JSON: {{"stories": [{{"id": <int>, "summary": <str>}}, ...]}}
 - {CHINESE_RULE}
+- {TOPIC_RULE}
 - Keep product and company names in their original form (e.g. OpenAI, GPT-5)."""
 
 CJK = re.compile(r"[\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff]")
@@ -47,6 +51,36 @@ def is_chinese(text: str) -> bool:
     cjk = len(CJK.findall(text))
     words = len(LATIN_WORD.findall(text))
     return cjk > 0 and cjk >= words
+
+
+GENERIC_TERMS = {
+    "a", "an", "and", "as", "at", "by", "for", "from", "in", "is", "of", "on", "or", "the", "to", "with",
+    "ai", "ceo", "com", "new", "us",
+}
+
+
+def _terms(text: str) -> set[str]:
+    """Latin-script keywords (names, products, acronyms), lowercased, light plural stripping."""
+    out = set()
+    for t in re.findall(r"[a-z0-9]+", text.lower()):
+        if len(t) < 2 or t in GENERIC_TERMS or not re.search(r"[a-z]", t):
+            continue
+        out.add(t[:-1] if len(t) > 3 and t.endswith("s") else t)
+    return out
+
+
+def matches_story(story: Story, summary: str) -> bool:
+    """Cheap topical check: Latin keywords in the summary must overlap the source headlines, or an
+    excerpt that is itself about those headlines. Without Latin keywords on both sides it is not judged."""
+    terms = _terms(summary)
+    headline = _terms(" ".join(i.title for i in story.items))
+    if not terms or not headline or terms & headline:
+        return True
+    return any(terms & ex and ex & headline for ex in (_terms(i.summary) for i in story.items))
+
+
+def is_valid(story: Story, summary: str) -> bool:
+    return is_chinese(summary) and matches_story(story, summary)
 
 
 def _story_payload(idx: int, story: Story) -> dict:
@@ -92,21 +126,23 @@ def source_text(story: Story) -> str:
 
 
 def fallback(story: Story, translate=None) -> bool:
-    """Fills a missing title/summary from the source; English source text is translated. False if no Chinese."""
+    """Fills a missing title/summary from the source; English source text is translated. False if none is valid."""
     story.title = story.title or story.lead.title
     if story.summary:
         return True
     text = source_text(story)
-    if not is_chinese(text):
-        text = translate(text) if translate else ""
-    if text and is_chinese(text):
+    if not is_valid(story, text):
+        text = translate(story, text) if translate else ""
+    if text and is_valid(story, text):
         story.summary = text
         return True
     return False
 
 
 def summarize(stories: list[Story], chat=_chat) -> bool:
-    """Fills story.title/summary in place and removes stories left without a Chinese summary.
+    """Fills story.title/summary in place and removes stories left without a valid summary.
+
+    Rows are matched to stories by their "id" (the story's index in the request), never by position.
 
     Returns True if the LLM was used."""
     api_key = os.environ.get("LLM_API_KEY")
@@ -128,27 +164,26 @@ def summarize(stories: list[Story], chat=_chat) -> bool:
             if not 0 <= idx < len(stories):
                 continue
             story = stories[idx]
-            if row["title"] and not story.title:
-                story.title = row["title"]
-                used = True
-            if is_chinese(row["summary"]):
+            if is_valid(story, row["summary"]):
+                story.title = story.title or row["title"]
                 story.summary = row["summary"]
                 used = True
             else:
-                log.warning("non-Chinese summary for story %d rejected: %.60s", idx, row["summary"])
+                log.warning("summary for story %d rejected (not Chinese or off-topic for %r): %.60s",
+                            idx, story.title, row["summary"])
 
     if api_key and stories:
         apply(ask(SYSTEM_PROMPT, [_story_payload(i, s) for i, s in enumerate(stories)]))
         missing = [i for i, s in enumerate(stories) if not s.summary]
         if missing:
-            log.info("retrying Chinese summaries for %d stories", len(missing))
+            log.info("retrying summaries for %d stories", len(missing))
             apply(ask(RETRY_PROMPT, [_story_payload(i, stories[i]) for i in missing]))
     elif not api_key:
         log.warning("LLM_API_KEY not set; only Chinese source text can be used")
 
-    def translate(text: str) -> str:
+    def translate(story: Story, text: str) -> str:
         nonlocal used
-        row = ask(TRANSLATE_PROMPT, [{"id": 0, "text": text}], need_title=False).get(0)
+        row = ask(TRANSLATE_PROMPT, [{"id": 0, "headline": story.title, "text": text}], need_title=False).get(0)
         used = used or bool(row)
         return row["summary"] if row else ""
 
@@ -157,6 +192,6 @@ def summarize(stories: list[Story], chat=_chat) -> bool:
         if fallback(s, translate if api_key else None):
             kept.append(s)
         else:
-            log.warning("dropping story without a Chinese summary: %s", s.lead.title)
+            log.warning("dropping story without a valid Chinese summary: %s", s.lead.title)
     stories[:] = kept
     return used

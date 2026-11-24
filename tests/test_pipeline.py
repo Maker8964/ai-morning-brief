@@ -1,16 +1,17 @@
 import json
 import logging
+import tempfile
 import unittest
 from datetime import datetime, timedelta, timezone
 from unittest import mock
 
-from pipeline.brief import story_to_card
+from pipeline.brief import ShortBrief, build, main, story_to_card
 from pipeline.dedup import dedup, normalize_url
 from pipeline.ingest import is_ai, parse_rss
 from pipeline.models import Item, Story
 from pipeline.rank import rank
 from pipeline.sources import Source
-from pipeline.summarize import is_chinese, parse_response, summarize
+from pipeline.summarize import TOPIC_RULE, is_chinese, matches_story, parse_response, summarize
 
 NOW = datetime(2026, 11, 19, 0, 0, tzinfo=timezone.utc)
 
@@ -75,6 +76,11 @@ class RankTest(unittest.TestCase):
     def test_zero_limit_selects_nothing(self):
         self.assertEqual(rank([Story([item("Wired", "a")])], now=NOW, limit=0), [])
 
+    def test_cap_counts_already_taken_stories(self):
+        taken = [Story([item("Wired", f"taken {i}")]) for i in range(3)]
+        stories = [Story([item("Wired", "w")]), Story([item("HN", "h", hours_ago=30)])]
+        self.assertEqual([s.lead.source for s in rank(stories, now=NOW, taken=taken)], ["HN"])
+
     def test_cap_counts_lead_item_source(self):
         # Lead (items[0]) is HN even though Bloomberg has higher weight.
         stories = [Story([item("HN", f"h{i}", hours_ago=i), item("Bloomberg", f"b{i}", weight=1.3)]) for i in range(5)]
@@ -129,7 +135,7 @@ class FakeChat:
 
 class SummarizeTest(unittest.TestCase):
     def stories(self):
-        return [Story([item("Wired", "Original headline one", summary="Excerpt one")]),
+        return [Story([item("Wired", "OpenAI ships GPT-5", summary="Excerpt one")]),
                 Story([item("HN", "Tasklet (YC P26) Is Hiring Product and Agent Infra Engineers")])]
 
     def run_summarize(self, stories, chat, key="k"):
@@ -164,7 +170,7 @@ class SummarizeTest(unittest.TestCase):
         self.run_summarize(stories, chat)
         self.assertEqual([p["id"] for p in chat.calls[1][1]], [1])
         self.assertIn("MUST be Simplified Chinese", chat.calls[1][0])
-        self.assertEqual(stories[1].title, "Tasklet hiring")
+        self.assertEqual(stories[1].title, "x")  # title from the rejected reply is not kept
         self.assertTrue(all(is_chinese(s.summary) for s in stories))
 
     def test_english_source_text_is_translated(self):
@@ -174,7 +180,7 @@ class SummarizeTest(unittest.TestCase):
                         reply([]),                                         # retry returns nothing
                         reply([{"id": 0, "summary": translated}]))         # translate call
         self.run_summarize(stories, chat)
-        self.assertEqual(chat.calls[2][1], [{"id": 0, "text": stories[1].lead.title}])
+        self.assertEqual(chat.calls[2][1], [{"id": 0, "headline": stories[1].lead.title, "text": stories[1].lead.title}])
         self.assertEqual(stories[1].summary, translated)
         self.assertEqual(stories[1].title, stories[1].lead.title)
 
@@ -186,7 +192,7 @@ class SummarizeTest(unittest.TestCase):
                         reply([{"id": 0, "summary": "Still English after translation"}]))
         _, logs = self.run_summarize(stories, chat)
         self.assertEqual([s.summary for s in stories], [ZH])
-        self.assertIn("dropping story without a Chinese summary: Tasklet", logs)
+        self.assertIn("dropping story without a valid Chinese summary: Tasklet", logs)
 
     def test_without_key_english_stories_dropped_chinese_kept(self):
         stories = self.stories() + [Story([item("36Kr", "标题", summary=ZH)])]
@@ -195,9 +201,142 @@ class SummarizeTest(unittest.TestCase):
         self.assertEqual([(s.title, s.summary) for s in stories], [("标题", ZH)])
         self.assertIn("dropping story", logs)
 
+    def test_reordered_reply_is_matched_by_id(self):
+        stories = self.stories()
+        tasklet = "YC孵化的Tasklet正在招聘产品与智能体基础设施工程师，扩充团队以加速研发。"
+        chat = FakeChat(reply([{"id": 1, "title": "Tasklet hiring", "summary": tasklet},
+                               {"id": 0, "title": "GPT-5 ships", "summary": ZH}]))
+        self.run_summarize(stories, chat)
+        self.assertEqual([(s.title, s.summary) for s in stories],
+                         [("GPT-5 ships", ZH), ("Tasklet hiring", tasklet)])
+        self.assertEqual(len(chat.calls), 1)
+
     def test_parse_response_accepts_fenced_json(self):
         rows = parse_response('```json\n{"stories":[{"id":"1","title":"T","summary":"S"}]}\n```')
         self.assertEqual(rows, {1: {"title": "T", "summary": "S"}})
+
+
+RBC_TITLE = "RBC Has Ideas For Canada to Unlock Tech GDP Gains as NVIDIA Rallies"
+RBC_ZH = "RBC提出加拿大释放科技行业GDP增长潜力的建议，同时NVIDIA股价继续上涨，带动科技板块走强。"
+COP_ZH = "最新报道分析了此次COP气候大会谈判陷入僵局并最终走向失败的核心原因，引发国际社会广泛关注。"
+
+
+class TopicTest(unittest.TestCase):
+    stories, run_summarize = SummarizeTest.stories, SummarizeTest.run_summarize
+
+    def rbc(self, excerpt="RBC economists say Canada could add billions to GDP from tech."):
+        return Story([item("Bloomberg", RBC_TITLE, summary=excerpt)])
+
+    def test_matches_story(self):
+        self.assertFalse(matches_story(self.rbc(), COP_ZH))
+        self.assertTrue(matches_story(self.rbc(), RBC_ZH))
+        self.assertTrue(matches_story(self.rbc(), "英伟达股价上涨，加拿大科技行业有望带动经济增长。"))  # no Latin keywords
+        self.assertTrue(matches_story(self.rbc(), "皇家银行经济学家Smith表示加拿大科技产业潜力巨大。".replace(
+            "Smith", "economists")))  # keyword only in an on-topic excerpt
+        self.assertFalse(matches_story(self.rbc("COP climate talks stall in Belem."), COP_ZH))  # off-topic excerpt
+        self.assertTrue(matches_story(Story([item("36Kr", "标题", summary=ZH)]), ZH))  # Chinese-only headline
+
+    def test_off_topic_summary_retried_with_headline_and_fixed(self):
+        stories = [self.rbc()]
+        chat = FakeChat(reply([{"id": 0, "title": "RBC Canada tech GDP", "summary": COP_ZH}]),
+                        reply([{"id": 0, "title": "RBC Canada tech GDP", "summary": RBC_ZH}]))
+        _, logs = self.run_summarize(stories, chat)
+        self.assertEqual(stories[0].summary, RBC_ZH)
+        self.assertIn(TOPIC_RULE, chat.calls[1][0])
+        sent = chat.calls[1][1][0]["sources"][0]
+        self.assertEqual((sent["headline"], sent["excerpt"]), (RBC_TITLE, stories[0].lead.summary))
+        self.assertIn("off-topic", logs)
+
+    def test_unrelated_llm_title_cannot_validate_unrelated_summary(self):
+        stories = [self.rbc()]
+        chat = FakeChat(reply([{"id": 0, "title": "COP climate talks stall", "summary": COP_ZH}]),
+                        reply([{"id": 0, "title": "RBC Canada tech GDP", "summary": RBC_ZH}]))
+        self.run_summarize(stories, chat)
+        self.assertEqual((stories[0].title, stories[0].summary), ("RBC Canada tech GDP", RBC_ZH))
+
+    def test_off_topic_summary_dropped_after_retry(self):
+        stories = [self.rbc(), self.stories()[0]]
+        chat = FakeChat(reply([{"id": 0, "title": "RBC Canada", "summary": COP_ZH},
+                               {"id": 1, "title": "GPT-5 ships", "summary": ZH}]),
+                        reply([{"id": 0, "title": "RBC Canada", "summary": COP_ZH}]),
+                        reply([{"id": 0, "summary": COP_ZH}]))  # translate call
+        _, logs = self.run_summarize(stories, chat)
+        self.assertEqual([(s.title, s.summary) for s in stories], [("GPT-5 ships", ZH)])  # untouched
+        self.assertEqual([p["id"] for p in chat.calls[1][1]], [0])
+        self.assertIn("dropping story without a valid Chinese summary: RBC", logs)
+
+
+def stories_for(n, offset=0, sources=None):
+    words = ["Alpha", "Bravo", "Charlie", "Delta", "Echo", "Foxtrot", "Golf", "Hotel", "India", "Juliet",
+             "Kilo", "Lima", "Mike", "November", "Oscar", "Papa", "Quebec", "Romeo", "Sierra", "Tango"]
+    return [item(f"S{i % sources if sources else i}", f"{words[i]}corp unveils {words[i]}bot model", hours_ago=1 + i)
+            for i in range(offset, offset + n)]
+
+
+def fake_summarize(drop=()):
+    def run(batch):
+        for s in batch:
+            s.title = s.lead.title
+            s.summary = s.lead.title.split()[0] + "发布了新的人工智能模型，在多项基准测试中取得领先成绩。"
+        batch[:] = [s for s in batch if s.title.split("corp")[0] not in drop]
+        return True
+    return run
+
+
+class BriefTest(unittest.TestCase):
+    def build(self, by_window, drop=()):
+        ingest = mock.Mock(side_effect=lambda now, window_hours: by_window[window_hours])
+        with mock.patch("pipeline.brief.ingest", ingest), \
+                mock.patch("pipeline.brief.summarize", side_effect=fake_summarize(drop)):
+            return build(now=NOW), [c.kwargs["window_hours"] for c in ingest.call_args_list]
+
+    def test_full_brief_uses_one_window(self):
+        brief, windows = self.build({36: stories_for(14)})
+        self.assertEqual((len(brief["stories"]), windows), (12, [36]))
+
+    def test_dropped_stories_backfilled_from_next_ranked(self):
+        brief, windows = self.build({36: stories_for(14)}, drop=("Alpha", "Bravo"))
+        titles = [c["title"] for c in brief["stories"]]
+        self.assertEqual((len(titles), windows), (12, [36]))
+        self.assertIn("Mikecorp unveils Mikebot model", titles)
+        self.assertNotIn("Alphacorp unveils Alphabot model", titles)
+
+    def test_backfill_reaches_source_whose_story_was_rejected(self):
+        # 16 stories from 4 sources: the per-source cap of 3 leaves Mike (S0's 4th) out at first.
+        brief, windows = self.build({36: stories_for(16, sources=4)}, drop=("Alpha",))
+        titles = [c["title"] for c in brief["stories"]]
+        self.assertEqual((len(titles), windows), (12, [36]))
+        self.assertIn("Mikecorp unveils Mikebot model", titles)
+
+    def test_short_window_retried_with_wider_window(self):
+        brief, windows = self.build({36: stories_for(8), 48: stories_for(14)})
+        self.assertEqual((len(brief["stories"]), windows), (12, [36, 48]))
+        self.assertEqual(len({c["id"] for c in brief["stories"]}), 12)
+
+    def test_still_short_fails_without_overwriting_brief(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            out = f"{tmp}/brief.json"
+            with open(out, "w") as f:
+                f.write("previous")
+            ingest = mock.Mock(side_effect=lambda now, window_hours: stories_for(10))
+            with mock.patch("pipeline.brief.ingest", ingest), \
+                    mock.patch("pipeline.brief.summarize", side_effect=fake_summarize(("Alpha",))), \
+                    mock.patch("sys.argv", ["brief", "--out", out]), \
+                    self.assertLogs("pipeline.brief") as logs, self.assertRaises(SystemExit) as exit:
+                main()
+            with open(out) as f:
+                self.assertEqual(f.read(), "previous")
+        self.assertEqual(exit.exception.code, 1)
+        log = "\n".join(logs.output)
+        self.assertIn("retrying with a 48h window", log)
+        self.assertIn("brief short: 9/12 stories, ingest/dedup/rank stage came up short", log)
+        self.assertIn("window=36h items=10 stories=10 attempted=10 kept=9", log)
+
+    def test_summarize_shortfall_names_summarize_stage(self):
+        with self.assertRaises(ShortBrief) as err:
+            self.build({36: stories_for(13), 48: stories_for(13)},
+                       drop=("Alpha", "Bravo", "Charlie", "Delta"))
+        self.assertIn("9/12 stories, summarize stage", str(err.exception))
 
 
 class CardTest(unittest.TestCase):
