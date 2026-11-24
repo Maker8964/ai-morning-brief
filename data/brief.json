@@ -1,141 +1,97 @@
 {
-  "date": "2026-11-23",
-  "generatedAt": "2026-11-23T10:02:09+08:00",
+  "date": "2026-11-24",
+  "generatedAt": "2026-11-24T08:27:12+08:00",
   "summarizedBy": "llm",
   "stories": [
     {
-      "id": "4c573e6b70",
-      "title": "OpenAI Chief Scientist Urges AI Limits",
-      "summary": "OpenAI首席科学家提议限制功能更强大的AI模型开发，直到研究人员能够更好地理解和监控其行为。",
+      "id": "d631009dc6",
+      "title": "Nvidia Reinstates Jensen Huang as CEO",
+      "summary": "Nvidia董事会在Jensen Huang因丑闻辞职一周后重新任命其为CEO。这一迅速回归引发了外界对企业治理与市场影响的热议。",
       "sources": [
         "Bloomberg",
-        "TechCrunch"
+        "The Verge"
       ],
-      "publishedAt": "2026-11-23T03:40+08:00",
-      "url": "https://www.bloomberg.com/news/articles/2026-11-22/openai-chief-scientist-urges-industry-limits-on-ai-development",
-      "score": 1.633
+      "publishedAt": "2026-11-23T22:00+08:00",
+      "url": "https://www.wired.com/story/jensen-huang-is-back-as-nvidia-ceo/",
+      "score": 7.45
     },
     {
-      "id": "1ba4d31258",
-      "title": "A Beginner Guide to Local AI",
-      "summary": "本文介绍了如何使用Inkling、Qwen和Unsloth快速上手本地AI，为开发者提供基础指南。",
+      "id": "49258f2ca6",
+      "title": "States Sue SpaceX Over Grok Deepfakes",
+      "summary": "俄勒冈州和弗吉尼亚州总检察长起诉SpaceX，指控其X平台的Grok功能缺乏安全保护，生成并传播色情深伪影像。",
       "sources": [
-        "HN"
+        "The Verge",
+        "Ars Technica"
       ],
-      "publishedAt": "2026-11-23T05:01+08:00",
-      "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
-      "score": 1.478
+      "publishedAt": "2026-11-23T19:00+08:00",
+      "url": "https://www.wired.com/story/states-sue-spacex-over-grok-deepfakes/",
+      "score": 1.642
     },
     {
-      "id": "ce223767cc",
-      "title": "Agent Swarm Tries to Solve P vs NP",
-      "summary": "一个AI智能体集群正尝试挑战计算机科学中的P与NP问题，探索自动化解决复杂数学难题的潜力。",
-      "sources": [
-        "HN"
-      ],
-      "publishedAt": "2026-11-23T05:53+08:00",
-      "url": "https://pequalnp.com/",
-      "score": 1.435
-    },
-    {
-      "id": "69aed33940",
-      "title": "Localcode Brings Agentic Coding",
-      "summary": "Localcode是一款全新的开源工具，只需一条命令即可在Mac上实现自主代理编程。",
-      "sources": [
-        "HN"
-      ],
-      "publishedAt": "2026-11-23T06:18+08:00",
-      "url": "https://github.com/mjwsolo/localcode",
-      "score": 1.262
-    },
-    {
-      "id": "2c6a6d4bfa",
-      "title": "AI Selloff Hits Emerging Markets",
-      "summary": "由于市场对人工智能交易可持续性的担忧引发全球抛售，新兴市场股票将抹去今年以来的涨幅。",
+      "id": "9867a2712e",
+      "title": "Singapore Raises GDP Growth Outlook",
+      "summary": "得益于人工智能热潮带来的经济动力，新加坡将今年的GDP增长预测上调至约6%，展现出极强的科技抗压能力。",
       "sources": [
         "Bloomberg"
       ],
-      "publishedAt": "2026-11-23T09:02+08:00",
-      "url": "https://www.bloomberg.com/news/articles/2026-11-23/emerging-market-stocks-set-to-erase-2026-gains-on-ai-selloff",
-      "score": 1.249
+      "publishedAt": "2026-11-24T08:00+08:00",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-24/singapore-raises-gdp-growth-outlook-to-around-6-on-ai-boom",
+      "score": 1.276
     },
     {
-      "id": "44880c1376",
-      "title": "AI Investment Adding to Inflation",
-      "summary": "经济学家指出AI领域的持续投资加剧了通货膨胀，并反映出其他领域投资的疲软。",
+      "id": "8e4e73262f",
+      "title": "OpenAI Staffer Captured Secrets on Hidden Bug",
+      "summary": "美国检察官称，OpenAI前工程师因在办公室会议室安装窃听装置，可能已截获核心商业机密及战略合作伙伴的条款清单照片。",
       "sources": [
         "Bloomberg"
       ],
-      "publishedAt": "2026-11-23T08:41+08:00",
-      "url": "https://www.bloomberg.com/news/videos/2026-11-23/ai-investment-adding-to-inflation-jain-video",
-      "score": 1.232
+      "publishedAt": "2026-11-24T07:56+08:00",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-23/openai-staffer-likely-captured-secrets-on-hidden-bug-us-says",
+      "score": 1.274
     },
     {
-      "id": "914bb147d0",
-      "title": "Backers Share Anthropic Bets",
-      "summary": "Notable Capital、GIC和Baillie Gifford等主要投资机构分享了在Anthropic上市前对其进行巨额押注的信念。",
+      "id": "efd23ded56",
+      "title": "RBC Has Ideas For Canada to Unlock Tech GDP Gains as NVIDIA Rallies",
+      "summary": "最新报道分析了此次COP气候大会谈判陷入僵局并最终走向失败的核心原因，引发国际社会广泛关注。",
+      "sources": [
+        "Bloomberg"
+      ],
+      "publishedAt": "2026-11-24T07:30+08:00",
+      "url": "https://www.bloomberg.com/news/newsletters/2026-11-23/rbc-has-ideas-for-canada-to-unlock-tech-gdp-gains-as-nvidia-rallies",
+      "score": 1.251
+    },
+    {
+      "id": "1d0c151fef",
+      "title": "OpenAI and Cisco Introduce Shirudo",
+      "summary": "OpenAI与Cisco联合推出开源Linux运行时Shirudo，旨在帮助团队在部署补丁的同时保护正在运行的系统安全。",
+      "sources": [
+        "OpenAI"
+      ],
+      "publishedAt": "2026-11-24T05:20+08:00",
+      "url": "https://openai.com/index/introducing-shirudo",
+      "score": 1.238
+    },
+    {
+      "id": "5094532b4e",
+      "title": "GLM-5.4 Released for Generalized Coding",
+      "summary": "GLM-5.4正式发布，旨在通过首个循环Transformer模型推动广义编程能力的提升。",
+      "sources": [
+        "HN"
+      ],
+      "publishedAt": "2026-11-23T18:06+08:00",
+      "url": "https://z.ai/blog/glm-5.4",
+      "score": 1.214
+    },
+    {
+      "id": "43b498f2b7",
+      "title": "Anthropic Launches Claude Ship",
+      "summary": "Anthropic推出Claude Ship开发工具，允许AI代理审查、修复并批准代码更改，以解决AI生成代码带来的效率瓶颈。",
       "sources": [
         "TechCrunch"
       ],
-      "publishedAt": "2026-11-23T09:25+08:00",
-      "url": "https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo/",
-      "score": 1.074
-    },
-    {
-      "id": "4b4d8e1532",
-      "title": "More Tech Outages Expected",
-      "summary": "在经历了一系列重大技术故障后，各方专家和官员警告称，未来可能会发生更多网络与系统瘫痪事件。",
-      "sources": [
-        "The Verge"
-      ],
-      "publishedAt": "2026-11-23T06:48+08:00",
-      "url": "https://www.theverge.com/tech/1039851/major-tech-outages",
-      "score": 1.057
-    },
-    {
-      "id": "10b966779b",
-      "title": "AI Music Removed from Binding of Isaac",
-      "summary": "因在游戏特定片段中使用了带有Suno元数据的AI音乐遭到玩家差评轰炸后，《Binding of Isaac》开发商移除了相关内容。",
-      "sources": [
-        "The Verge"
-      ],
-      "publishedAt": "2026-11-23T01:25+08:00",
-      "url": "https://www.theverge.com/games/1039770/binding-of-isaac-ai-music",
-      "score": 0.871
-    },
-    {
-      "id": "0c81fa30a9",
-      "title": "The Vibe-Coding Revolution",
-      "summary": "AI驱动的“氛围编程”浪潮正在席卷各类科技设备，改变着人们构建软件与应用的方式。",
-      "sources": [
-        "The Verge"
-      ],
-      "publishedAt": "2026-11-22T21:00+08:00",
-      "url": "https://www.theverge.com/column/1039139/vibe-coding-gadgets-tv-camera",
-      "score": 0.756
-    },
-    {
-      "id": "6ccebafcdf",
-      "title": "Banks Ban Third-Party AI Bots",
-      "summary": "美国主要金融机构正禁止第三方AI代理登录用户账户，并警告用户需自行承担机器人造成的损失。",
-      "sources": [
-        "TechCrunch",
-        "Wired"
-      ],
-      "publishedAt": "2026-11-22T01:00+08:00",
-      "url": "https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/",
-      "score": 0.711
-    },
-    {
-      "id": "ea4ec8bb42",
-      "title": "AI Coding Agents Fail Real Work",
-      "summary": "尽管AI编程助手能通过独立测试，但在复杂的模拟工作环境中完成的任务比例却不足十分之一。",
-      "sources": [
-        "The Decoder"
-      ],
-      "publishedAt": "2026-11-22T23:15+08:00",
-      "url": "https://the-decoder.com/ai-coding-agents-ace-isolated-tests-but-complete-fewer-than-one-in-ten-tasks-in-a-simulated-workplace/",
-      "score": 0.676
+      "publishedAt": "2026-11-24T06:05+08:00",
+      "url": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
+      "score": 1.002
     }
   ]
 }
