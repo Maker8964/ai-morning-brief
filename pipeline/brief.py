@@ -15,10 +15,18 @@ from .dedup import dedup, normalize_url
 from .ingest import ingest
 from .models import Story
 from .rank import rank
-from .summarize import summarize
+from .summarize import is_valid, summarize
 
 TZ = ZoneInfo("Asia/Shanghai")
 MAX_BADGES = 2
+WIDER_WINDOW_HOURS = 48
+BACKFILL_ROUNDS = 2
+
+log = logging.getLogger(__name__)
+
+
+class ShortBrief(RuntimeError):
+    """Fewer than `limit` stories survived even after backfill and a wider window."""
 
 
 def story_to_card(story: Story) -> dict:
@@ -34,18 +42,57 @@ def story_to_card(story: Story) -> dict:
     }
 
 
+def _urls(story: Story) -> set[str]:
+    return {normalize_url(i.url) for i in story.items}
+
+
+def _fill(picked: list[Story], candidates: list[Story], limit: int, tried: set[str]) -> tuple[int, bool]:
+    """Summarizes untried candidates in rank order to top `picked` up to `limit`, backfilling dropped ones.
+
+    Returns (stories attempted, whether the LLM was used)."""
+    attempted, llm = 0, False
+    for _ in range(BACKFILL_ROUNDS):
+        batch = [s for s in candidates if not _urls(s) & tried][: limit - len(picked)]
+        if not batch:
+            break
+        for s in batch:
+            tried |= _urls(s)
+        attempted += len(batch)
+        llm = summarize(batch) or llm
+        picked.extend(s for s in batch if is_valid(s, s.summary))
+    return attempted, llm
+
+
 def build(limit: int = 12, window_hours: int = 36, now: datetime | None = None) -> dict:
+    """Raises ShortBrief unless exactly `limit` stories end up with a valid summary."""
     now = now or datetime.now(timezone.utc)
-    items = ingest(now=now, window_hours=window_hours)
-    stories = dedup(items)
-    top = rank(stories, now=now, limit=limit)
-    llm = summarize(top)
-    logging.info("items=%d stories=%d picked=%d llm=%s", len(items), len(stories), len(top), llm)
+    picked: list[Story] = []
+    tried: set[str] = set()
+    llm = False
+    attempted = 0
+    stages = []
+    for window in dict.fromkeys([window_hours, max(window_hours, WIDER_WINDOW_HOURS)]):
+        if len(picked) >= limit:
+            break
+        if stages:
+            log.warning("only %d/%d stories; retrying with a %dh window", len(picked), limit, window)
+        items = ingest(now=now, window_hours=window)
+        stories = dedup(items)
+        ranked = rank(stories, now=now, limit=len(stories))
+        before = len(picked)
+        n, used = _fill(picked, ranked, limit, tried)
+        attempted, llm = attempted + n, llm or used
+        stages.append(f"window={window}h items={len(items)} stories={len(stories)} ranked={len(ranked)} "
+                      f"attempted={n} kept={len(picked) - before}")
+        log.info("%s picked=%d/%d llm=%s", stages[-1], len(picked), limit, llm)
+    if len(picked) < limit:
+        short = "summarize" if attempted >= limit else "ingest/dedup/rank"
+        raise ShortBrief(f"brief short: {len(picked)}/{limit} stories, {short} stage came up short ({'; '.join(stages)})")
     return {
         "date": now.astimezone(TZ).date().isoformat(),
         "generatedAt": now.astimezone(TZ).isoformat(timespec="seconds"),
         "summarizedBy": "llm" if llm else "source",
-        "stories": [story_to_card(s) for s in top],
+        "stories": [story_to_card(s) for s in picked[:limit]],
     }
 
 
@@ -57,9 +104,11 @@ def main() -> None:
     args = parser.parse_args()
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 
-    brief = build(limit=args.limit, window_hours=args.window)
-    if not brief["stories"]:
-        raise SystemExit("no stories ingested; keeping previous brief")
+    try:
+        brief = build(limit=args.limit, window_hours=args.window)
+    except ShortBrief as exc:
+        log.error("%s; keeping previous %s", exc, args.out)
+        raise SystemExit(1)
     out = Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(brief, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
