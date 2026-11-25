@@ -1,143 +1,142 @@
 {
   "date": "2026-11-25",
-  "generatedAt": "2026-11-25T08:27:22+08:00",
+  "generatedAt": "2026-11-25T12:39:27+08:00",
   "summarizedBy": "llm",
   "stories": [
     {
       "id": "3c6728c1bf",
-      "title": "GPT-6 Models Demonstrate Protein-Design Capabilities",
-      "summary": "GPT-6模型利用推理与代码展现出内在的蛋白质设计能力，实验室测试在五个目标上均证实了结合证据，为生物医药研发带来新突破。",
+      "title": "GPT-6 shows intrinsic protein-design capabilities",
+      "summary": "GPT-6 模型利用推理和代码展示了蛋白质设计能力，实验室测试在五个目标上显示出结合证据。这标志着人工智能在生物医学基础研究中的新突破。",
       "sources": [
         "OpenAI",
         "HN"
       ],
       "publishedAt": "2026-11-24T21:00+08:00",
       "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
-      "score": 2.531
+      "score": 2.322
     },
     {
-      "id": "9824edc2f4",
-      "title": "Anthropic Shares Fall Below IPO Price",
-      "summary": "Anthropic股价跌破首次公开募股价格，这一疲软走势给整个人工智能初创企业的估值带来了下行压力与担忧。",
+      "id": "a58808d0bc",
+      "title": "PenGPT is a generative transformer for writing",
+      "summary": "PenGPT 是一款专为手写和草图设计的生成式 Transformer 模型。它拓展了多模态 AI 在手写内容生成领域的应用。",
       "sources": [
-        "TechCrunch",
         "HN"
       ],
-      "publishedAt": "2026-11-24T21:23+08:00",
-      "url": "https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups/",
-      "score": 2.163
+      "publishedAt": "2026-11-25T08:54+08:00",
+      "url": "https://greydanus.github.io/2026/11/12/pengpt/",
+      "score": 1.472
+    },
+    {
+      "id": "c89d4bfb36",
+      "title": "Sandboxed AI models can communicate via servers",
+      "summary": "研究发现，被沙盒隔离的人工智能模型依然能够通过推理服务器进行通信。这一安全漏洞引发了外界对 AI 隔离机制有效性的担忧。",
+      "sources": [
+        "HN"
+      ],
+      "publishedAt": "2026-11-25T10:34+08:00",
+      "url": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
+      "score": 1.468
+    },
+    {
+      "id": "fa8097569f",
+      "title": "Marginalia Search Updates",
+      "summary": "Marginalia Search公布了关于资金、C++、Rust和AI等方面的新进展。这些技术更新展示了该搜索引擎在底层架构和智能化上的持续优化。",
+      "sources": [
+        "HN"
+      ],
+      "publishedAt": "2026-11-25T11:47+08:00",
+      "url": "https://www.marginalia.nu/log/a_141_marginalia_update/",
+      "score": 1.385
+    },
+    {
+      "id": "defd11f6e3",
+      "title": "Nvidia still faces key-man risk in Jensen Huang",
+      "summary": "分析指出 Nvidia 缺乏对 CEO 黄仁勋的继任计划，面临关键人物风险。这凸显出高度依赖单一领袖的科技巨头在治理上的隐患。",
+      "sources": [
+        "Bloomberg"
+      ],
+      "publishedAt": "2026-11-25T11:53+08:00",
+      "url": "https://www.bloomberg.com/news/videos/2026-11-25/nvidia-still-faces-key-man-risk-in-huang-professor",
+      "score": 1.26
+    },
+    {
+      "id": "cfd231592c",
+      "title": "AI chip boom boosts South Korean won",
+      "summary": "韩国的 AI 芯片繁荣引发了年底的资金流入浪潮，并可能推动韩元进入下一阶段的上涨。这显示了人工智能产业对宏观经济的强劲拉动作用。",
+      "sources": [
+        "Bloomberg"
+      ],
+      "publishedAt": "2026-11-25T09:41+08:00",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-25/ai-chip-boom-to-see-won-build-on-best-year-in-almost-a-decade",
+      "score": 1.157
     },
     {
       "id": "fdd5f51e8f",
-      "title": "Tidal Bans AI-Generated Music",
-      "summary": "Tidal宣布禁止全AI生成的音乐并计划删除2700万首相关曲目，以应对平台被AI平庸作品淹没的现状，但仍接受AI辅助创作的歌曲。",
+      "title": "Tidal bans and removes AI-generated music",
+      "summary": "流媒体平台 Tidal 宣布禁止并删除完全由 AI 生成的数百万首曲目。此举旨在应对日益泛滥的 AI 垃圾音乐并维护音乐版权。",
       "sources": [
         "Ars Technica",
         "TechCrunch"
       ],
       "publishedAt": "2026-11-25T00:46+08:00",
       "url": "https://arstechnica.com/ai/2026/11/tidal-will-ban-fully-ai-generated-music-on-december-9/",
-      "score": 1.318
-    },
-    {
-      "id": "ef8096d74f",
-      "title": "LLM agents work for their parent companies, not for you",
-      "summary": "大语言模型智能体始终为其背后的母公司服务，而非真正代表并服务于广大用户。",
-      "sources": [
-        "HN"
-      ],
-      "publishedAt": "2026-11-24T20:40+08:00",
-      "url": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/",
-      "score": 1.297
+      "score": 1.148
     },
     {
       "id": "bed495bd91",
-      "title": "AI Stocks Retreat as Markets Rotate Beyond Tech",
-      "summary": "受市场资金板块轮动影响，人工智能相关股票近期出现回落走势，投资者正将关注点转向科技股以外的领域。",
+      "title": "AI Stocks Retreat",
+      "summary": "由于市场资金轮动撤出科技板块，AI相关股票出现回落。这一现象反映了华尔街投资者在盘前对资产配置的最新调整。",
       "sources": [
         "Bloomberg"
       ],
       "publishedAt": "2026-11-25T06:57+08:00",
       "url": "https://www.bloomberg.com/news/videos/2026-11-24/the-close-11-24-2026-video",
-      "score": 1.224
+      "score": 1.045
     },
     {
-      "id": "ff4b1f0164",
-      "title": "J.P. Morgan Sees AI Borrowing Peak in 2027",
-      "summary": "摩根大通资产管理预计2027年人工智能相关借贷将迎来繁忙的高峰期，全年高等级信贷供给可能触及2.1万亿美元的新纪录。",
+      "id": "5b1a69d858",
+      "title": "Jensen Huang returns as Nvidia CEO",
+      "summary": "在政治盟友施压及争议之后，黄仁勋重新回归担任 Nvidia 首席执行官。高管层的动荡与回归凸显了该公司治理结构的复杂性。",
       "sources": [
-        "Bloomberg"
+        "The Verge",
+        "Ars Technica"
       ],
-      "publishedAt": "2026-11-25T06:54+08:00",
-      "url": "https://www.bloomberg.com/news/videos/2026-11-24/j-p-morgan-asset-mgmt-s-rosenbaum-on-2027-ai-spend-video",
-      "score": 1.222
-    },
-    {
-      "id": "2909117939",
-      "title": "AI Pullback Raises Data Center Financing Costs",
-      "summary": "人工智能股票的回调波及信贷市场，导致数据中心融资成本上升，贷款人变得更加挑剔并要求更宽的利差。",
-      "sources": [
-        "Bloomberg"
-      ],
-      "publishedAt": "2026-11-25T06:35+08:00",
-      "url": "https://www.bloomberg.com/news/videos/2026-11-24/ai-pullback-raises-the-cost-of-data-center-financing-video",
-      "score": 1.207
+      "publishedAt": "2026-11-24T01:52+08:00",
+      "url": "https://www.wired.com/story/jensens-back-stocks-up-what-the-hell-sure/",
+      "score": 1.04
     },
     {
       "id": "d6a3974a1a",
-      "title": "Yale’s Sonnenfeld: Nvidia is a ‘detriment’ to U.S. industrial might — not a champion",
-      "summary": "耶鲁大学教授杰弗里·索内费尔德警告称，Nvidia并非美国工业实力的代表，反而可能成为一种拖累。",
+      "title": "Yale expert criticizes Nvidia leadership",
+      "summary": "耶鲁大学教授 Jeffrey Sonnenfeld 警告称，黄仁勋的回归可能对美国工业实力不利。这引发了市场对公司合规风险及地缘政治影响的担忧。",
       "sources": [
         "TechCrunch"
       ],
       "publishedAt": "2026-11-25T08:12+08:00",
       "url": "https://techcrunch.com/2026/11/24/yales-sonnenfeld-nvidia-is-a-detriment-to-u-s-industrial-might-not-a-champion/",
-      "score": 1.089
-    },
-    {
-      "id": "d631009dc6",
-      "title": "Jensen Huang Returns as Nvidia CEO",
-      "summary": "在因绯闻辞职仅一周多后，黄仁勋在外部政治压力与盟友推动下重返Nvidia担任CEO，引发市场对公司治理及国家安全的审视。",
-      "sources": [
-        "The Verge",
-        "Ars Technica"
-      ],
-      "publishedAt": "2026-11-23T22:27+08:00",
-      "url": "https://www.wired.com/story/jensen-huang-is-back-as-nvidia-ceo/",
-      "score": 1.051
+      "score": 0.925
     },
     {
       "id": "9134491ec6",
-      "title": "Jensen Huang Denies Trump Intervention",
-      "summary": "Nvidia首席执行官黄仁勋在回归后的全员大会上向员工致歉，并否认白宫和硅谷领袖曾介入施压促使其复职的传闻。",
+      "title": "Huang denies Trump involvement in his return",
+      "summary": "Nvidia CEO 黄仁勋在全员大会上向员工致歉，并否认特朗普干预了其复职。这有助于澄清高层变动背后的政治传闻。",
       "sources": [
         "The Verge"
       ],
       "publishedAt": "2026-11-25T04:02+08:00",
       "url": "https://www.theverge.com/tech/1041571/jensen-huang-all-hands-nvidia-apology",
-      "score": 1.011
+      "score": 0.87
     },
     {
       "id": "71615ee1eb",
-      "title": "AI Agents Struggle with Everyday Life Tasks",
-      "summary": "最新基准测试表明，尽管个人AI助手日益普及，但即便是最先进的模型在安全可靠地完成日常生活任务时仍面临重大挑战。",
+      "title": "Advanced AI agents struggle with everyday life",
+      "summary": "一项新基准测试显示，最先进的 AI 智能体在可靠、安全地完成日常任务时仍然困难重重。这表明通用助手距离真正走进日常生活还有差距。",
       "sources": [
         "TechCrunch"
       ],
       "publishedAt": "2026-11-25T05:33+08:00",
       "url": "https://techcrunch.com/2026/11/24/even-the-best-ai-agents-struggle-with-everyday-life/",
-      "score": 0.981
-    },
-    {
-      "id": "8dcd3f46d3",
-      "title": "Jensen Huang’s Return Shows Nvidia Is Too Big to Police",
-      "summary": "英伟达CEO与中国情报涉案人员的关联引发关注，但专家认为其在美国经济中的核心地位使其难以受到审查。",
-      "sources": [
-        "Wired"
-      ],
-      "publishedAt": "2026-11-25T07:39+08:00",
-      "url": "https://www.wired.com/story/jensen-huang-nvidia-us-national-security-risks/",
-      "score": 0.968
+      "score": 0.841
     }
   ]
 }
