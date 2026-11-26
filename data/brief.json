@@ -1,141 +1,142 @@
 {
   "date": "2026-11-26",
-  "generatedAt": "2026-11-26T08:27:35+08:00",
+  "generatedAt": "2026-11-26T11:49:25+08:00",
   "summarizedBy": "llm",
   "stories": [
     {
       "id": "3a2027e269",
-      "title": "Amazon and Meta in talks over Muse AI shopping agent",
-      "summary": "亚马逊与Meta正就恢复Meta的Muse AI购物代理功能进行谈判，双方核心分歧在于广告收入与搜索结果控制权。",
+      "title": "Amazon and Meta Discuss Lifting Muse AI Shopping Block",
+      "summary": "亚马逊与Meta正就恢复Meta的AI购物助手Muse在亚马逊平台上架进行谈判。双方主要围绕广告收入及搜索结果控制权展开博弈。",
       "sources": [
         "The Verge",
         "TechCrunch"
       ],
       "publishedAt": "2026-11-25T22:10+08:00",
       "url": "https://the-decoder.com/amazon-and-meta-are-in-talks-to-end-the-block-on-metas-ai-shopping-agent-muse-in-amazons-online-store/",
-      "score": 1.812
+      "score": 1.632
     },
     {
       "id": "f63f4cad14",
-      "title": "Shorter GRH Lean Verification Released by Anthropic",
-      "summary": "Anthropic发布了更简短版本的GRH Lean验证。这一更新有助于简化相关技术流程并提升验证效率。",
+      "title": "Shorter GRH Lean Verification From Anthropic",
+      "summary": "Anthropic发布了GRH Lean验证的精简版本，有助于提升相关验证流程的效率与实用性。",
       "sources": [
         "HN"
       ],
       "publishedAt": "2026-11-26T05:48+08:00",
       "url": "https://github.com/lsernau/grh-lean",
-      "score": 1.6
+      "score": 1.46
+    },
+    {
+      "id": "19f2f984a8",
+      "title": "New York Times Warns Staff Against Photoshop Update",
+      "summary": "《纽约时报》要求自由摄影师暂勿更新最新版Adobe Photoshop。该版本引入了隐蔽的AI功能，引发了机构对内容透明度的担忧。",
+      "sources": [
+        "The Verge",
+        "HN"
+      ],
+      "publishedAt": "2026-11-25T00:09+08:00",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
+      "score": 1.344
     },
     {
       "id": "1343f7f3b4",
-      "title": "FCC approves SpaceX Starmind space data centers",
-      "summary": "美国联邦通信委员会已批准SpaceX部署最多100万颗搭载AI芯片的Starmind卫星，成为首个获批的太空数据中心项目。",
+      "title": "FCC Approves SpaceX Plan for Space AI Satellites",
+      "summary": "美国联邦通信委员会已批准SpaceX部署最多100万颗搭载AI芯片的卫星。这是太空AI数据中心建设获得的首个官方监管许可。",
       "sources": [
         "The Verge",
         "TechCrunch"
       ],
       "publishedAt": "2026-11-26T01:44+08:00",
       "url": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
-      "score": 1.488
+      "score": 1.327
     },
     {
       "id": "a1356d98ce",
       "title": "Bare Metal Qwen",
-      "summary": "近期出现针对Qwen的裸金属部署方案。该方案旨在提升大模型在底层硬件上的运行性能。",
+      "summary": "社区关注并探讨了在裸机环境上运行Qwen模型的技术方案，展现了其在基础设施上的应用潜力。",
       "sources": [
         "HN"
       ],
       "publishedAt": "2026-11-26T06:15+08:00",
       "url": "https://github.com/alesha-pro/llm.asm/tree/main/02-baremetal-os",
-      "score": 1.38
+      "score": 1.326
+    },
+    {
+      "id": "76e0d9a338",
+      "title": "SoftBank Credit Risk Surges Amid AI Investment",
+      "summary": "由于软银持续推进庞大的AI投资计划，其信用风险飙升至四年多来的最高点。这可能导致该公司的未来融资成本进一步上升。",
+      "sources": [
+        "Bloomberg"
+      ],
+      "publishedAt": "2026-11-26T11:00+08:00",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-26/softbank-credit-risk-tops-500-basis-points-as-ai-worries-mount",
+      "score": 1.258
     },
     {
       "id": "59d5490243",
-      "title": "AI Adoption Still in Early Innings",
-      "summary": "PSP Growth董事总经理Momei Qu表示，AI普及仍处于初期阶段。市场正在评估Anthropic的增长潜力、巨额资本开支及长期利润率。",
+      "title": "Anthropic in Early AI Adoption",
+      "summary": "PSP Growth的Momei Qu指出Anthropic正处于价格发现期，其增长虽快但资本开支和利润率仍存不确定性。",
       "sources": [
         "Bloomberg"
       ],
       "publishedAt": "2026-11-26T06:39+08:00",
       "url": "https://www.bloomberg.com/news/videos/2026-11-25/still-in-early-innings-of-ai-adoption-psp-s-momei-qu-video",
-      "score": 1.21
+      "score": 1.065
     },
     {
       "id": "de9f0dbfef",
-      "title": "Financials and Healthcare to Win Big with AI",
-      "summary": "Yardeni Research总裁Ed Yardeni指出，金融和医疗行业将成为AI的最大赢家。分析师还讨论了近期市场在剧烈波动中的支撑位与抄底现象。",
+      "title": "Financials and Healthcare Will Be Big AI Winners",
+      "summary": "Yardeni Research的Ed Yardeni指出，金融和医疗行业将成为人工智能领域的主要赢家。",
       "sources": [
         "Bloomberg"
       ],
       "publishedAt": "2026-11-26T06:28+08:00",
       "url": "https://www.bloomberg.com/news/videos/2026-11-25/financials-healthcare-will-be-big-ai-winners-yardeni-video",
-      "score": 1.201
-    },
-    {
-      "id": "a240b6cfc0",
-      "title": "Anthropic Stock Divides Wall Street Analysts",
-      "summary": "华尔街某研究机构的两名分析师对Anthropic新上市股票的前景产生了罕见的分歧看法。这反映出市场对该前沿AI公司的估值与发展路径存在争论。",
-      "sources": [
-        "Bloomberg"
-      ],
-      "publishedAt": "2026-11-26T05:35+08:00",
-      "url": "https://www.bloomberg.com/news/articles/2026-11-25/anthropic-s-stock-sparks-rare-divide-inside-one-wall-street-firm",
-      "score": 1.161
+      "score": 1.058
     },
     {
       "id": "7bb959aaf5",
       "title": "Google Patent for Custom AI Video Feeds",
-      "summary": "谷歌此前申请了一项名为My Channel的专利，旨在基于用户数据生成个性化AI视频与广告。尽管该专利目前已被拒绝，但未来仍可能被修改后重新提交。",
+      "summary": "Google曾申请基于用户数据生成个性化AI视频流的My Channel专利，引发对未来娱乐形态的担忧。",
       "sources": [
         "The Verge"
       ],
       "publishedAt": "2026-11-26T05:51+08:00",
       "url": "https://www.theverge.com/entertainment/1042221/google-my-channel-ai-video-patent",
-      "score": 1.083
+      "score": 0.955
     },
     {
       "id": "f27e0de9d0",
-      "title": "S&P Considers Nvidia Credit Downgrade",
-      "summary": "标普正考虑下调Nvidia的信用评级至AA-。此举主要由于公司治理问题以及关键人物风险引起。",
+      "title": "SP Considers Nvidia Credit Downgrade",
+      "summary": "标普评级正考虑因公司治理和关键人物风险，将Nvidia的信用评级下调至第四高的AA-。",
       "sources": [
         "TechCrunch"
       ],
       "publishedAt": "2026-11-26T06:44+08:00",
       "url": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/",
-      "score": 1.027
+      "score": 0.904
     },
     {
       "id": "4c44ce3014",
-      "title": "OpenAI merges Chat and Work with unified limits",
-      "summary": "OpenAI正将ChatGPT的聊天与工作体验合并并启用统一的使用额度计量，重度用户可能会更快达到限制。",
+      "title": "OpenAI Merges Chat and Work with Unified Usage Limits",
+      "summary": "OpenAI宣布将整合ChatGPT的聊天与工作体验并采用统一的使用额度。重度用户在合并后可能会更快达到使用上限。",
       "sources": [
         "TechCrunch"
       ],
       "publishedAt": "2026-11-26T04:03+08:00",
       "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
-      "score": 0.927
+      "score": 0.822
     },
     {
       "id": "e7d7a2ca3b",
       "title": "Jensen Huang Broke Nvidia Code of Conduct",
-      "summary": "Nvidia创始人黄仁勋违反了公司的行为准则。这一事件可能会对Nvidia的内部企业文化和员工心理产生深远影响。",
+      "summary": "Jensen Huang违反了Nvidia的行为准则，这一事件可能会对公司的企业文化和员工心理产生深远影响。",
       "sources": [
         "TechCrunch"
       ],
       "publishedAt": "2026-11-26T03:54+08:00",
       "url": "https://techcrunch.com/2026/11/25/jensen-huang-broke-nvidias-code-of-conduct-and-his-employees-may-not-forget-it/",
-      "score": 0.922
-    },
-    {
-      "id": "fec44873dc",
-      "title": "Nothing reveals AI earbuds with recording case",
-      "summary": "Nothing公布了将于12月8日发布的AI耳机及充电盒细节，其充电盒支持通话录音、转写与摘要功能。",
-      "sources": [
-        "The Verge"
-      ],
-      "publishedAt": "2026-11-26T00:00+08:00",
-      "url": "https://www.theverge.com/gadgets/1042162/nothing-ear-note-ai-earbuds-reveal",
-      "score": 0.876
+      "score": 0.818
     }
   ]
 }
