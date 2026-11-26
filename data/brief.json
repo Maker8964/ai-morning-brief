@@ -1,142 +1,141 @@
 {
-  "date": "2026-11-25",
-  "generatedAt": "2026-11-25T12:39:27+08:00",
+  "date": "2026-11-26",
+  "generatedAt": "2026-11-26T08:27:35+08:00",
   "summarizedBy": "llm",
   "stories": [
     {
-      "id": "3c6728c1bf",
-      "title": "GPT-6 shows intrinsic protein-design capabilities",
-      "summary": "GPT-6 模型利用推理和代码展示了蛋白质设计能力，实验室测试在五个目标上显示出结合证据。这标志着人工智能在生物医学基础研究中的新突破。",
-      "sources": [
-        "OpenAI",
-        "HN"
-      ],
-      "publishedAt": "2026-11-24T21:00+08:00",
-      "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
-      "score": 2.322
-    },
-    {
-      "id": "a58808d0bc",
-      "title": "PenGPT is a generative transformer for writing",
-      "summary": "PenGPT 是一款专为手写和草图设计的生成式 Transformer 模型。它拓展了多模态 AI 在手写内容生成领域的应用。",
-      "sources": [
-        "HN"
-      ],
-      "publishedAt": "2026-11-25T08:54+08:00",
-      "url": "https://greydanus.github.io/2026/11/12/pengpt/",
-      "score": 1.472
-    },
-    {
-      "id": "c89d4bfb36",
-      "title": "Sandboxed AI models can communicate via servers",
-      "summary": "研究发现，被沙盒隔离的人工智能模型依然能够通过推理服务器进行通信。这一安全漏洞引发了外界对 AI 隔离机制有效性的担忧。",
-      "sources": [
-        "HN"
-      ],
-      "publishedAt": "2026-11-25T10:34+08:00",
-      "url": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
-      "score": 1.468
-    },
-    {
-      "id": "fa8097569f",
-      "title": "Marginalia Search Updates",
-      "summary": "Marginalia Search公布了关于资金、C++、Rust和AI等方面的新进展。这些技术更新展示了该搜索引擎在底层架构和智能化上的持续优化。",
-      "sources": [
-        "HN"
-      ],
-      "publishedAt": "2026-11-25T11:47+08:00",
-      "url": "https://www.marginalia.nu/log/a_141_marginalia_update/",
-      "score": 1.385
-    },
-    {
-      "id": "defd11f6e3",
-      "title": "Nvidia still faces key-man risk in Jensen Huang",
-      "summary": "分析指出 Nvidia 缺乏对 CEO 黄仁勋的继任计划，面临关键人物风险。这凸显出高度依赖单一领袖的科技巨头在治理上的隐患。",
-      "sources": [
-        "Bloomberg"
-      ],
-      "publishedAt": "2026-11-25T11:53+08:00",
-      "url": "https://www.bloomberg.com/news/videos/2026-11-25/nvidia-still-faces-key-man-risk-in-huang-professor",
-      "score": 1.26
-    },
-    {
-      "id": "cfd231592c",
-      "title": "AI chip boom boosts South Korean won",
-      "summary": "韩国的 AI 芯片繁荣引发了年底的资金流入浪潮，并可能推动韩元进入下一阶段的上涨。这显示了人工智能产业对宏观经济的强劲拉动作用。",
-      "sources": [
-        "Bloomberg"
-      ],
-      "publishedAt": "2026-11-25T09:41+08:00",
-      "url": "https://www.bloomberg.com/news/articles/2026-11-25/ai-chip-boom-to-see-won-build-on-best-year-in-almost-a-decade",
-      "score": 1.157
-    },
-    {
-      "id": "fdd5f51e8f",
-      "title": "Tidal bans and removes AI-generated music",
-      "summary": "流媒体平台 Tidal 宣布禁止并删除完全由 AI 生成的数百万首曲目。此举旨在应对日益泛滥的 AI 垃圾音乐并维护音乐版权。",
-      "sources": [
-        "Ars Technica",
-        "TechCrunch"
-      ],
-      "publishedAt": "2026-11-25T00:46+08:00",
-      "url": "https://arstechnica.com/ai/2026/11/tidal-will-ban-fully-ai-generated-music-on-december-9/",
-      "score": 1.148
-    },
-    {
-      "id": "bed495bd91",
-      "title": "AI Stocks Retreat",
-      "summary": "由于市场资金轮动撤出科技板块，AI相关股票出现回落。这一现象反映了华尔街投资者在盘前对资产配置的最新调整。",
-      "sources": [
-        "Bloomberg"
-      ],
-      "publishedAt": "2026-11-25T06:57+08:00",
-      "url": "https://www.bloomberg.com/news/videos/2026-11-24/the-close-11-24-2026-video",
-      "score": 1.045
-    },
-    {
-      "id": "5b1a69d858",
-      "title": "Jensen Huang returns as Nvidia CEO",
-      "summary": "在政治盟友施压及争议之后，黄仁勋重新回归担任 Nvidia 首席执行官。高管层的动荡与回归凸显了该公司治理结构的复杂性。",
+      "id": "3a2027e269",
+      "title": "Amazon and Meta in talks over Muse AI shopping agent",
+      "summary": "亚马逊与Meta正就恢复Meta的Muse AI购物代理功能进行谈判，双方核心分歧在于广告收入与搜索结果控制权。",
       "sources": [
         "The Verge",
-        "Ars Technica"
-      ],
-      "publishedAt": "2026-11-24T01:52+08:00",
-      "url": "https://www.wired.com/story/jensens-back-stocks-up-what-the-hell-sure/",
-      "score": 1.04
-    },
-    {
-      "id": "d6a3974a1a",
-      "title": "Yale expert criticizes Nvidia leadership",
-      "summary": "耶鲁大学教授 Jeffrey Sonnenfeld 警告称，黄仁勋的回归可能对美国工业实力不利。这引发了市场对公司合规风险及地缘政治影响的担忧。",
-      "sources": [
         "TechCrunch"
       ],
-      "publishedAt": "2026-11-25T08:12+08:00",
-      "url": "https://techcrunch.com/2026/11/24/yales-sonnenfeld-nvidia-is-a-detriment-to-u-s-industrial-might-not-a-champion/",
-      "score": 0.925
+      "publishedAt": "2026-11-25T22:10+08:00",
+      "url": "https://the-decoder.com/amazon-and-meta-are-in-talks-to-end-the-block-on-metas-ai-shopping-agent-muse-in-amazons-online-store/",
+      "score": 1.812
     },
     {
-      "id": "9134491ec6",
-      "title": "Huang denies Trump involvement in his return",
-      "summary": "Nvidia CEO 黄仁勋在全员大会上向员工致歉，并否认特朗普干预了其复职。这有助于澄清高层变动背后的政治传闻。",
+      "id": "f63f4cad14",
+      "title": "Shorter GRH Lean Verification Released by Anthropic",
+      "summary": "Anthropic发布了更简短版本的GRH Lean验证。这一更新有助于简化相关技术流程并提升验证效率。",
+      "sources": [
+        "HN"
+      ],
+      "publishedAt": "2026-11-26T05:48+08:00",
+      "url": "https://github.com/lsernau/grh-lean",
+      "score": 1.6
+    },
+    {
+      "id": "1343f7f3b4",
+      "title": "FCC approves SpaceX Starmind space data centers",
+      "summary": "美国联邦通信委员会已批准SpaceX部署最多100万颗搭载AI芯片的Starmind卫星，成为首个获批的太空数据中心项目。",
+      "sources": [
+        "The Verge",
+        "TechCrunch"
+      ],
+      "publishedAt": "2026-11-26T01:44+08:00",
+      "url": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
+      "score": 1.488
+    },
+    {
+      "id": "a1356d98ce",
+      "title": "Bare Metal Qwen",
+      "summary": "近期出现针对Qwen的裸金属部署方案。该方案旨在提升大模型在底层硬件上的运行性能。",
+      "sources": [
+        "HN"
+      ],
+      "publishedAt": "2026-11-26T06:15+08:00",
+      "url": "https://github.com/alesha-pro/llm.asm/tree/main/02-baremetal-os",
+      "score": 1.38
+    },
+    {
+      "id": "59d5490243",
+      "title": "AI Adoption Still in Early Innings",
+      "summary": "PSP Growth董事总经理Momei Qu表示，AI普及仍处于初期阶段。市场正在评估Anthropic的增长潜力、巨额资本开支及长期利润率。",
+      "sources": [
+        "Bloomberg"
+      ],
+      "publishedAt": "2026-11-26T06:39+08:00",
+      "url": "https://www.bloomberg.com/news/videos/2026-11-25/still-in-early-innings-of-ai-adoption-psp-s-momei-qu-video",
+      "score": 1.21
+    },
+    {
+      "id": "de9f0dbfef",
+      "title": "Financials and Healthcare to Win Big with AI",
+      "summary": "Yardeni Research总裁Ed Yardeni指出，金融和医疗行业将成为AI的最大赢家。分析师还讨论了近期市场在剧烈波动中的支撑位与抄底现象。",
+      "sources": [
+        "Bloomberg"
+      ],
+      "publishedAt": "2026-11-26T06:28+08:00",
+      "url": "https://www.bloomberg.com/news/videos/2026-11-25/financials-healthcare-will-be-big-ai-winners-yardeni-video",
+      "score": 1.201
+    },
+    {
+      "id": "a240b6cfc0",
+      "title": "Anthropic Stock Divides Wall Street Analysts",
+      "summary": "华尔街某研究机构的两名分析师对Anthropic新上市股票的前景产生了罕见的分歧看法。这反映出市场对该前沿AI公司的估值与发展路径存在争论。",
+      "sources": [
+        "Bloomberg"
+      ],
+      "publishedAt": "2026-11-26T05:35+08:00",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-25/anthropic-s-stock-sparks-rare-divide-inside-one-wall-street-firm",
+      "score": 1.161
+    },
+    {
+      "id": "7bb959aaf5",
+      "title": "Google Patent for Custom AI Video Feeds",
+      "summary": "谷歌此前申请了一项名为My Channel的专利，旨在基于用户数据生成个性化AI视频与广告。尽管该专利目前已被拒绝，但未来仍可能被修改后重新提交。",
       "sources": [
         "The Verge"
       ],
-      "publishedAt": "2026-11-25T04:02+08:00",
-      "url": "https://www.theverge.com/tech/1041571/jensen-huang-all-hands-nvidia-apology",
-      "score": 0.87
+      "publishedAt": "2026-11-26T05:51+08:00",
+      "url": "https://www.theverge.com/entertainment/1042221/google-my-channel-ai-video-patent",
+      "score": 1.083
     },
     {
-      "id": "71615ee1eb",
-      "title": "Advanced AI agents struggle with everyday life",
-      "summary": "一项新基准测试显示，最先进的 AI 智能体在可靠、安全地完成日常任务时仍然困难重重。这表明通用助手距离真正走进日常生活还有差距。",
+      "id": "f27e0de9d0",
+      "title": "S&P Considers Nvidia Credit Downgrade",
+      "summary": "标普正考虑下调Nvidia的信用评级至AA-。此举主要由于公司治理问题以及关键人物风险引起。",
       "sources": [
         "TechCrunch"
       ],
-      "publishedAt": "2026-11-25T05:33+08:00",
-      "url": "https://techcrunch.com/2026/11/24/even-the-best-ai-agents-struggle-with-everyday-life/",
-      "score": 0.841
+      "publishedAt": "2026-11-26T06:44+08:00",
+      "url": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/",
+      "score": 1.027
+    },
+    {
+      "id": "4c44ce3014",
+      "title": "OpenAI merges Chat and Work with unified limits",
+      "summary": "OpenAI正将ChatGPT的聊天与工作体验合并并启用统一的使用额度计量，重度用户可能会更快达到限制。",
+      "sources": [
+        "TechCrunch"
+      ],
+      "publishedAt": "2026-11-26T04:03+08:00",
+      "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
+      "score": 0.927
+    },
+    {
+      "id": "e7d7a2ca3b",
+      "title": "Jensen Huang Broke Nvidia Code of Conduct",
+      "summary": "Nvidia创始人黄仁勋违反了公司的行为准则。这一事件可能会对Nvidia的内部企业文化和员工心理产生深远影响。",
+      "sources": [
+        "TechCrunch"
+      ],
+      "publishedAt": "2026-11-26T03:54+08:00",
+      "url": "https://techcrunch.com/2026/11/25/jensen-huang-broke-nvidias-code-of-conduct-and-his-employees-may-not-forget-it/",
+      "score": 0.922
+    },
+    {
+      "id": "fec44873dc",
+      "title": "Nothing reveals AI earbuds with recording case",
+      "summary": "Nothing公布了将于12月8日发布的AI耳机及充电盒细节，其充电盒支持通话录音、转写与摘要功能。",
+      "sources": [
+        "The Verge"
+      ],
+      "publishedAt": "2026-11-26T00:00+08:00",
+      "url": "https://www.theverge.com/gadgets/1042162/nothing-ear-note-ai-earbuds-reveal",
+      "score": 0.876
     }
   ]
 }
