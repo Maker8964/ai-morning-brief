@@ -1,142 +1,142 @@
 {
-  "date": "2026-11-26",
-  "generatedAt": "2026-11-26T11:49:25+08:00",
+  "date": "2026-11-27",
+  "generatedAt": "2026-11-27T08:27:08+08:00",
   "summarizedBy": "llm",
   "stories": [
     {
-      "id": "3a2027e269",
-      "title": "Amazon and Meta Discuss Lifting Muse AI Shopping Block",
-      "summary": "亚马逊与Meta正就恢复Meta的AI购物助手Muse在亚马逊平台上架进行谈判。双方主要围绕广告收入及搜索结果控制权展开博弈。",
-      "sources": [
-        "The Verge",
-        "TechCrunch"
-      ],
-      "publishedAt": "2026-11-25T22:10+08:00",
-      "url": "https://the-decoder.com/amazon-and-meta-are-in-talks-to-end-the-block-on-metas-ai-shopping-agent-muse-in-amazons-online-store/",
-      "score": 1.632
-    },
-    {
-      "id": "f63f4cad14",
-      "title": "Shorter GRH Lean Verification From Anthropic",
-      "summary": "Anthropic发布了GRH Lean验证的精简版本，有助于提升相关验证流程的效率与实用性。",
+      "id": "19dd464158",
+      "title": "AI Made Self-Hosting Fun Again",
+      "summary": "人工智能技术的普及让自建服务器变得重新充满趣味，极大地降低了个人开发与部署的门槛。",
       "sources": [
         "HN"
       ],
-      "publishedAt": "2026-11-26T05:48+08:00",
-      "url": "https://github.com/lsernau/grh-lean",
-      "score": 1.46
+      "publishedAt": "2026-11-27T05:47+08:00",
+      "url": "https://janlukas.blog/posts/ai-self-hosting",
+      "score": 1.599
     },
     {
-      "id": "19f2f984a8",
-      "title": "New York Times Warns Staff Against Photoshop Update",
-      "summary": "《纽约时报》要求自由摄影师暂勿更新最新版Adobe Photoshop。该版本引入了隐蔽的AI功能，引发了机构对内容透明度的担忧。",
+      "id": "1d45997e49",
+      "title": "AMD-Specific Fork of Llama.cpp",
+      "summary": "开发者推出了针对AMD硬件优化的llama.cpp分支版本，旨在提升AMD显卡运行开源大模型的性能。",
       "sources": [
-        "The Verge",
         "HN"
       ],
-      "publishedAt": "2026-11-25T00:09+08:00",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
-      "score": 1.344
+      "publishedAt": "2026-11-27T01:11+08:00",
+      "url": "https://devnull.land/amd-specific-llama-cpp",
+      "score": 1.377
+    },
+    {
+      "id": "536be0c2a1",
+      "title": "Top-Cited AI Scientists Compared",
+      "summary": "一项最新分析对比了四家美国科技公司内部被引用次数最多的顶尖人工智能科学家分布情况。",
+      "sources": [
+        "HN"
+      ],
+      "publishedAt": "2026-11-27T03:44+08:00",
+      "url": "https://topcitedscientists.com/figures/ai-at-four-us-companies/",
+      "score": 1.231
+    },
+    {
+      "id": "34d4b3dd3b",
+      "title": "Holidays to Test AI Shopping Bots",
+      "summary": "Google、Amazon、Meta和OpenAI的购物助手将在假日季迎来大考，验证消费者的接受度。",
+      "sources": [
+        "Bloomberg"
+      ],
+      "publishedAt": "2026-11-27T06:00+08:00",
+      "url": "https://www.bloomberg.com/news/features/2026-11-26/holidays-to-test-ai-shopping-bots-from-google-amazon-meta-and-openai",
+      "score": 1.18
+    },
+    {
+      "id": "6b0f9453fe",
+      "title": "TDK Bets on AI Data Centers and Robots",
+      "summary": "TDK正加紧扩大高端磁性传感器生产，以满足AI数据中心和人形机器人日益增长的市场需求。",
+      "sources": [
+        "Bloomberg"
+      ],
+      "publishedAt": "2026-11-27T05:00+08:00",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-26/tdk-bets-on-ai-data-centers-and-robots-to-fuel-sensor-growth",
+      "score": 1.135
     },
     {
       "id": "1343f7f3b4",
-      "title": "FCC Approves SpaceX Plan for Space AI Satellites",
-      "summary": "美国联邦通信委员会已批准SpaceX部署最多100万颗搭载AI芯片的卫星。这是太空AI数据中心建设获得的首个官方监管许可。",
+      "title": "FCC Approves SpaceX AI Satellites",
+      "summary": "FCC已批准SpaceX部署最多100万颗Starmind卫星的计划，用于打造太空AI数据中心。",
       "sources": [
         "The Verge",
         "TechCrunch"
       ],
       "publishedAt": "2026-11-26T01:44+08:00",
       "url": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
-      "score": 1.327
+      "score": 1.106
     },
     {
-      "id": "a1356d98ce",
-      "title": "Bare Metal Qwen",
-      "summary": "社区关注并探讨了在裸机环境上运行Qwen模型的技术方案，展现了其在基础设施上的应用潜力。",
+      "id": "c4937692d5",
+      "title": "Amazon and Meta Discuss Muse AI",
+      "summary": "亚马逊与Meta正就解除Meta的AI购物助手Muse在其电商平台上的封锁进行谈判。",
       "sources": [
-        "HN"
+        "The Verge",
+        "TechCrunch"
       ],
-      "publishedAt": "2026-11-26T06:15+08:00",
-      "url": "https://github.com/alesha-pro/llm.asm/tree/main/02-baremetal-os",
-      "score": 1.326
+      "publishedAt": "2026-11-25T22:10+08:00",
+      "url": "https://www.theverge.com/tech/1042071/meta-amazon-muse-ai-shopping-discussions",
+      "score": 1.047
     },
     {
-      "id": "76e0d9a338",
-      "title": "SoftBank Credit Risk Surges Amid AI Investment",
-      "summary": "由于软银持续推进庞大的AI投资计划，其信用风险飙升至四年多来的最高点。这可能导致该公司的未来融资成本进一步上升。",
+      "id": "a39051ff58",
+      "title": "SAP Weighs 10000 Job Cuts for AI",
+      "summary": "知情人士称SAP正考虑裁员至少1万人，以此推进公司向人工智能业务的全面战略转型。",
       "sources": [
         "Bloomberg"
       ],
-      "publishedAt": "2026-11-26T11:00+08:00",
-      "url": "https://www.bloomberg.com/news/articles/2026-11-26/softbank-credit-risk-tops-500-basis-points-as-ai-worries-mount",
-      "score": 1.258
+      "publishedAt": "2026-11-27T00:15+08:00",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-26/sap-weighs-cutting-at-least-10-000-positions-in-ai-restructuring",
+      "score": 0.957
     },
     {
-      "id": "59d5490243",
-      "title": "Anthropic in Early AI Adoption",
-      "summary": "PSP Growth的Momei Qu指出Anthropic正处于价格发现期，其增长虽快但资本开支和利润率仍存不确定性。",
-      "sources": [
-        "Bloomberg"
-      ],
-      "publishedAt": "2026-11-26T06:39+08:00",
-      "url": "https://www.bloomberg.com/news/videos/2026-11-25/still-in-early-innings-of-ai-adoption-psp-s-momei-qu-video",
-      "score": 1.065
-    },
-    {
-      "id": "de9f0dbfef",
-      "title": "Financials and Healthcare Will Be Big AI Winners",
-      "summary": "Yardeni Research的Ed Yardeni指出，金融和医疗行业将成为人工智能领域的主要赢家。",
-      "sources": [
-        "Bloomberg"
-      ],
-      "publishedAt": "2026-11-26T06:28+08:00",
-      "url": "https://www.bloomberg.com/news/videos/2026-11-25/financials-healthcare-will-be-big-ai-winners-yardeni-video",
-      "score": 1.058
-    },
-    {
-      "id": "7bb959aaf5",
-      "title": "Google Patent for Custom AI Video Feeds",
-      "summary": "Google曾申请基于用户数据生成个性化AI视频流的My Channel专利，引发对未来娱乐形态的担忧。",
-      "sources": [
-        "The Verge"
-      ],
-      "publishedAt": "2026-11-26T05:51+08:00",
-      "url": "https://www.theverge.com/entertainment/1042221/google-my-channel-ai-video-patent",
-      "score": 0.955
-    },
-    {
-      "id": "f27e0de9d0",
-      "title": "SP Considers Nvidia Credit Downgrade",
-      "summary": "标普评级正考虑因公司治理和关键人物风险，将Nvidia的信用评级下调至第四高的AA-。",
+      "id": "c881f1e711",
+      "title": "Nvidia Pauses Southeast Asia Shipments",
+      "summary": "随着美国收紧对华AI芯片出口限制，Nvidia已要求制造商暂停向东南亚部分国家的服务器发货。",
       "sources": [
         "TechCrunch"
       ],
-      "publishedAt": "2026-11-26T06:44+08:00",
-      "url": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/",
-      "score": 0.904
+      "publishedAt": "2026-11-27T04:03+08:00",
+      "url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
+      "score": 0.928
     },
     {
-      "id": "4c44ce3014",
-      "title": "OpenAI Merges Chat and Work with Unified Usage Limits",
-      "summary": "OpenAI宣布将整合ChatGPT的聊天与工作体验并采用统一的使用额度。重度用户在合并后可能会更快达到使用上限。",
+      "id": "0b68c1bfb1",
+      "title": "OpenAI Ex-Researcher on AI Math",
+      "summary": "前OpenAI研究员Scott Aaronson认为，AI实现重大数学突破的意义已远超学术范畴。",
       "sources": [
-        "TechCrunch"
+        "The Decoder"
       ],
-      "publishedAt": "2026-11-26T04:03+08:00",
-      "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
-      "score": 0.822
+      "publishedAt": "2026-11-27T03:31+08:00",
+      "url": "https://the-decoder.com/former-openai-researcher-says-the-riemann-proof-matters-less-than-the-fact-that-an-ai-system-can-produce-it/",
+      "score": 0.827
     },
     {
-      "id": "e7d7a2ca3b",
-      "title": "Jensen Huang Broke Nvidia Code of Conduct",
-      "summary": "Jensen Huang违反了Nvidia的行为准则，这一事件可能会对公司的企业文化和员工心理产生深远影响。",
+      "id": "d735635591",
+      "title": "42 State AGs Target Character.AI",
+      "summary": "全美42位州总检察长正联手阻止陷入破产重组的Character.AI拍卖2100多万用户的私密聊天数据。",
       "sources": [
+        "The Verge",
         "TechCrunch"
       ],
-      "publishedAt": "2026-11-26T03:54+08:00",
-      "url": "https://techcrunch.com/2026/11/25/jensen-huang-broke-nvidias-code-of-conduct-and-his-employees-may-not-forget-it/",
-      "score": 0.818
+      "publishedAt": "2026-11-26T01:35+08:00",
+      "url": "https://www.theverge.com/policy/1042620/character-ai-sale-state-ags-block-selling-users-chats",
+      "score": 0.802
+    },
+    {
+      "id": "27f35f09a9",
+      "title": "OpenAI Fixes GPT-6.2 Billing Bug",
+      "summary": "OpenAI修复计费错误后，GPT-6.2 Astra用户消耗额度的速度比上周快了40%。",
+      "sources": [
+        "The Decoder"
+      ],
+      "publishedAt": "2026-11-27T01:28+08:00",
+      "url": "https://the-decoder.com/gpt-6-2-astra-users-now-hit-limits-40-faster-after-openai-patched-a-pricing-error/",
+      "score": 0.768
     }
   ]
 }
