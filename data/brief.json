@@ -1,142 +1,141 @@
 {
   "date": "2026-11-27",
-  "generatedAt": "2026-11-27T08:27:08+08:00",
+  "generatedAt": "2026-11-27T11:50:19+08:00",
   "summarizedBy": "llm",
   "stories": [
     {
       "id": "19dd464158",
       "title": "AI Made Self-Hosting Fun Again",
-      "summary": "人工智能技术的普及让自建服务器变得重新充满趣味，极大地降低了个人开发与部署的门槛。",
+      "summary": "人工智能技术让自托管变得再次有趣。这改变了开发者管理和部署个人服务器的体验。",
       "sources": [
         "HN"
       ],
       "publishedAt": "2026-11-27T05:47+08:00",
       "url": "https://janlukas.blog/posts/ai-self-hosting",
-      "score": 1.599
+      "score": 1.483
+    },
+    {
+      "id": "6bac70b0e1",
+      "title": "AI Agents Control DeepMind Compute",
+      "summary": "人工智能代理现已控制DeepMind用于Gemini实验的部分计算资源。此举有助于提升AI在实验中的自主协作能力。",
+      "sources": [
+        "HN"
+      ],
+      "publishedAt": "2026-11-27T08:03+08:00",
+      "url": "https://the-decoder.com/ai-agents-now-control-part-of-deepminds-compute-for-gemini-experiments-but-recursive-self-improvement-remains-distant/",
+      "score": 1.326
     },
     {
       "id": "1d45997e49",
-      "title": "AMD-Specific Fork of Llama.cpp",
-      "summary": "开发者推出了针对AMD硬件优化的llama.cpp分支版本，旨在提升AMD显卡运行开源大模型的性能。",
+      "title": "AMD-Specific Fork of llama.cpp",
+      "summary": "开源社区推出了针对AMD硬件优化的llama.cpp分支版本。这为使用AMD显卡运行大模型提供了更好的支持。",
       "sources": [
         "HN"
       ],
       "publishedAt": "2026-11-27T01:11+08:00",
       "url": "https://devnull.land/amd-specific-llama-cpp",
-      "score": 1.377
+      "score": 1.239
     },
     {
-      "id": "536be0c2a1",
-      "title": "Top-Cited AI Scientists Compared",
-      "summary": "一项最新分析对比了四家美国科技公司内部被引用次数最多的顶尖人工智能科学家分布情况。",
-      "sources": [
-        "HN"
-      ],
-      "publishedAt": "2026-11-27T03:44+08:00",
-      "url": "https://topcitedscientists.com/figures/ai-at-four-us-companies/",
-      "score": 1.231
-    },
-    {
-      "id": "34d4b3dd3b",
-      "title": "Holidays to Test AI Shopping Bots",
-      "summary": "Google、Amazon、Meta和OpenAI的购物助手将在假日季迎来大考，验证消费者的接受度。",
+      "id": "164903e639",
+      "title": "Counterpoint on China AI Progress",
+      "summary": "分析师讨论了美国更新芯片控制后，中国互联网巨头与领先AI实验室的前景。新的限制进一步影响了前沿模型训练所需的先进半导体获取。",
       "sources": [
         "Bloomberg"
       ],
-      "publishedAt": "2026-11-27T06:00+08:00",
-      "url": "https://www.bloomberg.com/news/features/2026-11-26/holidays-to-test-ai-shopping-bots-from-google-amazon-meta-and-openai",
-      "score": 1.18
+      "publishedAt": "2026-11-27T10:17+08:00",
+      "url": "https://www.bloomberg.com/news/videos/2026-11-27/counterpoint-on-china-s-ai-progress-under-chip-curbs-video",
+      "score": 1.222
     },
     {
-      "id": "6b0f9453fe",
-      "title": "TDK Bets on AI Data Centers and Robots",
-      "summary": "TDK正加紧扩大高端磁性传感器生产，以满足AI数据中心和人形机器人日益增长的市场需求。",
+      "id": "8aaf193555",
+      "title": "China Hedge Fund Star Builds AI OS",
+      "summary": "中国知名对冲基金经理创立的AI初创公司正准备发布首款产品，这是一个专为AI代理设计的操作系统核心。",
       "sources": [
         "Bloomberg"
       ],
-      "publishedAt": "2026-11-27T05:00+08:00",
-      "url": "https://www.bloomberg.com/news/articles/2026-11-26/tdk-bets-on-ai-data-centers-and-robots-to-fuel-sensor-growth",
-      "score": 1.135
+      "publishedAt": "2026-11-27T09:29+08:00",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-27/china-hedge-fund-star-builds-operating-system-kernel-for-ai",
+      "score": 1.185
     },
     {
       "id": "1343f7f3b4",
-      "title": "FCC Approves SpaceX AI Satellites",
-      "summary": "FCC已批准SpaceX部署最多100万颗Starmind卫星的计划，用于打造太空AI数据中心。",
+      "title": "FCC Approves SpaceX Space AI Data Centers",
+      "summary": "美国联邦通信委员会（FCC）批准SpaceX部署多达100万颗Starmind卫星。此举旨在打造太空轨道AI数据中心，计划于2040年前全面运营。",
       "sources": [
         "The Verge",
         "TechCrunch"
       ],
       "publishedAt": "2026-11-26T01:44+08:00",
       "url": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
-      "score": 1.106
+      "score": 1.05
     },
     {
-      "id": "c4937692d5",
-      "title": "Amazon and Meta Discuss Muse AI",
-      "summary": "亚马逊与Meta正就解除Meta的AI购物助手Muse在其电商平台上的封锁进行谈判。",
-      "sources": [
-        "The Verge",
-        "TechCrunch"
-      ],
-      "publishedAt": "2026-11-25T22:10+08:00",
-      "url": "https://www.theverge.com/tech/1042071/meta-amazon-muse-ai-shopping-discussions",
-      "score": 1.047
-    },
-    {
-      "id": "a39051ff58",
-      "title": "SAP Weighs 10000 Job Cuts for AI",
-      "summary": "知情人士称SAP正考虑裁员至少1万人，以此推进公司向人工智能业务的全面战略转型。",
+      "id": "34d4b3dd3b",
+      "title": "Holidays Test AI Shopping Bots",
+      "summary": "谷歌、亚马逊、Meta和OpenAI都在假期推出AI购物助手。各大平台的智能推荐将在节日期间接受消费者的真实检验。",
       "sources": [
         "Bloomberg"
       ],
-      "publishedAt": "2026-11-27T00:15+08:00",
-      "url": "https://www.bloomberg.com/news/articles/2026-11-26/sap-weighs-cutting-at-least-10-000-positions-in-ai-restructuring",
-      "score": 0.957
+      "publishedAt": "2026-11-27T06:00+08:00",
+      "url": "https://www.bloomberg.com/news/features/2026-11-26/holidays-to-test-ai-shopping-bots-from-google-amazon-meta-and-openai",
+      "score": 1.04
     },
     {
       "id": "c881f1e711",
       "title": "Nvidia Pauses Southeast Asia Shipments",
-      "summary": "随着美国收紧对华AI芯片出口限制，Nvidia已要求制造商暂停向东南亚部分国家的服务器发货。",
+      "summary": "英伟达已通知制造伙伴暂停向马来西亚、新加坡、泰国和印尼发货服务器。美国正收紧对华AI芯片禁令以防止规避。",
       "sources": [
         "TechCrunch"
       ],
       "publishedAt": "2026-11-27T04:03+08:00",
       "url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
-      "score": 0.928
-    },
-    {
-      "id": "0b68c1bfb1",
-      "title": "OpenAI Ex-Researcher on AI Math",
-      "summary": "前OpenAI研究员Scott Aaronson认为，AI实现重大数学突破的意义已远超学术范畴。",
-      "sources": [
-        "The Decoder"
-      ],
-      "publishedAt": "2026-11-27T03:31+08:00",
-      "url": "https://the-decoder.com/former-openai-researcher-says-the-riemann-proof-matters-less-than-the-fact-that-an-ai-system-can-produce-it/",
-      "score": 0.827
+      "score": 0.821
     },
     {
       "id": "d735635591",
-      "title": "42 State AGs Target Character.AI",
-      "summary": "全美42位州总检察长正联手阻止陷入破产重组的Character.AI拍卖2100多万用户的私密聊天数据。",
+      "title": "42 State AGs Oppose Character.AI Sale",
+      "summary": "42位美国州总检察长正试图阻止Character.AI在破产重组期间出售用户聊天记录。此举旨在保护超过2100万美国账户的隐私数据。",
       "sources": [
         "The Verge",
         "TechCrunch"
       ],
       "publishedAt": "2026-11-26T01:35+08:00",
       "url": "https://www.theverge.com/policy/1042620/character-ai-sale-state-ags-block-selling-users-chats",
-      "score": 0.802
+      "score": 0.762
+    },
+    {
+      "id": "0b68c1bfb1",
+      "title": "AI Math Breakthroughs Matter",
+      "summary": "前OpenAI研究员斯科特·阿伦森认为，AI在数学领域的突破意义重大。这不仅超越了学术范畴，还可能深刻影响全球经济与密码学。",
+      "sources": [
+        "The Decoder"
+      ],
+      "publishedAt": "2026-11-27T03:31+08:00",
+      "url": "https://the-decoder.com/former-openai-researcher-says-the-riemann-proof-matters-less-than-the-fact-that-an-ai-system-can-produce-it/",
+      "score": 0.733
     },
     {
       "id": "27f35f09a9",
-      "title": "OpenAI Fixes GPT-6.2 Billing Bug",
-      "summary": "OpenAI修复计费错误后，GPT-6.2 Astra用户消耗额度的速度比上周快了40%。",
+      "title": "OpenAI Patches GPT-6.2 Billing Bug",
+      "summary": "OpenAI修复计费错误后，GPT-6.2 Astra用户触及使用限制的速度加快了40%。官方为此向订阅用户提供额外重置额度作为补偿。",
       "sources": [
         "The Decoder"
       ],
       "publishedAt": "2026-11-27T01:28+08:00",
       "url": "https://the-decoder.com/gpt-6-2-astra-users-now-hit-limits-40-faster-after-openai-patched-a-pricing-error/",
-      "score": 0.768
+      "score": 0.685
+    },
+    {
+      "id": "5320f5d21a",
+      "title": "Chinese AI Labs Seek Data Sources",
+      "summary": "由于OpenAI和Anthropic关闭数据大门，中国AI开发者正将目光转向谷歌和Meta的数据来源，以推进大模型训练。",
+      "sources": [
+        "The Decoder"
+      ],
+      "publishedAt": "2026-11-26T23:45+08:00",
+      "url": "https://the-decoder.com/after-openai-and-anthropic-shut-the-door-on-their-data-a-chinese-ai-developer-is-turning-to-google-and-meta-instead/",
+      "score": 0.648
     }
   ]
 }
