@@ -1,141 +1,141 @@
 {
   "date": "2026-11-28",
-  "generatedAt": "2026-11-28T08:27:20+08:00",
+  "generatedAt": "2026-11-28T11:36:46+08:00",
   "summarizedBy": "llm",
   "stories": [
     {
+      "id": "4e825df2be",
+      "title": "Tenant Evicted After Landlord AI Assistant Rent Error",
+      "summary": "一名女性因房东的AI助手错误告知其可以推迟交租而遭到驱逐。这凸显了在租赁管理中盲目依赖AI工具的潜在风险。",
+      "sources": [
+        "HN"
+      ],
+      "publishedAt": "2026-11-28T09:32+08:00",
+      "url": "https://drmahfouz.substack.com/p/woman-evicted-after-landlords-ai",
+      "score": 1.495
+    },
+    {
       "id": "6acd918e33",
-      "title": "Michael Nielsen removes neural nets book",
-      "summary": "知名作者 Michael Nielsen 下架了其关于神经网络的在线图书。这一举动引发了读者和技术界的关注与讨论。",
+      "title": "Michael Nielsen Removes Neural Net Book",
+      "summary": "作者Michael Nielsen已将他关于神经网络的书籍下架。目前具体下架原因尚待进一步公开。",
       "sources": [
         "HN"
       ],
       "publishedAt": "2026-11-28T03:31+08:00",
       "url": "https://neuralnetworksanddeeplearning.com/",
-      "score": 1.531
+      "score": 1.385
     },
     {
       "id": "aa52748596",
-      "title": "States sue SpaceX over Grok images",
-      "summary": "多州起诉 SpaceX，要求阻止其 Grok 生成儿童色情和复仇色情图像。此举旨在遏制 AI 工具被滥用于生成违规内容。",
+      "title": "States Sue SpaceX Over Grok Child Sex Images",
+      "summary": "多州起诉SpaceX，以阻止Grok生成儿童色情和复仇色情图像。此举旨在打击利用生成式AI制造违法有害内容的滥用行为。",
       "sources": [
         "HN"
       ],
       "publishedAt": "2026-11-28T03:42+08:00",
       "url": "https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform",
-      "score": 1.489
+      "score": 1.356
     },
     {
       "id": "1b6569d6d2",
-      "title": "Banned Nvidia Blackwell chips found in China",
-      "summary": "两家中国公司在上海某数据中心安装了被禁的 Nvidia 芯片 Blackwell。这批涉案设备与 Alice Huang 有关，引发了外界对出口管制的担忧。",
+      "title": "Banned Nvidia Blackwell Chips Found in Shanghai",
+      "summary": "两家中国企业在上海一处数据中心安装了被禁的Nvidia Blackwell芯片。这暴露出高端AI硬件出口管制在执行环节的漏洞。",
       "sources": [
         "Bloomberg",
         "The Decoder"
       ],
       "publishedAt": "2026-11-27T19:45+08:00",
       "url": "https://www.bloomberg.com/news/videos/2026-11-27/nvidia-blackwell-chips-turn-up-at-china-site-video",
-      "score": 1.323
+      "score": 1.207
     },
     {
       "id": "65f5e5e1b0",
-      "title": "SAP weighs 10000 job cuts for AI pivot",
-      "summary": "知情人士称，SAP 计划因业务转向 AI 而裁员至少 1 万人。此举反映了人工智能浪潮正深刻重塑全球科技行业。",
+      "title": "SAP Plans 10000 Job Cuts in AI Pivot",
+      "summary": "SAP正筹备裁员至少1万人，作为其转向AI的全面重组计划的一部分。此举反映了人工智能浪潮下科技行业的深度调整。",
       "sources": [
         "Bloomberg",
         "The Decoder"
       ],
       "publishedAt": "2026-11-27T19:11+08:00",
       "url": "https://www.bloomberg.com/news/videos/2026-11-27/the-pulse-11-27-2026-video",
-      "score": 1.301
-    },
-    {
-      "id": "42792ea1ec",
-      "title": "Prospero: Bloat-free native AI coding harness",
-      "summary": "Prospero 推出了无冗余的、基于 ImGui 的原生 AI 编程辅助工具。它为开发者提供了一种更加轻量且高效的编码体验。",
-      "sources": [
-        "HN"
-      ],
-      "publishedAt": "2026-11-28T04:23+08:00",
-      "url": "https://github.com/skeeto/prospero",
-      "score": 1.261
+      "score": 1.188
     },
     {
       "id": "782abf0585",
-      "title": "OpenAI accuses Apple of pressuring suppliers",
-      "summary": "OpenAI 指控 Apple 向供应商施压以孤立其设备，并利用不公平协议防止人才跳槽。这标志着两家公司的商业竞争进一步白热化。",
+      "title": "OpenAI Accuses Apple of Coercing Suppliers",
+      "summary": "OpenAI指控Apple向共享供应商施压以排挤其设备。两家公司之间的商业摩擦与竞争正进一步升级。",
       "sources": [
         "Bloomberg"
       ],
       "publishedAt": "2026-11-28T03:02+08:00",
       "url": "https://www.bloomberg.com/news/articles/2026-11-27/openai-says-apple-pressured-suppliers-to-shun-its-devices",
-      "score": 1.055
-    },
-    {
-      "id": "fbf41e8b35",
-      "title": "OpenAI countersues Apple over trade secrets",
-      "summary": "OpenAI 在加州法院对 Apple 提起反诉，指控其盗窃商业机密并胁迫共享供应商。此前双方曾合作将 ChatGPT 引入 iPhone。",
-      "sources": [
-        "The Decoder"
-      ],
-      "publishedAt": "2026-11-28T03:38+08:00",
-      "url": "https://the-decoder.com/openai-countersues-apple-over-trade-secret-theft-and-alleged-coercion-of-shared-suppliers/",
-      "score": 0.83
+      "score": 0.944
     },
     {
       "id": "cc2646aaf0",
-      "title": "Android DIY widgets bring vibe-coding fun",
-      "summary": "Android 平台的 DIY 小组件为用户带来了有趣的 vibe-coding 体验。它让用户通过 AI 更轻松地定制实时公交等个性化信息。",
+      "title": "Android DIY Widgets Offer Vibe-Coding Fun",
+      "summary": "Android系统的DIY小组件为用户提供了有趣的个性化体验。这类功能让日常手机交互变得更加便捷和充满创意。",
       "sources": [
         "The Verge"
       ],
       "publishedAt": "2026-11-27T22:00+08:00",
       "url": "https://www.theverge.com/tech/1041801/android-intelligence-create-my-widget-gemini",
-      "score": 0.819
+      "score": 0.743
+    },
+    {
+      "id": "fbf41e8b35",
+      "title": "OpenAI Countersues Apple Over Trade Secrets",
+      "summary": "OpenAI在加州法院起诉Apple盗取商业机密并胁迫共享供应商。双方从曾经的合作伙伴彻底走向直接竞争与法律诉讼。",
+      "sources": [
+        "The Decoder"
+      ],
+      "publishedAt": "2026-11-28T03:38+08:00",
+      "url": "https://the-decoder.com/openai-countersues-apple-over-trade-secret-theft-and-alleged-coercion-of-shared-suppliers/",
+      "score": 0.742
     },
     {
       "id": "4d4018e508",
-      "title": "Three studies back Yann LeCun JEPA models",
-      "summary": "Meta 与 AMI Labs 的三项新研究支持了 Yann LeCun 的 JEPA 世界模型。该架构旨在让机器拥有理解因果关系的能力，成为大语言模型的替代方案。",
+      "title": "Studies Support Yann LeCun JEPA World Models",
+      "summary": "来自Meta和AMI Labs的三项新研究支持了Yann LeCun对JEPA世界模型的押注。这为超越大语言模型、实现更高效的机器推理开辟了新途径。",
       "sources": [
         "The Decoder"
       ],
       "publishedAt": "2026-11-28T00:58+08:00",
       "url": "https://the-decoder.com/three-studies-from-meta-and-ami-labs-back-yann-lecuns-bet-on-jepa-world-models-over-large-language-models/",
-      "score": 0.755
+      "score": 0.679
     },
     {
       "id": "aced9ea9d0",
-      "title": "Hackers breach US Air Force Cloud One",
-      "summary": "最新报道显示，黑客成功入侵了美国空军的旗舰云平台 Cloud One。这暴露出国防关键云基础设施面临严峻的网络安全威胁。",
+      "title": "Hackers Breach US Air Force Cloud One",
+      "summary": "黑客成功入侵了美国空军的旗舰云计算平台Cloud One。这一安全事件凸显了关键国防云基础设施面临的严峻威胁。",
       "sources": [
         "The Decoder"
       ],
       "publishedAt": "2026-11-28T00:06+08:00",
       "url": "https://the-decoder.com/hackers-breached-the-us-air-forces-flagship-cloud-one-platform-report-says/",
-      "score": 0.732
+      "score": 0.66
     },
     {
       "id": "355eb2e5ee",
-      "title": "New chip runs AI models using light waves",
-      "summary": "德国公司 Q.ANT 推出了一种利用光波运行 AI 模型的新型芯片。该技术旨在大幅降低人工智能计算过程中的巨大能耗。",
+      "title": "German Startup Uses Light Waves for AI Chips",
+      "summary": "德国公司Q.ANT正尝试利用光波来执行AI计算。这项新技术有望大幅降低运行人工智能模型所需的能源消耗。",
       "sources": [
         "Wired"
       ],
       "publishedAt": "2026-11-27T15:00+08:00",
       "url": "https://www.wired.com/story/a-new-breed-of-chip-runs-ai-models-using-waves-of-light/",
-      "score": 0.555
+      "score": 0.513
     },
     {
       "id": "c881f1e711",
-      "title": "Nvidia pauses chip shipments to SE Asia",
-      "summary": "随着美国收紧对华芯片禁令，Nvidia 已通知制造伙伴暂停向马来西亚、新加坡等地发货。此举旨在防止 AI 芯片违规流入中国市场。",
+      "title": "Nvidia Pauses Chip Shipments to Southeast Asia",
+      "summary": "Nvidia已要求制造合作伙伴暂停向马来西亚、新加坡等地发货。这是美国收紧对华AI芯片封锁政策的一部分。",
       "sources": [
         "TechCrunch"
       ],
       "publishedAt": "2026-11-27T04:03+08:00",
       "url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
-      "score": 0.479
+      "score": 0.454
     }
   ]
 }
